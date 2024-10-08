@@ -1,0 +1,50 @@
+{
+  "flex-layout.row#buttons-brands-home": {
+    "title": "Botões de Marcas Home",
+    "props": {},
+    "children": [
+      "custom-buttons-brands#homev2"
+    ]
+  },
+  "custom-buttons-brands#homev2": {
+    "props": {
+        "isActive": true,
+        "title": "### AS MELHORES MARCAS",
+        "buttonsContent": [
+          {
+            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+            "imageSrc": "assets/images/brand-image.png"
+          },
+          {
+            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+            "imageSrc": "assets/images/brand-image.png"
+          },
+          {
+            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+            "imageSrc": "assets/images/brand-image.png"
+          },
+          {
+            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+            "imageSrc": "assets/images/brand-image.png"
+          },
+          {
+            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+            "imageSrc": "assets/images/brand-image.png"
+          },
+          {
+            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+            "imageSrc": "assets/images/brand-image.png"
+          }
+        ]
+    },
+    "children": [
+        "list-context-renderer#buttons-category"
+    ]
+  },
+  "list-context-renderer#buttons-category": {
+      "props": {
+          "listElement": "div",
+          "itemElement": "div"
+      }
+  }
+}

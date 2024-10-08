@@ -10,7 +10,8 @@
   height: 24px;
   display: block;
 }
-.minicartContainer .openIconContainer--minicart {
+.minicartContainer .openIconContainer--minicart,
+.minicartContainer .openIconContainer--minicart-header__minicart {
   padding: 0.75em 0;
 }
 .minicartContainer .openIconContainer :global(.vtex-button):hover {

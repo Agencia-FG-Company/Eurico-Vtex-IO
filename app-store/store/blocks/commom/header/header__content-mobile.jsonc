@@ -5,11 +5,13 @@
   "flex-layout.row#header__content-mobile": {
     "children": [
       "drawer",
+      "modal-trigger#search-bar",
       "flex-layout.col#spacer",
       "logo#mobile",
       "flex-layout.col#spacer",
       "login",
-      "minicart.v2#header__minicart"
+      "minicart.v2#header__minicart",
+      "back-to-top-button"
     ],
     "props": {
       "blockClass": "header__content-mobile",
@@ -17,6 +19,28 @@
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
+  },
+  "modal-trigger#search-bar": {
+    "props": {
+      "blockClass": "search-bar"
+    },
+    "children": ["image#search-bar", "modal-layout#search-bar"]
+  },
+  "image#search-bar": {
+    "props": {
+      "src": "assets/icons/search.svg",
+      "maxHeight": 24,
+      "blockClass": "search-bar"
+    }
+  },
+
+  "modal-layout#search-bar": {
+    "props": {
+      "blockClass": "search-bar",
+      "disableEscapeKeyDown": false,
+      "backdrop": "clickable"
+    },
+    "children": ["search-bar#header__search"]
   },
   "logo#mobile": {
     "props": {

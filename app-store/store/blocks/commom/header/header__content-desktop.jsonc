@@ -24,6 +24,11 @@
       "flex-layout.col#spacer"
     ]
   },
+  "back-to-top-button":{
+    "props":{
+      "displayThreshold": 800
+    }
+  },
   "flex-layout.row#header__content": {
     "props": {
       "blockClass": "header__content",
@@ -34,7 +39,7 @@
       "fullWidth": true
     },
     "children": [
-      "menu#header__institucional--menu-institucional",
+      "flex-layout.col#spacer",
       "flex-layout.col#spacer",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",

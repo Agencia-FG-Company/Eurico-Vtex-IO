@@ -2,13 +2,23 @@
   // display: none;
   @include tablet{
     display: block;
+
+
+  }
+  :global(.vtex-styleguide-9-x-input) {
+    border: 0;
+    background-color: transparent;
+    width: 100%;
   }
 
   :global(.vtex-input-prefix__group) {
-    border: none;
+    border: 0;
+    border-bottom: 1px solid #000;
+    flex-direction: row-reverse;
   }
   :global(.vtex-input__suffix) {
     padding: 0;
+    background-color: transparent;
   }
   :global(.vtex-store-components-3-x-searchIcon) {
     display: none;
@@ -28,12 +38,15 @@
   }
 
   @include tablet{
-    box-shadow: 0 1px 8px rgba(0, 0, 0, .6);
-    position: relative;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 42px;
+    left: 0;
     width: 100%;
     z-index: 999;
     max-width: 100%;
     background-color: white;
+    padding: 16px 8px;
   }
 
   .autoCompleteOuterContainer{
@@ -41,7 +54,35 @@
       :global(.vtex-input-prefix__group){
         justify-content: center;
         align-items: flex-start;
+
+        @media (max-width: 1024px) {
+          align-items: center;
+        }
       }
+    }
+  }
+}
+
+.backToTopButtonActive {
+  bottom: 8rem;
+
+  :global(.vtex-button) {
+    background-color: transparent;
+    border: 0;
+
+    :global(.vtex-button__label) {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 48px;
+      height: 48px;
+      background-image: url(assets/icons/scrollup-icon.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 }

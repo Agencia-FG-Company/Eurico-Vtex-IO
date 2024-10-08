@@ -17,6 +17,11 @@
     @media (min-width: 768px) {
       padding-bottom: 75px;
     }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 0;
+    }
     .flexCol {
       :global(
           .vtex-store-components-3-x-imageElement--secund__area-banners--img
@@ -37,16 +42,22 @@
   }
 
   &--third__banner-area {
-    margin: 80px auto 100px auto;
-    width: 90%;
+    margin: 72px auto;
+    width: 100%;
     @include mobile {
       margin-top: 10px;
       width: fit-content;
       display: flex;
-      flex-direction: column;
-      gap: 10px;
-      .stretchChildrenWidth {
-        width: 100% !important;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      .stretchChildrenWidth{
+        width: fit-content !important;
+      }
+
+      &--img {
+        width: 170px;
       }
     }
     .flexCol {
@@ -87,6 +98,10 @@
     }
   }
 
+  &--header__content {
+    background: transparent;
+  }
+
   @media screen and (min-width: 40em) {
     &--menu-link,
     &--header__content {
@@ -120,21 +135,28 @@
 
   &--header__content-mobile {
     align-items: center;
-    padding: 0 10%;
+    padding: 0 15px;
     background-color: white;
-    width: 100%;
-    margin: auto;
   }
 }
 
 .flexRow {
+
+  &--header__content {
+    background-color: transparent !important;
+    z-index: 99;
+  }
   &--header {
     &__content {
       background-color: white;
     }
   }
   &--secund__area-banners {
-    margin-top: 70px;
+    margin-top: 162px;
+
+    @media (max-width: 768px) {
+      margin-top: 48px;
+    }
   }
 
   &--quickviewMainRow {
@@ -156,8 +178,7 @@
   }
 
   &--menu__category {
-    -webkit-box-shadow: 5px 5px 5px #f7f7f7;
-    box-shadow: 5px 5px 5px #f7f7f7;
+    z-index: 99;
   }
 
   &--physical__stories-row:first-child {

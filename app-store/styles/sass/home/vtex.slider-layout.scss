@@ -1,17 +1,17 @@
 .slideChildrenContainer {
-  &--header__tipbar {
+  &--header__topbar {
     @include desktop {
       width: fit-content;
     }
   }
 
   &--shelf {
-    padding-top: 90px;
+    padding-top: 24px;
   }
 }
 
 .slide {
-  &--header__tipbar {
+  &--header__topbar {
     @media(min-width:1025px){
       &:nth-child(n+5){
         display: none;
@@ -25,7 +25,7 @@
 }
 
 .sliderTrack {
-  &--header__tipbar {
+  &--header__topbar {
     @include desktop{
       transform: unset !important;
     }
@@ -42,9 +42,7 @@
   &--carrossel {
     background-color: transparent;
     min-height: 450px;
-    // @media (max-width: 768px) {
-    //   max-height: 450px;
-    // }
+
     .sliderArrows {
       .caretIcon {
         display: none;
@@ -69,10 +67,9 @@
       max-width: 1920px;
     }
   }
-  &--header__tipbar {
+  &--header__topbar {
     -webkit-box-shadow: 5px 5px 5px #f7f7f7;
     box-shadow: 5px 5px 5px #f7f7f7;
-    margin-bottom: 10px;
     height: 100%;
     padding: 13px 0;
     @media (min-width: 768px) {
@@ -128,7 +125,6 @@
   margin-bottom: 25px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  min-height: 550px;
   @media (max-width: 768px) {
     min-height: auto;
   }
