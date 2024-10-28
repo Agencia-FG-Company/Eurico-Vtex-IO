@@ -8,7 +8,7 @@
       color: #000;
       text-transform: uppercase;
       text-align: center;
-      margin-bottom: 20px;
+      margin: 50px 0;
 
       @include tablet {
         font-size: 25px;
@@ -22,6 +22,11 @@
       }
     }
 
+    .flexRowContent {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
     .paragraph--search__not-found__text {
       font-size: 15px;
       font-weight: 400;
@@ -75,5 +80,12 @@
           url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.519' height='10.805' viewBox='0 0 12.519 10.805'%3E%3Cg data-name='Icon feather-arrow-left' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.25'%3E%3Cpath data-name='Caminho 1768' d='M11.894 5.403H.625'/%3E%3Cpath data-name='Caminho 1769' d='M5.144 9.922L.625 5.403 5.144.884'/%3E%3C/g%3E%3C/svg%3E");
       }
     }
+  }
+}
+
+.container--title-size-home{
+  @media (max-width: 769px) {
+    justify-content: center;
+    padding: 20px 0;
   }
 }

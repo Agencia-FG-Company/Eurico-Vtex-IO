@@ -1,5 +1,15 @@
 @charset "UTF-8";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+@media (max-width: 1024px) {
+  :global(.vtex-login-2-x-container) {
+    margin-right: 15px;
+  }
+}
+
+:globaL(.vtex-minicart-2-x-openIconContainer--header__minicart) {
+  padding: 0.75em 0;
+}
+
 .menuLinks .menuLink {
   border: 1px solid #ccc;
   margin: 0;
@@ -117,4 +127,203 @@
   content: "Solicitar Troca ou Devolução";
   display: block;
   font-size: 14px;
+}
+
+@media (min-width: 769px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--size-home-layout) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(1) {
+    width: 14% !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--size-home-layout) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2) {
+    width: 30% !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--size-home-layout) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(1) {
+    width: 100% !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--size-home-layout) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2) :global(.vtex-slider-layout-0-x-slideChildrenContainer),
+  :global(.vtex-flex-layout-0-x-flexRowContent--size-home-layout) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2) :global(.vtex-slider-layout-0-x-slide--visible) {
+    width: 56px !important;
+  }
+}
+
+:global(.eurico-agenciafg-custom-0-x-newsletterform__newsletterlabelInput) {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #606060;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
+  cursor: pointer;
+}
+:global(.eurico-agenciafg-custom-0-x-newsletterform__newsletterlabelInput):checked::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #C00018;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+:global(.vtex-sticky-layout-0-x-wrapper--hover-header) {
+  position: absolute !important;
+  width: 100% !important;
+  top: 40px;
+}
+
+:global(.vtex-store-components-3-x-logoImage--logo-initial) {
+  display: none;
+}
+
+:global(.vtex-sticky-layout-0-x-container--hover-header) :global(.vtex-menu-2-x-styledLink--menu__item) {
+  color: #fff;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header) :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-store-components-3-x-searchBarIcon)::before {
+  background: url(assets/icons/search-white.svg);
+  width: 28px;
+  height: 28px;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header) :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-input-prefix__group) {
+  border-bottom: 1px solid #FFF;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header) :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #FFF;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header) :global(.vtex-login-2-x-container) :global(.vtex-button) {
+  background: url(assets/icons/user-icon.svg);
+  width: 28px;
+  height: 28px;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header) :global(.vtex-minicart-2-x-minicartContainer) :global(.vtex-minicart-2-x-minicartIconContainer)::before {
+  background: url(assets/icons/bag-white.svg);
+  width: 28px;
+  height: 28px;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header):hover {
+  background: #fff;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header):hover :global(.vtex-menu-2-x-styledLink--menu__item) {
+  color: #3f3f40;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header):hover :global(.vtex-store-components-3-x-logoImage--logo-initial) {
+  display: block;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header):hover :global(.vtex-store-components-3-x-logoImage--logo-hover) {
+  display: none;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header):hover :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-store-components-3-x-searchBarIcon)::before {
+  background: url(assets/icons/search-black.svg);
+  width: 28px;
+  height: 28px;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header):hover :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-input-prefix__group) {
+  border-bottom: 1px solid #000;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header):hover :global(.vtex-store-components-3-x-searchBarContainer) :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #949494;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header):hover :global(.vtex-login-2-x-container) :global(.vtex-button) {
+  background: url(assets/icons/user-black.svg);
+  width: 28px;
+  height: 28px;
+}
+:global(.vtex-sticky-layout-0-x-container--hover-header):hover :global(.vtex-minicart-2-x-minicartContainer) :global(.vtex-minicart-2-x-minicartIconContainer)::before {
+  background: url(assets/icons/bag-black.svg);
+  width: 28px;
+  height: 28px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header__content) {
+  height: 70px;
+}
+
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) :global(.vtex-store-components-3-x-logoImage--logo-hover) {
+  display: none;
+}
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) :global(.vtex-store-components-3-x-logoImage--logo-initial) {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--header__content-mobile) {
+    background-color: white !important;
+  }
+}
+@media (max-width: 768px) {
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-sticky-layout-0-x-container) {
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--fullbanner-home) {
+    margin-top: -83px;
+  }
+}
+
+@media (max-width: 768px) {
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-minicart-2-x-minicartContainer) :global(.vtex-minicart-2-x-minicartIconContainer)::before {
+    background: url("assets/icons/bag-black.svg");
+    width: 28px;
+    height: 28px;
+    background-size: 24px;
+  }
+}
+
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-store-drawer-0-x-openIconContainer--menu__drawer)::after {
+  background: url("assets/icons/header/drawer.svg");
+}
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-store-components-3-x-imageElement--search-bar-fixed),
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-store-components-3-x-logoContainer--logo-mobile-fixed) {
+  display: block;
+}
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-store-components-3-x-imageElement--search-bar-initial),
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-store-components-3-x-logoContainer--logo-mobile-initial) {
+  display: none;
+}
+@media (max-width: 768px) {
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRow--header__content-mobile) :global(.vtex-login-2-x-container) :global(.vtex-button) {
+    background: url(assets/icons/user-black.svg);
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRow--header__content-mobile) :global(.vtex-minicart-2-x-minicartContainer) :global(.vtex-minicart-2-x-minicartIconContainer)::before {
+    background: url("assets/icons/bag-black.svg");
+    width: 28px;
+    height: 28px;
+    background-size: 28px;
+    background-repeat: no-repeat;
+  }
+}
+
+:global(.vtex-store-components-3-x-imageElement--search-bar-fixed),
+:global(.vtex-store-components-3-x-logoContainer--logo-mobile-fixed) {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexRow--header__content-mobile) :global(.vtex-login-2-x-container) :global(.vtex-button) {
+    background: url(assets/icons/user-icon.svg);
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexRow--header__content-mobile) :global(.vtex-minicart-2-x-minicartContainer) :global(.vtex-minicart-2-x-minicartIconContainer)::before {
+    background: url("assets/icons/bag-white.svg");
+    width: 28px;
+    height: 28px;
+    background-size: 28px;
+    background-repeat: no-repeat;
+  }
 }

@@ -57,7 +57,7 @@
   width: 100vw !important;
   max-width: 1920px;
 }
-.sliderLayoutContainer--header__tipbar {
+.sliderLayoutContainer--header__topbar {
   -webkit-box-shadow: 5px 5px 5px #f7f7f7;
   box-shadow: 5px 5px 5px #f7f7f7;
   height: 100%;
@@ -119,5 +119,11 @@
 @media (max-width: 768px) {
   .slide--shelf {
     min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .sliderLayoutContainer--shelf {
+    padding: 0 20px !important;
   }
 }

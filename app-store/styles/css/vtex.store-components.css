@@ -297,6 +297,18 @@
   margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+  .imageElement--physical__stories-img {
+    display: none;
+  }
+}
+
+@media (max-width: 1665px) {
+  .imageElement--physical__stories-img {
+    height: 305px;
+  }
+}
+
 .imageElement--about-us__fullbanner {
   width: 100%;
 }

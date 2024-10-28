@@ -30,6 +30,18 @@
 .minicartContainer :global(.vtex-button__label) {
   padding: 0;
 }
+.minicartContainer .minicartIconContainer::before {
+  content: "";
+  background: url(assets/icons/bag-white.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 28px;
+  height: 24px;
+  display: block;
+}
+.minicartContainer .minicartWrapperContainer--header__minicart {
+  width: 28px !important;
+}
 
 .drawer--header__minicart {
   z-index: 1001;

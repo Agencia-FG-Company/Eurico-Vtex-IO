@@ -3,48 +3,195 @@
     "title": "Botões de Marcas Home",
     "props": {},
     "children": [
-      "custom-buttons-brands#homev2"
+      // "custom-buttons-brands#homev2",
+      "flex-layout.col#brands-home"
     ]
   },
-  "custom-buttons-brands#homev2": {
+  "flex-layout.col#brands-home": {
     "props": {
-        "isActive": true,
-        "title": "### AS MELHORES MARCAS",
-        "buttonsContent": [
-          {
-            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
-            "imageSrc": "assets/images/brand-image.png"
-          },
-          {
-            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
-            "imageSrc": "assets/images/brand-image.png"
-          },
-          {
-            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
-            "imageSrc": "assets/images/brand-image.png"
-          },
-          {
-            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
-            "imageSrc": "assets/images/brand-image.png"
-          },
-          {
-            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
-            "imageSrc": "assets/images/brand-image.png"
-          },
-          {
-            "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
-            "imageSrc": "assets/images/brand-image.png"
-          }
-        ]
+      "title": "### AS MELHORES MARCAS",
+      "isActive": true,
+      "buttonsContent": null,
+      "blockClass": "brand-home-layout"
     },
     "children": [
-        "list-context-renderer#buttons-category"
+      "rich-text#title-brand",
+      "slider-layout#buttons-brand"
     ]
   },
-  "list-context-renderer#buttons-category": {
-      "props": {
-          "listElement": "div",
-          "itemElement": "div"
+  "rich-text#title-brand": {
+    "props": {
+      "text": "### AS MELHORES MARCAS",
+      "blockClass": "title-brand-home"
+    }
+  },
+  "slider-layout#buttons-brand": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never"
+    },
+    "children": [
+      "flex-layout.row#brand-1",
+      "flex-layout.row#brand-2",
+      "flex-layout.row#brand-3",
+      "flex-layout.row#brand-4",
+      "flex-layout.row#brand-5",
+      "flex-layout.row#brand-6"
+    ]
+  },
+  "flex-layout.row#brand-1": {
+    "children": [
+      "image#brand-01"
+    ],
+    "props": {
+      "blockClass": "brands"
+    }
+  },
+  "image#brand-01": {
+    "props": {
+      "src": "assets/images/brand-home.png",
+      "maxHeight": 240,
+      "blockClass": "brand-image",
+      "link": {
+        "url": "/feminino/Melissa?O=OrderByReleaseDateDESC"
       }
+    }
+  },
+  "flex-layout.row#brand-2": {
+    "children": [
+      "image#brand-02"
+    ],
+    "props": {
+      "blockClass": "brands"
+    }
+  },
+  "image#brand-02": {
+    "props": {
+      "src": "assets/images/brand-home.png",
+      "maxHeight": 240,
+      "blockClass": "brand-image",
+      "link": {
+        "url": "/feminino/Melissa?O=OrderByReleaseDateDESC"
+      }
+    }
+  },
+  "flex-layout.row#brand-3": {
+    "children": [
+      "image#brand-03"
+    ],
+    "props": {
+      "blockClass": "brands"
+    }
+  },
+  "image#brand-03": {
+    "props": {
+      "src": "assets/images/brand-home.png",
+      "maxHeight": 240,
+      "blockClass": "brand-image",
+      "link": {
+        "url": "/feminino/Melissa?O=OrderByReleaseDateDESC"
+      }
+    }
+  },
+  "flex-layout.row#brand-4": {
+    "children": [
+      "image#brand-04"
+    ],
+    "props": {
+      "blockClass": "brands"
+    }
+  },
+  "image#brand-04": {
+    "props": {
+      "src": "assets/images/brand-home.png",
+      "maxHeight": 240,
+      "blockClass": "brand-image",
+      "link": {
+        "url": "/feminino/Melissa?O=OrderByReleaseDateDESC"
+      }
+    }
+  },
+  "flex-layout.row#brand-5": {
+    "children": [
+      "image#brand-05"
+    ],
+    "props": {
+      "blockClass": "brands"
+    }
+  },
+  "image#brand-05": {
+    "props": {
+      "src": "assets/images/brand-home.png",
+      "maxHeight": 240,
+      "blockClass": "brand-image",
+      "link": {
+        "url": "/feminino/Melissa?O=OrderByReleaseDateDESC"
+      }
+    }
+  },
+  "flex-layout.row#brand-6": {
+    "children": [
+      "image#brand-06"
+    ],
+    "props": {
+      "blockClass": "brands"
+    }
+  },
+  "image#brand-06": {
+    "props": {
+      "src": "assets/images/brand-home.png",
+      "maxHeight": 240,
+      "blockClass": "brand-image",
+      "link": {
+        "url": "/feminino/Melissa?O=OrderByReleaseDateDESC"
+      }
+    }
   }
+  // "custom-buttons-brands#homev2": {
+  //   "props": {
+  //     "isActive": true,
+  //     "title": "### AS MELHORES MARCAS",
+  //     "buttonsContent": [
+  //       {
+  //         "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+  //         "imageSrc": "assets/images/brand-image.png"
+  //       },
+  //       {
+  //         "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+  //         "imageSrc": "assets/images/brand-image.png"
+  //       },
+  //       {
+  //         "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+  //         "imageSrc": "assets/images/brand-image.png"
+  //       },
+  //       {
+  //         "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+  //         "imageSrc": "assets/images/brand-image.png"
+  //       },
+  //       {
+  //         "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+  //         "imageSrc": "assets/images/brand-image.png"
+  //       },
+  //       {
+  //         "categorySrc": "/feminino/Melissa?O=OrderByReleaseDateDESC",
+  //         "imageSrc": "assets/images/brand-image.png"
+  //       }
+  //     ]
+  //   },
+  //   "children": [
+  //     "list-context-renderer#buttons-category"
+  //   ]
+  // },
+  // "list-context-renderer#buttons-category": {
+  //   "props": {
+  //     "listElement": "div",
+  //     "itemElement": "div"
+  //   }
+  // }
 }

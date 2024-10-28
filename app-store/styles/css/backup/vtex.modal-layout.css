@@ -1,0 +1,84 @@
+.triggerContainer--product__guide-size--trigger {
+  margin-bottom: 20px;
+}
+
+.modal--product__guide-size .container--product__guide-size .paper--product__guide-size {
+  border-radius: 8px;
+  padding: 20px;
+  overflow: initial;
+}
+.modal--product__guide-size .container--product__guide-size .paper--product__guide-size .headerContainer {
+  position: absolute;
+  top: -13px;
+  right: -8px;
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a7a9ac;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.67);
+}
+.modal--product__guide-size .container--product__guide-size .paper--product__guide-size .headerContainer .closeButton {
+  padding: 0;
+  display: flex;
+}
+.modal--product__guide-size .container--product__guide-size .paper--product__guide-size .headerContainer .closeButton .closeIcon {
+  scale: 0.5;
+  color: #fff;
+  stroke-width: 2;
+}
+.modal--product__guide-size .container--product__guide-size .paper--product__guide-size :global(.vtex-store-components-3-x-imageElement--table__sizes-img) {
+  max-width: 300px;
+}
+.modal--product__guide-size .backdropContainer--product__guide-size {
+  opacity: 0.2 !important;
+  background-color: white;
+}
+.modal--product-payment-options .paper--product-payment-options {
+  width: 500px;
+  height: 330px;
+}
+.modal--product-payment-options .paper--product-payment-options .headerContainer {
+  align-items: center;
+  background-color: #c00018;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 20px 30px;
+}
+.modal--product-payment-options .paper--product-payment-options .headerContainer :global(.vtex-rich-text-0-x-paragraph--product-title-modal) {
+  color: white;
+  font-weight: 600;
+}
+.modal--product-payment-options .paper--product-payment-options .headerContainer .closeButtonContainer .closeButton {
+  padding: 0;
+}
+.modal--product-payment-options .paper--product-payment-options .headerContainer .closeButtonContainer .closeButton .closeIcon {
+  color: white;
+}
+
+.backdropContainer .backdrop--product-payment-options {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.triggerContainer--search-bar {
+  margin-left: 15px;
+}
+
+.headerContainer--new-testimonial {
+  position: absolute;
+  border: 0;
+  right: 0;
+}
+
+.triggerContainer--new-testimonial__trigger {
+  width: fit-content !important;
+}

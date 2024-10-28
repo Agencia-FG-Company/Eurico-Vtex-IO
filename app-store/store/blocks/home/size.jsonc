@@ -1,63 +1,193 @@
 {
   "responsive-layout.desktop#home-size": {
-    "children": ["flex-layout.row#home-size"]
+    "children": [
+      "flex-layout.row#home-size"
+    ]
   },
   "flex-layout.row#home-size": {
     "props": {
       "blockClass": "home-size"
     },
     "children": [
-      "custom-buttons-size#home"
+      // "custom-buttons-size#home",
+      "flex-layout.row#home-mobile"
     ]
   },
   "responsive-layout.mobile#home-size": {
     "children": [
-      "custom-buttons-size#home"
+      // "custom-buttons-size#home",
+      "flex-layout.row#home-mobile"
     ]
   },
-  "custom-buttons-size#home": {
+  // "custom-buttons-size#home": {
+  //   "props": {
+  //     "title": "COMPRE POR NUMERAÇÃO",
+  //     "isActive": true,
+  //     "buttonsContent": [
+  //       {
+  //         "categorySrc": "/feminino/tênis?O=OrderByReleaseDateDESC",
+  //         "sizeText": "40"
+  //       },
+  //       {
+  //         "categorySrc": "/feminino/mocassim?O=OrderByReleaseDateDESC",
+  //         "sizeText": "41"
+  //       },
+  //       {
+  //         "categorySrc": "feminino/sapatilha?O=OrderByReleaseDateDESC",
+  //         "sizeText": "42"
+  //       },
+  //       {
+  //         "categorySrc": "/feminino/tênis?O=OrderByReleaseDateDESC",
+  //         "sizeText": "43"
+  //       },
+  //       {
+  //         "categorySrc": "/feminino/mocassim?O=OrderByReleaseDateDESC",
+  //         "sizeText": "44"
+  //       },
+  //       {
+  //         "categorySrc": "/feminino/sapatilha?O=OrderByReleaseDateDESC",
+  //         "sizeText": "46"
+  //       },
+  //       {
+  //         "categorySrc": "/feminino/sapatilha?O=OrderByReleaseDateDESC",
+  //         "sizeText": "48"
+  //       }
+  //     ]
+  //   },
+  //   "children": [
+  //     "list-context-renderer#buttons-size"
+  //   ]
+  // },
+  // "list-context-renderer#buttons-size": {
+  //   "props": {
+  //     "listElement": "div",
+  //     "itemElement": "div"
+  //   }
+  // },
+  "flex-layout.row#home-mobile": {
     "props": {
-        "title": "COMPRE POR NUMERAÇÃO",
-        "isActive": true,
-        "buttonsContent": [
-          {
-            "categorySrc": "/feminino/tênis?O=OrderByReleaseDateDESC",
-            "sizeText": "40"
-          },
-          {
-            "categorySrc": "/feminino/mocassim?O=OrderByReleaseDateDESC",
-            "sizeText": "41"
-          },
-          {
-            "categorySrc": "feminino/sapatilha?O=OrderByReleaseDateDESC",
-            "sizeText": "42"
-          },
-          {
-            "categorySrc": "/feminino/tênis?O=OrderByReleaseDateDESC",
-            "sizeText": "43"
-          },
-          {
-            "categorySrc": "/feminino/mocassim?O=OrderByReleaseDateDESC",
-            "sizeText": "44"
-          },
-          {
-            "categorySrc": "/feminino/sapatilha?O=OrderByReleaseDateDESC",
-            "sizeText": "46"
-          },
-          {
-            "categorySrc": "/feminino/sapatilha?O=OrderByReleaseDateDESC",
-            "sizeText": "48"
-          }
-        ]
+      "title": "COMPRE POR NUMERAÇÃO",
+      "isActive": true,
+      "buttonsContent": null,
+      "blockClass": "size-home-layout"
     },
     "children": [
-      "list-context-renderer#buttons-size"
+      "rich-text#title-size",
+      "slider-layout#buttons-size"
     ]
   },
-  "list-context-renderer#buttons-size": {
+  "rich-text#title-size": {
     "props": {
-        "listElement": "div",
-        "itemElement": "div"
+      "text": "COMPRE POR NUMERAÇÃO",
+      "blockClass": "title-size-home"
     }
-}
+  },
+  "slider-layout#buttons-size": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 3,
+        "phone": 3
+      },
+      "infinite": false,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never"
+    },
+    "children": [
+      "flex-layout.row#button-size-40",
+      "flex-layout.row#button-size-41",
+      "flex-layout.row#button-size-42",
+      "flex-layout.row#button-size-43",
+      "flex-layout.row#button-size-44",
+      "flex-layout.row#button-size-46",
+      "flex-layout.row#button-size-48"
+    ]
+  },
+  "flex-layout.row#button-size-40": {
+    "children": [
+      "link.product#link-button-40"
+    ],
+    "props": {
+      "blockClass": "numbers-size"
+    }
+  },
+  "link.product#link-button-40": {
+    "props": {
+      "label": "40",
+      "href": "/feminino/tênis?O=OrderByReleaseDateDESC",
+      "blockClass": "button-size"
+    }
+  },
+  "flex-layout.row#button-size-41": {
+    "children": [
+      "link.product#link-button-41"
+    ]
+  },
+  "link.product#link-button-41": {
+    "props": {
+      "label": "41",
+      "href": "/feminino/mocassim?O=OrderByReleaseDateDESC",
+      "blockClass": "button-size"
+    }
+  },
+  "flex-layout.row#button-size-42": {
+    "children": [
+      "link.product#link-button-42"
+    ]
+  },
+  "link.product#link-button-42": {
+    "props": {
+      "label": "42",
+      "href": "/feminino/mocassim?O=OrderByReleaseDateDESC",
+      "blockClass": "button-size"
+    }
+  },
+  "flex-layout.row#button-size-43": {
+    "children": [
+      "link.product#link-button-43"
+    ]
+  },
+  "link.product#link-button-43": {
+    "props": {
+      "label": "43",
+      "href": "/feminino/mocassim?O=OrderByReleaseDateDESC",
+      "blockClass": "button-size"
+    }
+  },
+  "flex-layout.row#button-size-44": {
+    "children": [
+      "link.product#link-button-44"
+    ]
+  },
+  "link.product#link-button-44": {
+    "props": {
+      "label": "44",
+      "href": "/feminino/mocassim?O=OrderByReleaseDateDESC",
+      "blockClass": "button-size"
+    }
+  },
+  "flex-layout.row#button-size-46": {
+    "children": [
+      "link.product#link-button-46"
+    ]
+  },
+  "link.product#link-button-46": {
+    "props": {
+      "label": "46",
+      "href": "/feminino/mocassim?O=OrderByReleaseDateDESC",
+      "blockClass": "button-size"
+    }
+  },
+  "flex-layout.row#button-size-48": {
+    "children": [
+      "link.product#link-button-48"
+    ]
+  },
+  "link.product#link-button-48": {
+    "props": {
+      "label": "48",
+      "href": "/feminino/mocassim?O=OrderByReleaseDateDESC",
+      "blockClass": "button-size"
+    }
+  }
 }

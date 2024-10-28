@@ -35,15 +35,14 @@
       .flexColChild {
         width: fit-content;
       }
-
-      &--col-right {
-      }
     }
   }
 
   &--third__banner-area {
     margin: 72px auto;
     width: 100%;
+    gap: 10px;
+
     @include mobile {
       margin-top: 10px;
       width: fit-content;
@@ -53,7 +52,7 @@
       gap: 5px;
 
       .stretchChildrenWidth{
-        width: fit-content !important;
+        width: calc(50% - 10px)!important;
       }
 
       &--img {
@@ -78,8 +77,10 @@
     margin: auto;
     gap: 50px;
     margin-bottom: 100px;
-    flex-wrap: wrap;
     justify-content: center;
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
     &-row {
       align-items: center;
       @include tablet {
@@ -87,6 +88,7 @@
         align-items: center;
       }
       .stretchChildrenWidth {
+        max-width: fit-content;
       }
     }
 
@@ -94,6 +96,9 @@
       max-width: 800px;
       @media (max-width: 1440px) {
         width: 100% !important;
+      }
+      @media (max-width: 768px) {
+        max-width: 100%;
       }
     }
   }
@@ -143,6 +148,7 @@
 .flexRow {
 
   &--header__content {
+    // display: none;
     background-color: transparent !important;
     z-index: 99;
   }
@@ -184,6 +190,14 @@
   &--physical__stories-row:first-child {
     @include mobile {
       margin-bottom: 20px;
+    }
+  }
+
+  &--size-home-layout {
+    background: #fafafa;
+    height: 110px;
+    @include mobile {
+      height: 164px;
     }
   }
 }
@@ -232,6 +246,8 @@
     height: 385px;
     background: #f2f2f2;
     padding: 0 5rem 0 5rem;
+    @media (max-width: 1665px){
+      height: 285px;
     @include mobile {
       width: 90% !important;
       padding: 0;
@@ -249,5 +265,123 @@
     &:last-child {
       height: 34% !important;
     }
+  }
+}
+}
+
+.container--hover-header{
+  position: absolute;
+  width: 100%;
+  &:hover{
+    .flexRow--header__content,
+    .flexRow--menu__category{
+      background: #FFF !important;
+    }
+    .logoLink--logo-hover,
+    .logoImage--logo-hover{
+      display: none;
+    }
+    .logoLink--logo-initial{
+      display: block !important;
+    }
+    .styledLink--menu__item{
+      color: #3f3f40;
+    }
+    :global(.vtex-store-components-3-x-searchBarContainer){
+      :global(.vtex-store-components-3-x-searchBarIcon){
+        &::before{
+          background: url(assets/icons/search.svg) no-repeat;
+          width: 24px;
+          height: 22px;
+        }
+      }
+      :global(.vtex-input-prefix__group){
+        border: 0;
+        border-bottom: 1px solid #393939;
+        flex-direction: row-reverse;
+      }
+      :global(.vtex-styleguide-9-x-input){
+        color: #949494;
+        &::placeholder{
+          color: #949494;
+        }
+      }
+    }
+    :global(.vtex-login-2-x-container){
+      :global(.vtex-button){
+        padding: 0;
+        margin: 0;
+        width: 28px;
+        height: 28px;
+        background: url(assets/icons/user-black.svg) no-repeat;
+        min-height: unset;
+        border: 0;
+      }
+    }
+    :global(.vtex-minicart-2-x-minicartContainer){
+      :global(.vtex-minicart-2-x-minicartIconContainer){
+        &::before{
+          content: "";
+          background: url(assets/icons/bag-black.svg) no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 28px;
+          height: 24px;
+          display: block;
+        }
+      }
+    }
+  }
+  .logoLink--logo-hover,
+  .logoImage--logo-hover{
+    display: block;
+  }
+  .logoLink--logo-initial{
+    display: none !important;
+  }
+  :global(.vtex-store-components-3-x-searchBarContainer){
+    :global(.vtex-styleguide-9-x-input){
+      color: #fff;
+
+      &::placeholder{
+        color: #fff;
+      }
+    }
+  }
+  .styledLink--menu__item{
+    color: #FFF;
+  }
+}
+
+.flexRowContent--physical__stories{
+  flex-wrap: nowrap!important;
+  padding: 0 20px;
+  @media (max-width: 768px){
+    margin-bottom: 20px!important;
+  }
+}
+
+.flexColChild--brand-home-layout{
+  :global(.vtex-slider-layout-0-x-sliderTrack){
+    @media (max-width: 768px){
+      gap: 10px;
+      padding: 0 20px;
+    }
+  }
+}
+
+.flexRowContent--size-home-layout {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexCol--col-right{
+  transform: none!important;
+}
+
+.flexRowContent--header__content-mobile{
+  @media (max-width: 768px){
+    background-color: transparent!important;
   }
 }

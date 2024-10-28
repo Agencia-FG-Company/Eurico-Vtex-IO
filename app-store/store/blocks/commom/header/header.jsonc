@@ -1,7 +1,10 @@
 {
   "header.full": {
     "title": "HEADER",
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "title": "Desktop",
@@ -9,13 +12,19 @@
       "blockClass": "header-layout__desktop"
     },
     "children": [
+      "header-layout.desktop#topo"
+    ]
+  },
+  "header-layout.desktop#topo": {
+    "props": {
+      "blockClass": "header-layout__desktop-topo"
+    },
+    "children": [
       "slider-layout#header__topbar--desktop",
-      "flex-layout.row#header__content",
-      "flex-layout.row#category-menu",
+      "sticky-layout#header__menu",
       "sticky-layout#header__content"
     ]
   },
-
   "header-layout.mobile": {
     "title": "Mobile",
     "children": [
@@ -23,7 +32,6 @@
       "sticky-layout#header__content-mobile"
     ]
   },
-
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"

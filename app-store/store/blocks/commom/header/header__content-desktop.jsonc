@@ -3,7 +3,18 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#header__content-sticky"]
+    "children": [
+      "flex-layout.row#header__content-sticky"
+    ]
+  },
+  "sticky-layout#header__menu": {
+    "props": {
+      "blockClass": "hover-header"
+    },
+    "children": [
+      "flex-layout.row#header__content",
+      "flex-layout.row#category-menu"
+    ]
   },
   "flex-layout.row#header__content-sticky": {
     "title": "Header - Fixo",
@@ -19,13 +30,18 @@
       "flex-layout.col#spacer",
       "flex-layout.col#logo-desktop",
       "flex-layout.row#category-menu",
-      "search-bar",
+      "search-bar#header__search-desktop",
       "flex-layout.row#header__icons-sticky",
       "flex-layout.col#spacer"
     ]
   },
-  "back-to-top-button":{
-    "props":{
+  "search-bar#header__search-desktop": {
+    "props": {
+      "placeholder": "Busco por..."
+    }
+  },
+  "back-to-top-button": {
+    "props": {
       "displayThreshold": 800
     }
   },
@@ -43,7 +59,7 @@
       "flex-layout.col#spacer",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "search-bar",
+      "search-bar#header__search-desktop",
       "flex-layout.row#header__icons"
     ]
   },
@@ -54,7 +70,10 @@
       "verticalAlign": "center",
       "preventVerticalStretch": true
     },
-    "children": ["login", "minicart.v2#header__minicart"]
+    "children": [
+      "login",
+      "minicart.v2#header__minicart"
+    ]
   },
   "flex-layout.row#header__icons-sticky": {
     "props": {
@@ -63,13 +82,19 @@
       "verticalAlign": "center",
       "preventVerticalStretch": true
     },
-    "children": ["login", "minicart.v2#header__minicart-sticky"]
+    "children": [
+      "login",
+      "minicart.v2#header__minicart-sticky"
+    ]
   },
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo#desktop"]
+    "children": [
+      "logo#desktop",
+      "logo#desktop-hover"
+    ]
   },
   "logo#desktop": {
     "props": {
@@ -77,7 +102,22 @@
       "href": "/",
       "url": "assets/icons/logo.svg",
       "width": "164",
-      "height": "47"
+      "height": "47",
+      "blockClass": [
+        "logo-initial"
+      ]
+    }
+  },
+  "logo#desktop-hover": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/images/logo-white.svg",
+      "width": "164",
+      "height": "47",
+      "blockClass": [
+        "logo-hover"
+      ]
     }
   }
 }

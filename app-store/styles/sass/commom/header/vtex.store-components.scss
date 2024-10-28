@@ -92,3 +92,19 @@
     margin-top: 20px;
   }
 }
+
+
+
+
+.imageElement--physical__stories-img {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+
+.imageElement--physical__stories-img {
+    @media (max-width: 1665px){
+    height: 305px;
+  }
+}

@@ -21,7 +21,7 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  border: 1px solid #C00018;
+  border-radius: 0;
 }
 .container--home__shelf-tab .listContainer .listItem :global(.vtex-button):hover {
   background: #C00018;
