@@ -165,6 +165,15 @@
    :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
      &:nth-child(2) {
       width: 30%!important;
+      @media (min-width: 769px) and (max-width: 1199px){
+        width: 60%!important;
+      }
+      @media  (min-width: 1200px) and (max-width: 1739px) {
+        width: 40%!important;
+      }
+      @media (min-width: 1740px) {
+        width: 30%!important;
+      }
     }
   }
    :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
@@ -212,75 +221,27 @@
 
 }
 
-:global(.vtex-sticky-layout-0-x-wrapper--hover-header){
-  position: absolute!important;
-  width: 100%!important;
-  top: 40px;
-}
-
-:global(.vtex-store-components-3-x-logoImage--logo-initial){
-  display: none;
-}
-
-:global(.vtex-sticky-layout-0-x-container--hover-header){
-  :global(.vtex-menu-2-x-styledLink--menu__item){
-    color: #fff;
+:global(.render-route-store-home){
+  :global(.vtex-sticky-layout-0-x-wrapper--hover-header){
+    position: absolute!important;
+    width: 100%!important;
+    top: 40px;
   }
-  :global(.vtex-store-components-3-x-searchBarContainer){
-    :global(.vtex-store-components-3-x-searchBarIcon){
-      &::before{
-        background: url(assets/icons/search-white.svg);
-        width: 28px;
-        height: 28px;
-      }
-    }
+  :global(.vtex-store-components-3-x-logoImage--logo-initial){
+    display: none;
   }
-  :global(.vtex-store-components-3-x-searchBarContainer){
-    :global(.vtex-input-prefix__group){
-      border-bottom: 1px solid #FFF;
-    }
+  :global(.vtex-store-components-3-x-logoImage--logo-hover){
+    display: block;
   }
 
-  :global(.vtex-store-components-3-x-searchBarContainer){
-    :global(.vtex-styleguide-9-x-input){
-      &::placeholder{
-        color :#FFF;
-      }
-    }
-  }
-  :global(.vtex-login-2-x-container){
-    :global(.vtex-button){
-      background: url(assets/icons/user-icon.svg);
-      width: 28px;
-      height: 28px;
-    }
-  }
-  :global(.vtex-minicart-2-x-minicartContainer){
-    :global(.vtex-minicart-2-x-minicartIconContainer){
-      &::before{
-        background: url(assets/icons/bag-white.svg);
-        width: 28px;
-        height: 28px;
-      }
-    }
-  }
-  &:hover{
-    background: #fff;
+  :global(.vtex-sticky-layout-0-x-container--hover-header){
     :global(.vtex-menu-2-x-styledLink--menu__item){
-      color: #3f3f40;
-    }
-    :global(.vtex-store-components-3-x-logoImage--logo-initial){
-      display: block;
-      margin-left: -10px;
-      margin-top: 30px;
-    }
-    :global(.vtex-store-components-3-x-logoImage--logo-hover){
-      display: none;
+      color: #fff;
     }
     :global(.vtex-store-components-3-x-searchBarContainer){
       :global(.vtex-store-components-3-x-searchBarIcon){
         &::before{
-          background: url(assets/icons/search-black.svg);
+          background: url(assets/icons/search-white.svg);
           width: 28px;
           height: 28px;
         }
@@ -288,19 +249,20 @@
     }
     :global(.vtex-store-components-3-x-searchBarContainer){
       :global(.vtex-input-prefix__group){
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #FFF;
       }
     }
+
     :global(.vtex-store-components-3-x-searchBarContainer){
       :global(.vtex-styleguide-9-x-input){
         &::placeholder{
-          color :#949494;
+          color :#FFF;
         }
       }
     }
     :global(.vtex-login-2-x-container){
       :global(.vtex-button){
-        background: url(assets/icons/user-black.svg);
+        background: url(assets/icons/user-icon.svg);
         width: 28px;
         height: 28px;
       }
@@ -308,13 +270,69 @@
     :global(.vtex-minicart-2-x-minicartContainer){
       :global(.vtex-minicart-2-x-minicartIconContainer){
         &::before{
-          background: url(assets/icons/bag-black.svg);
+          background: url(assets/icons/bag-white.svg);
           width: 28px;
           height: 28px;
         }
       }
     }
+    &:hover{
+      background: #fff;
+      :global(.vtex-menu-2-x-styledLink--menu__item){
+        color: #3f3f40;
+      }
+      :global(.vtex-store-components-3-x-logoImage--logo-initial){
+        display: block;
+        margin-left: -10px;
+        margin-top: 30px;
+      }
+      :global(.vtex-store-components-3-x-logoImage--logo-hover){
+        display: none;
+      }
+      :global(.vtex-store-components-3-x-searchBarContainer){
+        :global(.vtex-store-components-3-x-searchBarIcon){
+          &::before{
+            background: url(assets/icons/search-black.svg);
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+      :global(.vtex-store-components-3-x-searchBarContainer){
+        :global(.vtex-input-prefix__group){
+          border-bottom: 1px solid #000;
+        }
+      }
+      :global(.vtex-store-components-3-x-searchBarContainer){
+        :global(.vtex-styleguide-9-x-input){
+          &::placeholder{
+            color :#949494;
+          }
+        }
+      }
+      :global(.vtex-login-2-x-container){
+        :global(.vtex-button){
+          background: url(assets/icons/user-black.svg);
+          width: 28px;
+          height: 28px;
+        }
+      }
+      :global(.vtex-minicart-2-x-minicartContainer){
+        :global(.vtex-minicart-2-x-minicartIconContainer){
+          &::before{
+            background: url(assets/icons/bag-black.svg);
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+    }
   }
+}
+
+
+:global(.vtex-store-components-3-x-logoImage--logo-hover){
+  display: none;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--header__content) {
@@ -344,8 +362,26 @@
 }
 
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--fullbanner-home) {
-  @media (max-width: 768px){
+  @media (max-width: 339px){
+    margin-top: -100px;
+  }
+  @media (min-width: 340px) and (max-width: 359px){
+    margin-top: -100px;
+  }
+  @media (min-width: 360px) and (max-width: 369px){
+    margin-top: -90px;
+  }
+  @media (min-width: 370px) and (max-width: 380px){
     margin-top: -83px;
+  }
+  @media (min-width: 381px) and (max-width: 395px){
+    margin-top: -75px;
+  }
+  @media (min-width: 396px) and (max-width: 409px){
+    margin-top: -70px;
+  }
+  @media (min-width: 410px) and (max-width: 768px){
+    margin-top: -65px;
   }
 }
 
@@ -441,3 +477,23 @@
   }
 }
 
+
+:global(.vtex-flex-layout-0-x-flexRow--size-home-layout) {
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer) {
+    @media (max-width: 768px){
+      padding: 0 50px;
+    }
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--brand-home-layout ){
+  @media (min-width: 1200px){
+    :global(.vtex-slider-layout-0-x-slide--visible) {
+      width: 240px!important;
+    }
+    :global(.vtex-slider-layout-0-x-sliderTrack) {
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}

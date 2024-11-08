@@ -2,6 +2,7 @@
   "store.home": {
     "blocks": [
       "image#fixed__whatsapp",
+      "cookie-bar",
       "Helmet",
       "list-context.image-list#fullbanner",
       "responsive-layout.desktop#home-size",
@@ -17,8 +18,7 @@
       "rich-text#physical__stories-title",
       "flex-layout.row#physical__stories",
       "rich-text#content-seo",
-      "flex-layout.row#footer__newsletter",
-      "cookie-bar"
+      "flex-layout.row#footer__newsletter"
     ]
   }
 }

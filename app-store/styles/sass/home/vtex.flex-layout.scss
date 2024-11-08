@@ -27,9 +27,9 @@
           .vtex-store-components-3-x-imageElement--secund__area-banners--img
         ) {
         transition: all 0.6s ease-in-out;
-        &:hover {
-          transform: translate(5px, 5px);
-        }
+        // &:hover {
+        //   transform: translate(5px, 5px);
+        // }
       }
       width: fit-content;
       .flexColChild {
@@ -66,9 +66,9 @@
           margin-top: -50px;
         }
       }
-      &:hover {
-        transform: translate(5px, 5px);
-      }
+      // &:hover {
+      //   transform: translate(5px, 5px);
+      // }
     }
   }
 
@@ -377,7 +377,9 @@
 }
 
 .flexCol--col-right{
-  transform: none!important;
+  @media (min-width: 769px){
+    transform: translate(5px, 45px)!important;
+  }
 }
 
 .flexRowContent--header__content-mobile{

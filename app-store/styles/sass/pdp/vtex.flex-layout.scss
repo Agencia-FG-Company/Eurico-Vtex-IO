@@ -289,3 +289,16 @@
     }
   }
 }
+
+
+@media (max-width: 1665px) {
+  .flexCol--physical__stories-col {
+    height: 285px;
+  }
+}
+
+.flexCol--physical__stories-col {
+  @media (min-width: 1455px) and (max-width: 1579px){
+    padding: 50px!important;
+  }
+}

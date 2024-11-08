@@ -25,6 +25,7 @@
   &--icon-clearSale{
     @include mobile{
       max-width: 160px  !important;
+      margin-top: 15px;
     }
   }
   &--agencia{

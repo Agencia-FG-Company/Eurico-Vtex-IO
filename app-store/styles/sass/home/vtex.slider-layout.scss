@@ -83,7 +83,7 @@
     }
     .sliderArrows {
       @media (max-width: 768px) {
-        top: 20%;
+        top: 50%;
       }
       &::after {
         filter: invert(0);

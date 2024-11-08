@@ -56,8 +56,7 @@
 }
 @media (max-width: 1025px) {
   .container .clearLink .element :global(.vtex-button) {
-    opacity: 1;
-    visibility: visible;
+    display: none;
   }
 }
 .container .clearLink .element :global(.vtex-button) :global(.vtex-button__label) {

@@ -179,6 +179,7 @@
   position: fixed;
   right: 40px;
   bottom: 40px;
+  z-index: 999;
 }
 
 .imageElement--footer__atendimento-img {

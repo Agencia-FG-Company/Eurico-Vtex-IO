@@ -278,7 +278,8 @@
 }
 
 .container--title-brand-home{
-  justify-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 .container--physical__stories-title{

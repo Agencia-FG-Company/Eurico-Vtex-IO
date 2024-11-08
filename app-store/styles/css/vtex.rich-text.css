@@ -441,7 +441,7 @@
 }
 @media (max-width: 768px) {
   .container--footer__column--title .paragraph {
-    margin-bottom: 0;
+    margin-bottom: 30px !important;
   }
 }
 .container--footer__address-item .heading {
@@ -741,7 +741,8 @@
 }
 
 .container--title-brand-home {
-  justify-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 .container--physical__stories-title {

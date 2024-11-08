@@ -7,3 +7,9 @@
 :globaL(.vtex-minicart-2-x-openIconContainer--header__minicart){
   padding: .75em 0;
 }
+
+:global(.vtex-flex-layout-0-x-flexRowContent--size-home-layout) {
+  :global(.vtex-slider-layout-0-x-slide--hidden){
+    opacity: 0;
+  }
+}

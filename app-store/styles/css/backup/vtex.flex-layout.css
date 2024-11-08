@@ -113,7 +113,7 @@
 }
 @media (min-width: 768px) {
   .flexRowContent--secund__area-banners {
-    padding-bottom: 75px;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 768px) {
@@ -128,9 +128,9 @@
 .flexRowContent--secund__area-banners .flexCol :global(.vtex-store-components-3-x-imageElement--secund__area-banners--img) {
   transition: all 0.6s ease-in-out;
 }
-.flexRowContent--secund__area-banners .flexCol :global(.vtex-store-components-3-x-imageElement--secund__area-banners--img):hover {
+/* .flexRowContent--secund__area-banners .flexCol :global(.vtex-store-components-3-x-imageElement--secund__area-banners--img):hover {
   transform: translate(5px, 5px);
-}
+} */
 .flexRowContent--secund__area-banners .flexCol .flexColChild {
   width: fit-content;
 }
@@ -147,9 +147,9 @@
     flex-wrap: wrap;
     gap: 5px;
   }
-  .flexRowContent--third__banner-area .stretchChildrenWidth {
+  /* .flexRowContent--third__banner-area .stretchChildrenWidth {
     width: fit-content !important;
-  }
+  } */
   .flexRowContent--third__banner-area--img {
     width: 170px;
   }
@@ -162,9 +162,9 @@
     margin-top: -50px;
   }
 }
-.flexRowContent--third__banner-area .flexCol:hover {
+/* .flexRowContent--third__banner-area .flexCol:hover {
   transform: translate(5px, 5px);
-}
+} */
 .flexRowContent--physical__stories {
   width: 100%;
   margin: auto;
@@ -229,7 +229,7 @@
   background-color: white;
 }
 .flexRow--secund__area-banners {
-  margin-top: 162px;
+  margin-top: 100px;
 }
 @media (max-width: 768px) {
   .flexRow--secund__area-banners {
@@ -683,7 +683,6 @@
 @media (max-width: 768px) {
   .flexRow--footer__links .flexRowContent--footer__links .flexCol--footer__column--payments {
     align-items: center;
-    gap: 30px;
   }
 }
 @media (max-width: 768px) {

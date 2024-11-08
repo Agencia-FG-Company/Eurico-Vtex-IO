@@ -55,8 +55,7 @@
         // }
 
         @include tablet {
-          opacity: 1;
-          visibility: visible;
+          display: none;
         }
 
         :global(.vtex-button__label) {

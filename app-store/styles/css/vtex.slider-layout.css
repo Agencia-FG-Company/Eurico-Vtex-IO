@@ -75,7 +75,7 @@
 }
 @media (max-width: 768px) {
   .sliderLayoutContainer--shelf .sliderArrows {
-    top: 20%;
+    top: 50%;
   }
 }
 .sliderLayoutContainer--shelf .sliderArrows::after {
