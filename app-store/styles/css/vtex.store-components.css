@@ -162,13 +162,6 @@
   max-width: unset;
 }
 
-.imageElement--fixed__whatsapp {
-  display: block !important;
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-}
-
 .imageElement--footer__atendimento-img {
   max-width: 177px;
   margin-top: 15px;
@@ -201,6 +194,13 @@
 }
 .imageElement--agencia {
   height: fit-content;
+}
+
+.imageElement--fixed__whatsapp {
+  display: block !important;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
 }
 
 @media (max-width: 1025px) {
