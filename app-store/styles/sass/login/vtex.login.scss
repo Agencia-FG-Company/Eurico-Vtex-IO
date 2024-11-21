@@ -385,9 +385,9 @@
 // css do copmponente de review, esta nesse arquivo devido a bug da vtex..
 
 :global(.vtex-reviews-and-ratings-3-x-container) {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 50px;
-  width: 100%;
+  width: fit-content;
   max-width: 100%;
 
   :global(.vtex-reviews-and-ratings-3-x-loginLink) {

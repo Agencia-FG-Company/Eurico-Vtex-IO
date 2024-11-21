@@ -103,6 +103,7 @@
     margin-right: 20px;
     max-width: calc(100% - 40px);
     .flexRowContent--product-main {
+      padding-top: 0;
       @include tablet {
         padding-top: 0;
         flex-direction: column;
@@ -241,6 +242,11 @@
 
 .flexRowContent{
   &--product-advantages {
+    @media (max-width: 768px){
+      width: 300px;
+      margin: 0 auto;
+    }
+
     @media (max-width: 1024px) {
       display: flex;
       justify-content: center;

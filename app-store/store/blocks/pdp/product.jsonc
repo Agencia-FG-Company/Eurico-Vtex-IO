@@ -5,19 +5,22 @@
       "condition-layout.product#availability",
       "__fold__",
       "sticky-layout.stack-container#buy-fast-pdp",
-     "product-reviews",
-     "fg-limit-buy-fast"
+      "rich-text#shelf__pdp__title",
+      "list-context.product-list#shelf__pdp",
+      "rich-text#ratings__title",
+      "product-reviews",
+      "fg-limit-buy-fast"
     ]
   },
-
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4,
       "blockClass": "product-breadcrumb"
     },
-    "children": ["breadcrumb"]
+    "children": [
+      "breadcrumb"
+    ]
   },
-
   "condition-layout.product#availability": {
     "props": {
       "conditions": [
@@ -40,9 +43,11 @@
       "paddingBottom": 7,
       "blockClass": "product-main"
     },
-    "children": ["flex-layout.col#stack", "flex-layout.col#product__info-pdp"]
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#product__info-pdp"
+    ]
   },
-
   "product-specification-badges": {
     "props": {
       "specificationGroupName": "Group",
@@ -51,12 +56,15 @@
       "displayValue": "SPECIFICATION_NAME"
     }
   },
-
   "responsive-layout.desktop#stack__product": {
-    "children": ["stack-layout"]
+    "children": [
+      "stack-layout"
+    ]
   },
   "responsive-layout.mobile#stack__product": {
-    "children": ["stack-layout#mobile"]
+    "children": [
+      "stack-layout#mobile"
+    ]
   },
   "flex-layout.col#stack": {
     "children": [
@@ -69,7 +77,6 @@
       "blockClass": "stack__product"
     }
   },
-
   "flex-layout.row#flags-pdp": {
     "props": {
       "blockClass": "flags-pdp"
@@ -80,7 +87,6 @@
       "fg-Flags"
     ]
   },
-
   "stack-layout": {
     "props": {
       "blockClass": "product"
@@ -100,7 +106,6 @@
       "product-specification-badges"
     ]
   },
-
   "product-images": {
     "props": {
       "aspectRatio": {
@@ -123,7 +128,6 @@
       "blockClass": "product-image-slide"
     }
   },
-
   "flex-layout.row#product__price-pdp": {
     "props": {
       "blockClass": "product__price-pdp"
@@ -133,28 +137,25 @@
       "product-installments#product__installments-pdp"
     ]
   },
-
   "product-installments#product__installments-pdp": {
     "props": {
       "blockClass": "product__installments-pdp",
       "message": "ou {installmentsNumber}x de {installmentValue}"
     }
   },
-
   "product-selling-price#product__price-pdp": {
     "props": {
       "blockClass": "product__price-pdp",
       "message": "Por: {sellingPriceValue}"
     }
   },
-
   "sku-selector#pdp": {
     "props": {
       "initialSelection": "empty",
       "blockClass": "sku-selector__pdp"
     }
   },
-"product-list-price#pdp": {
+  "product-list-price#pdp": {
     "props": {
       "message": "DE: {listPriceValue}",
       "blockClass": "product-list-price__pdp"
@@ -198,8 +199,12 @@
   },
   "list-context.product-list#shelf__pdp": {
     "title": "QUEM VIU, VIU TAMBÉM",
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#shelf__pdp"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#shelf__pdp"
+    ],
     "props": {
       "blockClass": "shelf__pdp",
       "category": "26",
@@ -217,7 +222,10 @@
       },
       "infinite": true,
       "fullWidth": false,
-      "blockClass": ["shelf", "carrossel"]
+      "blockClass": [
+        "shelf",
+        "carrossel"
+      ]
     }
   },
   "rich-text#ratings__title": {

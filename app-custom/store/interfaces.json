@@ -1,48 +1,48 @@
 {
-  "Helmet":{
-    "component":"Helmet"
+  "Helmet": {
+    "component": "Helmet"
   },
-  "fg-Newsletter":{
-    "component":"Newsletter"
+  "fg-Newsletter": {
+    "component": "Newsletter"
   },
-  "fg-Pagination":{
-    "component":"Pagination"
+  "fg-Pagination": {
+    "component": "Pagination"
   },
-  "fg-product-variants":{
-    "component":"product-variants"
+  "fg-product-variants": {
+    "component": "product-variants"
   },
-  "fg-product-description":{
-    "component":"product-description"
+  "fg-product-description": {
+    "component": "product-description"
   },
-  "fg-Depositions":{
-    "component":"Depositions"
+  "fg-Depositions": {
+    "component": "Depositions"
   },
-  "fg-CustomProductRef":{
-    "component":"CustomProductRef"
+  "fg-CustomProductRef": {
+    "component": "CustomProductRef"
   },
-  "fg-NewTestimonial":{
-    "component":"NewTestimonial"
+  "fg-NewTestimonial": {
+    "component": "NewTestimonial"
   },
-  "fg-ScriptCommom":{
-    "component":"ScriptCommom"
+  "fg-ScriptCommom": {
+    "component": "ScriptCommom"
   },
-  "fg-UltimosPares":{
-    "component":"UltimosPares"
+  "fg-UltimosPares": {
+    "component": "UltimosPares"
   },
-  "fg-Flags":{
-    "component":"Flags"
+  "fg-Flags": {
+    "component": "Flags"
   },
-  "fg-keepBuying":{
-    "component":"KeepBuying"
+  "fg-keepBuying": {
+    "component": "KeepBuying"
   },
-  "fg-limit-buy-fast":{
-    "component":"limit-buy-fast"
+  "fg-limit-buy-fast": {
+    "component": "limit-buy-fast"
   },
-  "fg-troca-facil":{
-    "component":"TrocaFacil"
+  "fg-troca-facil": {
+    "component": "TrocaFacil"
   },
-  "fg-Parallax":{
-    "component":"Parallax"
+  "fg-Parallax": {
+    "component": "Parallax"
   },
   "fg-custom-buy-too": {
     "component": "CustomBuyToo"
