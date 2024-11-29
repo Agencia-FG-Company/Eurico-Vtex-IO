@@ -110,6 +110,8 @@
 .flexRowContent--secund__area-banners {
   width: 65%;
   margin: auto;
+  justify-content: center;
+  gap: 15px;
 }
 @media (min-width: 768px) {
   .flexRowContent--secund__area-banners {
