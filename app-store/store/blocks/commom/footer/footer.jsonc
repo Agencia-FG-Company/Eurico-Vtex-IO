@@ -1,23 +1,23 @@
 {
   "footer": {
     "title": "Footer",
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer__links",
       "flex-layout.row#footer__copyright",
-      "fg-ScriptCommom",
-      "image#fixed__whatsapp"
+      "fg-ScriptCommom"
     ]
   },
-
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#footer__links-mobile",
       "flex-layout.row#footer__copyright",
-      "fg-ScriptCommom",
-      "image#fixed__whatsapp"
+      "fg-ScriptCommom"
     ]
   }
 }

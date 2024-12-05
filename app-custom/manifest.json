@@ -10,6 +10,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "vtex.list-context": "0.x",
     "vtex.styleguide": "9.x",
     "vtex.native-types": "0.x",
     "vtex.css-handles": "1.x",
@@ -18,7 +19,10 @@
     "vtex.search-graphql": "0.x",
     "vtex.order-items": "0.x",
     "vtex.order-manager": "0.x",
-    "vtex.store-resources": "0.x"
+    "vtex.store-resources": "0.x",
+    "vtex.device-detector": "0.x",
+    "vtex.rich-text": "0.x",
+    "vtex.recommendation-shelf": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

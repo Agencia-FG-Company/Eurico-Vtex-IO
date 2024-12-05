@@ -442,3 +442,10 @@
     margin-right: 25px;
   }
 }
+.container :global(.vtex-button) {
+  padding: 0;
+  margin: 0;
+  width: 28pxpx;
+  height: 28px;
+  background: url(assets/icons/user-icon.svg) no-repeat;
+}

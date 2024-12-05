@@ -1,4 +1,4 @@
-import React, {  useState,useRef } from 'react'
+import React, { useState } from 'react'
 import { applyModifiers, useCssHandles } from 'vtex.css-handles'
 import { newsletterFactory } from '../NewsletterFactory'
 
@@ -13,6 +13,9 @@ export const HANDLES_POPUPNEWSLETTER = [
   'newsletterform__formInputName',
   'newsletterform__formSubmit',
   'newsletterform__success',
+  'newsletterform__newsletterlabel',
+  'newsletterform__radiogroup',
+  'newsletterform__newsletterlabelInput'
 ] as const
 
 export function NewsletterForm() {
@@ -20,7 +23,6 @@ export function NewsletterForm() {
   const [data, setData] = useState({
     success: false,
   })
-  const submitButtonRef = useRef<HTMLButtonElement | null>(null)
 
   const handleSubmit = function (e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -29,13 +31,13 @@ export function NewsletterForm() {
     const newsletterData = {
       nome: form.get('name') as string,
       email: form.get('email') as string,
-      sexo: submitButtonRef.current?.getAttribute('data-gender') as string,
+      sexo: form.get('gender') as string,
     }
 
 
     const newsletter = newsletterFactory()
     newsletter.send(newsletterData).then(function () {
-    setData(() => ({ ...data, success: true }))
+      setData(() => ({ ...data, success: true }))
     })
 
   }
@@ -48,7 +50,7 @@ export function NewsletterForm() {
       )}
     >
       <span className={handles.newsletterform__formTitle}>
-      FIQUE POR DENTRO DAS <strong className='strong'>NOVIDADES</strong>
+        FIQUE POR DENTRO DAS <strong className="strong">NOVIDADES</strong>
       </span>
       <form className={handles.newsletterform__form} onSubmit={handleSubmit}>
         <input
@@ -67,24 +69,57 @@ export function NewsletterForm() {
           required
           className={handles.newsletterform__formInputEmail}
         />
+
+        <div className={handles.newsletterform__radiogroup}>
+          <label className={handles.newsletterform__newsletterlabel}>
+            <input className={handles.newsletterform__newsletterlabelInput}
+              type="radio"
+              name="gender"
+              value="feminino"
+              data-gender="feminino"
+              required
+            />
+            Feminino
+          </label>
+          <label className={handles.newsletterform__newsletterlabel}>
+            <input className={handles.newsletterform__newsletterlabelInput}
+              type="radio"
+              name="gender"
+              value="masculino"
+              data-gender="masculino"
+              required
+            />
+            Masculino
+          </label>
+          <label className={handles.newsletterform__newsletterlabel}>
+            <input className={handles.newsletterform__newsletterlabelInput}
+              type="radio"
+              name="gender"
+              value="ambos"
+              data-gender="ambos"
+              required
+            />
+            Ambos
+          </label>
+        </div>
+
         <button
-          className={handles.newsletterform__formSubmit}
-          data-gender="feminino"
           type="submit"
-          onClick={() => (submitButtonRef.current = document.activeElement as HTMLButtonElement)}
-        >
-          Feminino
-        </button>
-        <button
           className={handles.newsletterform__formSubmit}
-          data-gender="masculino"
-          type="submit"
-          onClick={() => (submitButtonRef.current = document.activeElement as HTMLButtonElement)}
+          onClick={(e) => {
+            const selectedGender = document.querySelector('input[name="gender"]:checked')?.getAttribute('data-gender');
+            if (selectedGender) {
+              (e.currentTarget as HTMLButtonElement).setAttribute('data-gender', selectedGender);
+            }
+          }}
         >
-          Masculino
+          Cadastrar
         </button>
       </form>
+
       <div className={handles.newsletterform__success}>Cadastrado com sucesso</div>
     </div>
   )
+
+
 }

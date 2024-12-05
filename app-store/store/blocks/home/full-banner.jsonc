@@ -1,18 +1,23 @@
 {
   "list-context.image-list#fullbanner": {
     "title": "Slider principal home",
-    "children": ["slider-layout#demo-images"],
+    "children": [
+      "slider-layout#demo-images"
+    ],
     "props": {
+      "blockClass": [
+        "fullbanner-home"
+      ],
       "height": "auto",
       "preload": true,
       "images": [
         {
-          "image": "https://eurico.vteximg.com.br/arquivos/ids/304436/bannerdesk_masc_200624.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "image": "assets/images/banner-example.png",
+          "mobileImage": "assets/images/banner-example-mobile.png"
         },
         {
-          "image": "https://eurico.vteximg.com.br/arquivos/ids/304435/bannerdesk_fem_200624.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "image": "assets/images/banner-example.png",
+          "mobileImage": "assets/images/banner-example-mobile.png"
         }
       ]
     }
@@ -31,8 +36,11 @@
         "stopOnHouver": true
       },
       "showNavigationArrows": "mobileOnly",
-      "showPaginationDots":"desktopOnly",
-      "blockClass": "carrossel"
+      "showPaginationDots": "desktopOnly",
+      "blockClass": [
+        "carrossel",
+        "fullbanner-home"
+      ]
     }
   }
 }

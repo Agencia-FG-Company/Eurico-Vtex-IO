@@ -7,7 +7,10 @@
       "fullWidth": false,
       "horizontalAlign": "between"
     },
-    "children": ["flex-layout.col#footer__copyright-left", "flex-layout.col#footer__copyright-right"]
+    "children": [
+      "flex-layout.col#footer__copyright-left",
+      "flex-layout.col#footer__copyright-right"
+    ]
   },
   "flex-layout.col#footer__copyright-left": {
     "title": "Coluna de Copyright à Esquerda",
@@ -20,7 +23,9 @@
       "preventHorizontalStretch": false,
       "preventVerticalStretch": false
     },
-    "children": ["rich-text#footer__copyright-text"]
+    "children": [
+      "rich-text#footer__copyright-text"
+    ]
   },
   "flex-layout.col#footer__copyright-right": {
     "title": "Coluna de Copyright à Direita",
@@ -33,7 +38,9 @@
       "preventHorizontalStretch": false,
       "preventVerticalStretch": false
     },
-    "children": ["flex-layout.row#footer__copyright-right--row"]
+    "children": [
+      "flex-layout.row#footer__copyright-right--row"
+    ]
   },
   "flex-layout.row#footer__copyright-right--row": {
     "title": "Linha de Imagens no Copyright",
@@ -63,7 +70,7 @@
     "title": "Imagem VTEX no Copyright",
     "props": {
       "src": "assets/icons/footer/vtex.svg",
-      "blockClass": "vtex-copyright" ,
+      "blockClass": "vtex-copyright",
       "link": {
         "url": "https://vtex.com/pt-br/",
         "openNewTab": true
@@ -73,7 +80,7 @@
   "rich-text#footer__copyright-text": {
     "title": "Texto de Copyright",
     "props": {
-      "text": "Copyright © 2020 - Todos os direitos reservados | EURICO WEB CALÇADOS LTDA-EPP\nCNPJ: 12.579.806/0001-65 | Av. Jandira, 59 - Indianópolis - São Paulo/SP - (11) 5054 8878",
+      "text": "Copyright © 2024 - Todos os direitos reservados | EURICO WEB CALÇADOS LTDA-EPP\nCNPJ: 12.579.806/0001-65 | Av. Jandira, 59 - Indianópolis - São Paulo/SP - (11) 5054 8878",
       "blockClass": "footer__copyright-text"
     }
   }

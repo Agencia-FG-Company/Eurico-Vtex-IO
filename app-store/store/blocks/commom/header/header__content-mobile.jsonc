@@ -1,15 +1,20 @@
 {
   "sticky-layout#header__content-mobile": {
-    "children": ["flex-layout.row#header__content-mobile"]
+    "children": [
+      "flex-layout.row#header__content-mobile"
+    ]
   },
   "flex-layout.row#header__content-mobile": {
     "children": [
       "drawer",
+      "modal-trigger#search-bar",
       "flex-layout.col#spacer",
       "logo#mobile",
+      "logo#mobile-fixed",
       "flex-layout.col#spacer",
       "login",
-      "minicart.v2#header__minicart"
+      "minicart.v2#header__minicart",
+      "back-to-top-button"
     ],
     "props": {
       "blockClass": "header__content-mobile",
@@ -18,13 +23,70 @@
       "fullWidth": true
     }
   },
+  "modal-trigger#search-bar": {
+    "props": {
+      "blockClass": "search-bar"
+    },
+    "children": [
+      "image#search-bar",
+      "image#search-bar-fixed",
+      "modal-layout#search-bar"
+    ]
+  },
+  "image#search-bar": {
+    "props": {
+      "src": "assets/icons/search-white.svg",
+      "maxHeight": 35,
+      "blockClass": [
+        "search-bar",
+        "search-bar-initial"
+      ]
+    }
+  },
+  "image#search-bar-fixed": {
+    "props": {
+      "src": "assets/icons/search-black.svg",
+      "maxHeight": 35,
+      "blockClass": [
+        "search-bar",
+        "search-bar-fixed"
+      ]
+    }
+  },
+  "modal-layout#search-bar": {
+    "props": {
+      "blockClass": "search-bar",
+      "disableEscapeKeyDown": false,
+      "backdrop": "clickable"
+    },
+    "children": [
+      "search-bar#header__search"
+    ]
+  },
   "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
       "url": "assets/icons/logo.svg",
       "width": "115",
-      "height": "48"
+      "height": "48",
+      "blockClass": [
+        "logo-mobile",
+        "logo-mobile-fixed"
+      ]
+    }
+  },
+  "logo#mobile-fixed": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/images/logo-white.svg",
+      "width": "115",
+      "height": "48",
+      "blockClass": [
+        "logo-mobile",
+        "logo-mobile-initial"
+      ]
     }
   },
   "search-bar#header__search": {
@@ -33,7 +95,7 @@
       "openAutocompleteOnFocus": true,
       "blockClass": "header__search-mobile",
       "hideTitles": true,
-      "placeholder": "DIGITE AQUI",
+      "placeholder": "Busco por...",
       "compactMode": false,
       "containerMode": "overlay"
     }
@@ -43,28 +105,36 @@
       "blockClass": "menu__drawer",
       "isFullWidth": true
     },
-    "children": ["flex-layout.col#content-drawer"],
-    "blocks": ["drawer-header#drawer-header"]
+    "children": [
+      "flex-layout.col#content-drawer"
+    ],
+    "blocks": [
+      "drawer-header#drawer-header"
+    ]
   },
   "flex-layout.col#content-drawer": {
     "props": {
       "blockClass": "content-drawer"
     },
-    "children": ["vtex.menu@2.x:menu#category__menu-mobile", "login#drawer"]
+    "children": [
+      "vtex.menu@2.x:menu#category__menu-mobile",
+      "login#drawer"
+    ]
   },
-
   "login#drawer": {
     "props": {
-      "blockClass":"login__drawer",
-      "iconLabel":"login",
+      "blockClass": "login__drawer",
+      "iconLabel": "login",
       "showPasswordVerificationIntoTooltip": true
     }
   },
-
   "drawer-header#drawer-header": {
     "props": {
       "blockClass": "header-drawer"
     },
-    "children": ["flex-layout.col#logo-desktop", "drawer-close-button"]
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "drawer-close-button"
+    ]
   }
 }

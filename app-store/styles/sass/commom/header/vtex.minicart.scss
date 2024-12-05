@@ -14,7 +14,8 @@
     }
   }
 
-  .openIconContainer--minicart{
+  .openIconContainer--minicart,
+  .openIconContainer--minicart-header__minicart{
     padding: .75em 0;
   }
 
@@ -38,5 +39,20 @@
   }
   :global(.vtex-button__label){
     padding: 0;
+  }
+  .minicartIconContainer{
+    &::before {
+      content: "";
+      background: url(assets/icons/bag-white.svg) no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 28px;
+      height: 24px;
+      display: block;
+    }
+  }
+
+  .minicartWrapperContainer--header__minicart {
+    width: 28px!important;
   }
 }
