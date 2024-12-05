@@ -83,18 +83,18 @@ const CustomBuyToo = () => {
   return (
     <>
       <div className="vtex-rich-text-0-x-container vtex-rich-text-0-x-container--titleShelf vtex-rich-text-0-x-container--buyTogetherTitle flex tl items-start justify-start t-body c-on-base"><div className="vtex-rich-text-0-x-wrapper vtex-rich-text-0-x-wrapper--titleShelf vtex-rich-text-0-x-wrapper--buyTogetherTitle"><h2 className="vtex-rich-text-0-x-heading vtex-rich-text-0-x-heading--titleShelf vtex-rich-text-0-x-heading--buyTogetherTitle t-heading-2 vtex-rich-text-0-x-headingLevel2 vtex-rich-text-0-x-headingLevel2--titleShelf vtex-rich-text-0-x-headingLevel2--buyTogetherTitle vtex-rich-text-0-x-heading-level-2  vtex-rich-text-0-x-title-compre-junto">APROVEITE E LEVE TAMBÉM</h2></div></div>
-        <div className={styles["buyTogether__container_wrapper"]}>
-          <img className={styles["product__buyTogether_image"]} src={randomProduct?.items?.[0]?.images?.[0]?.imageUrl} alt={randomProduct?.productName} />
-          <div  className={styles["bloco_texto"]} >
-            <div className={styles["product__buyTogether_name"]}>
-              {randomProduct?.productName && randomProduct.productName.substring(0, 50) + (randomProduct.productName.length > 50 ? '...' : '')}
-            </div>
-            <p className={styles["product__buyTogether_listprice"]} style={{ fontWeight: 400, fontSize: 12  }}>
-              <b>POR: {menorPrecoRandomProductPrice.toLocaleString("pt-br", { style: "currency", "currency": "BRL" })}</b>
-              {" "}|{" "}2X {(menorPrecoRandomProductPrice / 2).toLocaleString("pt-br", { style: "currency", "currency": "BRL" })}
-            </p>
-            <div className={styles["product__buyTogether_buyButton"]} onClick={() => buyTogether()}>Comprar</div>
+      <div className={styles["buyTogether__container_wrapper"]}>
+        <img className={styles["product__buyTogether_image"]} src={randomProduct?.items?.[0]?.images?.[0]?.imageUrl} alt={randomProduct?.productName} />
+        <div className={styles["bloco_texto"]} >
+          <div className={styles["product__buyTogether_name"]}>
+            {randomProduct?.productName && randomProduct.productName.substring(0, 50) + (randomProduct.productName.length > 50 ? '...' : '')}
           </div>
+          <p className={styles["product__buyTogether_listprice"]} style={{ fontWeight: 400, fontSize: 12 }}>
+            <b>POR: {menorPrecoRandomProductPrice.toLocaleString("pt-br", { style: "currency", "currency": "BRL" })}</b>
+            {" "}|{" "}2X {(menorPrecoRandomProductPrice / 2).toLocaleString("pt-br", { style: "currency", "currency": "BRL" })}
+          </p>
+          <div className={styles["product__buyTogether_buyButton"]} onClick={() => buyTogether()}>Comprar</div>
+        </div>
       </div>
     </>
   );
