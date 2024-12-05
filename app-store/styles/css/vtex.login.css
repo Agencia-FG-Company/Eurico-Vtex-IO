@@ -297,10 +297,10 @@
 }
 
 :global(.vtex-reviews-and-ratings-3-x-container) {
-  margin: 0 auto;
-  margin-bottom: 50px;
-  width: fit-content;
-  max-width: 100%;
+  margin: 0 auto !important;
+  margin-bottom: 50px !important;
+  width: fit-content !important;
+  max-width: 100% !important;
 }
 :global(.vtex-reviews-and-ratings-3-x-container) :global(.vtex-reviews-and-ratings-3-x-loginLink) {
   border: 1px solid #000;

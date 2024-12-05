@@ -136,6 +136,7 @@
 :global(.vtex-my-orders-app-3-x-cancelBtn) {
   display: none;
 }
+
 @media (min-width: 769px) {
   :global(.vtex-flex-layout-0-x-flexRowContent--size-home-layout) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(1) {
     width: 14% !important;

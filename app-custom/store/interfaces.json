@@ -1,84 +1,74 @@
 {
   "Helmet": {
-    "component": "Helmet""Helmet": {
-      "component": "Helmet"
-    },
-    "fg-Newsletter": {
-      "component": "Newsletter""fg-Newsletter": {
-        "component": "Newsletter"
-      },
-      "fg-Pagination": {
-        "component": "Pagination""fg-Pagination": {
-          "component": "Pagination"
-        },
-        "fg-product-variants": {
-          "component": "product-variants""fg-product-variants": {
-            "component": "product-variants"
-          },
-          "fg-product-description": {
-            "component": "product-description""fg-product-description": {
-              "component": "product-description"
-            },
-            "fg-Depositions": {
-              "component": "Depositions"
-            },
-            "fg-NewTestimonial": {
-              "component": "NewTestimonial""fg-NewTestimonial": {
-                "component": "NewTestimonial"
-              },
-              "fg-ScriptCommom": {
-                "component": "ScriptCommom""fg-ScriptCommom": {
-                  "component": "ScriptCommom"
-                },
-                "fg-UltimosPares": {
-                  "component": "UltimosPares""fg-UltimosPares": {
-                    "component": "UltimosPares"
-                  },
-                  "fg-Flags": {
-                    "component": "Flags""fg-Flags": {
-                      "component": "Flags"
-                    },
-                    "fg-keepBuying": {
-                      "component": "KeepBuying""fg-keepBuying": {
-                        "component": "KeepBuying"
-                      },
-                      "custom-buttons-category": {
-                        "component": "CustomButtonsCategory",
-                        "allowed": "*",
-                        "composition": "children",
-                        "content": {
-                          "$ref": "app:eurico.agenciafg-custom#/definitions/CustomButtonsCategory"
-                        }
-                      },
-                      "custom-buttons-brands": {
-                        "component": "CustomButtonsBrands",
-                        "allowed": "*",
-                        "composition": "children",
-                        "content": {
-                          "$ref": "app:eurico.agenciafg-custom#/definitions/CustomButtonsBrands"
-                        }
-                      },
-                      "custom-buttons-size": {
-                        "component": "CustomButtonsSize",
-                        "allowed": "*",
-                        "composition": "children",
-                        "content": {
-                          "$ref": "app:eurico.agenciafg-custom#/definitions/CustomButtonsSize"
-                        }
-                      },
-                      "fg-custom-buy-too": {
-                        "component": "CustomBuyToo"
-                      },
-                      "fg-limit-buy-fast": {
-                        "component": "limit-buy-fast"
-                      },
-                      "fg-troca-facil": {
-                        "component": "troca-facil"
-                      },
-                      "fg-Parallax": {
-                        "component": "Parallax"
-                      },
-                      "cookie-bar": {
-                        "component": "CookieBar"
-                      }
-                    }
+    "component": "Helmet"
+  },
+  "fg-Newsletter": {
+    "component": "Newsletter"
+  },
+  "fg-Pagination": {
+    "component": "Pagination"
+  },
+  "fg-product-variants": {
+    "component": "product-variants"
+  },
+  "fg-product-description": {
+    "component": "product-description"
+  },
+  "fg-Depositions": {
+    "component": "Depositions"
+  },
+  "fg-NewTestimonial": {
+    "component": "NewTestimonial"
+  },
+  "fg-ScriptCommom": {
+    "component": "ScriptCommom"
+  },
+  "fg-UltimosPares": {
+    "component": "UltimosPares"
+  },
+  "fg-Flags": {
+    "component": "Flags"
+  },
+  "fg-keepBuying": {
+    "component": "KeepBuying"
+  },
+  "custom-buttons-category": {
+    "component": "CustomButtonsCategory",
+    "allowed": "*",
+    "composition": "children",
+    "content": {
+      "$ref": "app:eurico.agenciafg-custom#/definitions/CustomButtonsCategory"
+    }
+  },
+  "custom-buttons-brands": {
+    "component": "CustomButtonsBrands",
+    "allowed": "*",
+    "composition": "children",
+    "content": {
+      "$ref": "app:eurico.agenciafg-custom#/definitions/CustomButtonsBrands"
+    }
+  },
+  "custom-buttons-size": {
+    "component": "CustomButtonsSize",
+    "allowed": "*",
+    "composition": "children",
+    "content": {
+      "$ref": "app:eurico.agenciafg-custom#/definitions/CustomButtonsSize"
+    }
+  },
+  "fg-custom-buy-too": {
+    "component": "CustomBuyToo"
+  },
+  "fg-limit-buy-fast": {
+    "component": "limit-buy-fast"
+  },
+  "fg-troca-facil": {
+    "component": "troca-facil"
+  },
+  "fg-Parallax": {
+    "component": "Parallax"
+  },
+  "cookie-bar": {
+    "component": "CookieBar"
+  }
+}

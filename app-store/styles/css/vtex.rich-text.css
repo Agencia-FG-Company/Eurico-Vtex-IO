@@ -1,4 +1,27 @@
 @charset "UTF-8";
+.container--content-seo .wrapper {
+  width: 80%;
+  margin: 0 auto 25px auto;
+}
+.container--content-seo .heading {
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 45px;
+}
+.container--content-seo .paragraph {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 1.5px;
+  color: #000;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 0.2px;
+}
+
 .container--filter__suggestion-filter-one, .container--filter__suggestion-filter-secund, .container--filter__suggestion-filter-third, .container--filter__suggestion-filter-fourth, .container--filter__suggestion-filter-fifth {
   align-items: center;
   border: 1px solid #e9e9e9;
@@ -39,27 +62,88 @@
   margin: 24px auto;
 }
 
-.container--content-seo .wrapper {
-  width: 80%;
-  margin: 0 auto 25px auto;
-}
-.container--content-seo .heading {
-  font-size: 25px;
-  letter-spacing: 1.5px;
+.container--search__not-found__text .heading {
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  color: #000;
   text-transform: uppercase;
-  display: block;
-  font-weight: 400;
-  color: #000;
-  margin-bottom: 45px;
+  text-align: center;
+  margin: 50px 0;
 }
-.container--content-seo .paragraph {
-  font-size: 12px;
+@media (max-width: 1025px) {
+  .container--search__not-found__text .heading {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 32px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+.container--search__not-found__text .flexRowContent {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container--search__not-found__text .paragraph--search__not-found__text {
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-transform: uppercase;
   color: #000;
-  margin-bottom: 20px;
-  -webkit-text-stroke: 0.2px;
+}
+@media (max-width: 1025px) {
+  .container--search__not-found__text .paragraph--search__not-found__text {
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #000;
+  }
+}
+@media (max-width: 1025px) {
+  .container--search__not-found__backToHome {
+    justify-content: center;
+  }
+}
+.container--search__not-found__backToHome .link--search__not-found__backToHome {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 25px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.container--search__not-found__backToHome .link--search__not-found__backToHome::before {
+  content: "";
+  width: 12px;
+  height: 10px;
+  display: block;
+  margin-right: 10px;
+  background: 50% no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.519' height='10.805' viewBox='0 0 12.519 10.805'%3E%3Cg data-name='Icon feather-arrow-left' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.25'%3E%3Cpath data-name='Caminho 1768' d='M11.894 5.403H.625'/%3E%3Cpath data-name='Caminho 1769' d='M5.144 9.922L.625 5.403 5.144.884'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+@media (max-width: 769px) {
+  .container--title-size-home {
+    justify-content: center;
+    padding: 20px 0;
+  }
 }
 
 .container--deals {
@@ -246,90 +330,6 @@
     line-height: 1.3em;
   }
 }
-.container--search__not-found__text .heading {
-  font-size: 35px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  line-height: 24px;
-  color: #000;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 50px 0;
-}
-@media (max-width: 1025px) {
-  .container--search__not-found__text .heading {
-    font-size: 25px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 32px;
-    color: #000;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-}
-.container--search__not-found__text .flexRowContent {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.container--search__not-found__text .paragraph--search__not-found__text {
-  font-size: 15px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #000;
-}
-@media (max-width: 1025px) {
-  .container--search__not-found__text .paragraph--search__not-found__text {
-    text-align: center;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 25px;
-    text-transform: uppercase;
-    color: #000;
-  }
-}
-@media (max-width: 1025px) {
-  .container--search__not-found__backToHome {
-    justify-content: center;
-  }
-}
-.container--search__not-found__backToHome .link--search__not-found__backToHome {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  line-height: 25px;
-  color: #000;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-.container--search__not-found__backToHome .link--search__not-found__backToHome::before {
-  content: "";
-  width: 12px;
-  height: 10px;
-  display: block;
-  margin-right: 10px;
-  background: 50% no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.519' height='10.805' viewBox='0 0 12.519 10.805'%3E%3Cg data-name='Icon feather-arrow-left' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.25'%3E%3Cpath data-name='Caminho 1768' d='M11.894 5.403H.625'/%3E%3Cpath data-name='Caminho 1769' d='M5.144 9.922L.625 5.403 5.144.884'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-@media (max-width: 769px) {
-  .container--title-size-home {
-    justify-content: center;
-    padding: 20px 0;
-  }
-}
-
 .container--product__guide-size--trigger .paragraph {
   border: none;
   box-shadow: none;
@@ -363,6 +363,37 @@
   display: block;
   height: 22px;
   width: 22px;
+}
+
+.wrapper--product-advantage {
+  margin-top: 8px !important;
+}
+
+.paragraph--product-advantage {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.4px;
+  text-align: center;
+  color: #606060;
+}
+.paragraph--shelf__pdp__title, .paragraph--ratings__title {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+.paragraph--ratings__title {
+  margin-bottom: 24px !important;
+}
+.paragraph--ratings__title::after {
+  width: 151px;
+  height: 2px;
+  content: "";
+  background-color: #ff0000;
+  display: block;
+  margin-top: 12px;
 }
 
 .wrapper--product-advantage {
@@ -1002,6 +1033,70 @@
   }
 }
 
+.container--whatsapp .wrapper {
+  font-style: normal;
+  font-weight: 700;
+  width: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container--whatsapp .wrapper::before {
+  content: "";
+  width: 77px;
+  height: 20px;
+  display: block;
+  background-image: url(assets/icons/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container--whatsapp .wrapper .paragraph {
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 1px solid #eaeaea;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+.container--whatsapp__button .wrapper {
+  width: 100%;
+}
+.container--whatsapp__button .wrapper:hover {
+  cursor: pointer;
+}
+.container--whatsapp__button .wrapper .link {
+  width: 100%;
+  height: 40px;
+  background: #24d366;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  transition: all 0.2s;
+  color: #fff;
+  text-decoration: none;
+}
+.container--whatsapp__button .wrapper .link::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-image: url(assets/icons/whatsapp.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 @media (max-width: 1025px) {
   .container--depositions__title {
     justify-content: center;
@@ -1085,95 +1180,6 @@
   content: "-";
 }
 
-.container--whatsapp .wrapper {
-  font-style: normal;
-  font-weight: 700;
-  width: 100%;
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 1.5px;
-  color: #000;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.container--whatsapp .wrapper::before {
-  content: "";
-  width: 77px;
-  height: 20px;
-  display: block;
-  background-image: url(assets/icons/logo.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.container--whatsapp .wrapper .paragraph {
-  padding-left: 20px;
-  margin-left: 20px;
-  border-left: 1px solid #eaeaea;
-  min-height: 70px;
-  display: flex;
-  align-items: center;
-}
-.container--whatsapp__button .wrapper {
-  width: 100%;
-}
-.container--whatsapp__button .wrapper:hover {
-  cursor: pointer;
-}
-.container--whatsapp__button .wrapper .link {
-  width: 100%;
-  height: 40px;
-  background: #24d366;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  transition: all 0.2s;
-  color: #fff;
-  text-decoration: none;
-}
-.container--whatsapp__button .wrapper .link::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  display: block;
-  background-image: url(assets/icons/whatsapp.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.container--payment-methods {
-  counter-reset: list-counter;
-}
-.container--payment-methods .listOrdered {
-  list-style: none;
-  padding: 0;
-  font-weight: 300;
-}
-.container--payment-methods .listOrdered .listItem {
-  counter-increment: list-counter;
-}
-.container--payment-methods .listOrdered .listItem::before {
-  content: counter(list-counter) ". ";
-  margin-right: 10px;
-}
-
-.container--institucional__wrapper-privacy-policies--content .paragraph {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.6px;
-  line-height: 29px;
-  color: #000;
-  margin-bottom: 30px;
-}
-
 .container--history__title .heading {
   padding: 30px 0 15px;
   font-size: 33px;
@@ -1242,6 +1248,22 @@
   .container--history__content-text {
     width: 70% !important;
   }
+}
+
+.container--payment-methods {
+  counter-reset: list-counter;
+}
+.container--payment-methods .listOrdered {
+  list-style: none;
+  padding: 0;
+  font-weight: 300;
+}
+.container--payment-methods .listOrdered .listItem {
+  counter-increment: list-counter;
+}
+.container--payment-methods .listOrdered .listItem::before {
+  content: counter(list-counter) ". ";
+  margin-right: 10px;
 }
 
 .container--institucional__wrapper-privacy-policies--content .paragraph {
@@ -1339,22 +1361,6 @@
 }
 .container .list--tips__article-1--text .listItem .paragraph--tips__article-1--text, .container .list--tips__article-1--text .listItem .paragraph--tips__article-2--text, .container .list--tips__article-2--text .listItem .paragraph--tips__article-1--text, .container .list--tips__article-2--text .listItem .paragraph--tips__article-2--text {
   padding-left: 20px;
-}
-
-.container--payment-methods {
-  counter-reset: list-counter;
-}
-.container--payment-methods .listOrdered {
-  list-style: none;
-  padding: 0;
-  font-weight: 300;
-}
-.container--payment-methods .listOrdered .listItem {
-  counter-increment: list-counter;
-}
-.container--payment-methods .listOrdered .listItem::before {
-  content: counter(list-counter) ". ";
-  margin-right: 10px;
 }
 
 .container--work__text {
