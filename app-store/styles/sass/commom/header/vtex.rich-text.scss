@@ -123,6 +123,7 @@
 
 
 .paragraph--buttons-category-home {
+  font-weight: 400;
   @media (max-width: 768px) {
     padding: 0;
   }
@@ -272,6 +273,7 @@
 
 .heading--title-brand-home{
   font-size: 25px;
+  font-weight: 400;
   @media (max-width: 768px){
     font-size: 20px;
   }
@@ -283,7 +285,7 @@
 }
 
 .container--physical__stories-title{
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .paragraph--title-size-home{

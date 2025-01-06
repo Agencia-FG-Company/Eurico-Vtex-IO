@@ -20,6 +20,7 @@
 }
 
 .ButtonCategory {
+  padding-bottom: 10px;
   position: relative;
   min-height: 338px;
   max-height: 338px;
@@ -110,7 +111,7 @@
   }
   .CustomButtonsCategoryHome .ButtonCategory img {
     width: 100%;
-    height: 115px;
+    height: 150px;
   }
 }
 

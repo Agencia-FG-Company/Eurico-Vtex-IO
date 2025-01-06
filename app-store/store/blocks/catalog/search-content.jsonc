@@ -5,6 +5,7 @@
       "image#category-banner",
       "flex-layout.row#searchinfo",
       "flex-layout.row#buttons-category",
+      "flex-layout.row#filter__suggestion",
       "flex-layout.row#searchtitle",
       "__fold__",
       "flex-layout.row#result",
@@ -17,65 +18,68 @@
       "defaultGalleryLayout": "grid-4"
     }
   },
-
   "flex-layout.row#buttons-category": {
     "title": "Butons Category",
-    "children": ["custom-buttons-category#search"],
+    "children": [
+      "custom-buttons-category#search"
+    ],
     "props": {
       "blockClass": "buttons-category"
     }
   },
-
   "custom-buttons-category#search": {
     "props": {
-        "isActive": true,
-        "page": "search",
-        "buttonsContent": [
-          {
-            "categorySrc": "/feminino/tênis?O=OrderByReleaseDateDESC",
-            "imageSrc": "https://eurico.vteximg.com.br/arquivos/tenis_cateogria_eurico.png",
-            "buttonName": "TÊNIS"
-          },
-          {
-            "categorySrc": "/feminino/mocassim?O=OrderByReleaseDateDESC",
-            "imageSrc": "https://eurico.vteximg.com.br/arquivos/mocassim_cateogria_eurico.png",
-            "buttonName": "MOCASSIM"
-          },
-          {
-            "categorySrc": "feminino/sapatilha?O=OrderByReleaseDateDESC",
-            "imageSrc": "https://eurico.vteximg.com.br/arquivos/sapatilha_cateogria_eurico.png",
-            "buttonName": "SAPATILHA"
-          },
-          {
-            "categorySrc": "/feminino/tênis?O=OrderByReleaseDateDESC",
-            "imageSrc": "https://eurico.vteximg.com.br/arquivos/tenis_cateogria_eurico.png",
-            "buttonName": "TÊNIS"
-          },
-          {
-            "categorySrc": "/feminino/mocassim?O=OrderByReleaseDateDESC",
-            "imageSrc": "https://eurico.vteximg.com.br/arquivos/mocassim_cateogria_eurico.png",
-            "buttonName": "MOCASSIM"
-          },
-          {
-            "categorySrc": "/feminino/sapatilha?O=OrderByReleaseDateDESC",
-            "imageSrc": "https://eurico.vteximg.com.br/arquivos/sapatilha_cateogria_eurico.png",
-            "buttonName": "SAPATILHA"
-          }
-        ]
+      "isActive": true,
+      "page": "search",
+      "buttonsContent": [
+        {
+          "categorySrc": "/feminino/tênis?O=OrderByReleaseDateDESC",
+          "imageSrc": "https://eurico.vteximg.com.br/arquivos/tenis_cateogria_eurico.png",
+          "buttonName": "TÊNIS"
+        },
+        {
+          "categorySrc": "/feminino/mocassim?O=OrderByReleaseDateDESC",
+          "imageSrc": "https://eurico.vteximg.com.br/arquivos/mocassim_cateogria_eurico.png",
+          "buttonName": "MOCASSIM"
+        },
+        {
+          "categorySrc": "feminino/sapatilha?O=OrderByReleaseDateDESC",
+          "imageSrc": "https://eurico.vteximg.com.br/arquivos/sapatilha_cateogria_eurico.png",
+          "buttonName": "SAPATILHA"
+        },
+        {
+          "categorySrc": "/feminino/tênis?O=OrderByReleaseDateDESC",
+          "imageSrc": "https://eurico.vteximg.com.br/arquivos/tenis_cateogria_eurico.png",
+          "buttonName": "TÊNIS"
+        },
+        {
+          "categorySrc": "/feminino/mocassim?O=OrderByReleaseDateDESC",
+          "imageSrc": "https://eurico.vteximg.com.br/arquivos/mocassim_cateogria_eurico.png",
+          "buttonName": "MOCASSIM"
+        },
+        {
+          "categorySrc": "/feminino/sapatilha?O=OrderByReleaseDateDESC",
+          "imageSrc": "https://eurico.vteximg.com.br/arquivos/sapatilha_cateogria_eurico.png",
+          "buttonName": "SAPATILHA"
+        }
+      ]
     },
     "children": [
-        "list-context-renderer#buttons-category"
+      "list-context-renderer#buttons-category"
     ]
-},
-"list-context-renderer#buttons-category": {
+  },
+  "list-context-renderer#buttons-category": {
     "props": {
-        "listElement": "div",
-        "itemElement": "div"
+      "listElement": "div",
+      "itemElement": "div"
     }
-},
+  },
   "flex-layout.row#result": {
     "title": "Resultado de busca",
-    "children": ["flex-layout.col#filter", "flex-layout.col#content"],
+    "children": [
+      "flex-layout.col#filter",
+      "flex-layout.col#content"
+    ],
     "props": {
       "blockClass": "category__result",
       "fullWidth": true
@@ -83,7 +87,9 @@
   },
   "flex-layout.col#filter": {
     "title": "Coluna de filtro",
-    "children": ["filter-navigator.v3"],
+    "children": [
+      "filter-navigator.v3"
+    ],
     "props": {
       "blockClass": "filterCol"
     }
@@ -100,11 +106,16 @@
   },
   "flex-layout.row#products": {
     "title": "Produtos",
-    "children": ["search-content"]
+    "children": [
+      "search-content"
+    ]
   },
   "search-content": {
     "title": "Conteúdo de busca",
-    "blocks": ["gallery", "not-found"]
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
   },
   "gallery": {
     "title": "Galeria de produtos",

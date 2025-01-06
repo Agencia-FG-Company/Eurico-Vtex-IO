@@ -17,6 +17,10 @@
     justify-content: center;
     gap: 15px;
 
+    @media (min-width: 1000px){
+      margin-bottom: 60px!important;
+    }
+
     @media (min-width: 768px) {
       padding-bottom: 75px;
     }

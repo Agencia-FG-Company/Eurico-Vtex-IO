@@ -370,6 +370,13 @@
   }
 }
 
+@media (min-width: 768px) {
+  .logoLink--logo-hover {
+    margin-left: -15px;
+    margin-top: -3px;
+  }
+}
+
 .imageElement--about-us__fullbanner {
   width: 100%;
 }

@@ -2,6 +2,7 @@
  :global(.vtex-flex-layout-0-x-flexCol) {
     @media (min-width: 1580px){
       width: 100%!important;
+
       :global(.vtex-flex-layout-0-x-flexColChild) {
         width: 100%!important;
       }
@@ -11,4 +12,6 @@
     }
   }
 }
+
+
 
