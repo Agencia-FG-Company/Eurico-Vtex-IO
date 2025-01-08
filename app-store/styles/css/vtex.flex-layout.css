@@ -140,6 +140,11 @@
   transition: all 0.6s ease-in-out;
   width: 100% !important;
 }
+@media (max-width: 768px) {
+  .flexRowContent--secund__area-banners .flexCol :global(.vtex-store-components-3-x-imageElement--secund__area-banners--img) {
+    margin: 0 !important;
+  }
+}
 .flexRowContent--secund__area-banners .flexCol .flexColChild {
   width: 100% !important;
 }
@@ -447,12 +452,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .flexRowContent--header__content-mobile {
-    background-color: transparent !important;
-  }
-}
-
 .flexRow--search__not-found__text {
   margin: 50px 0;
 }
@@ -732,6 +731,26 @@
 @media (min-width: 1455px) and (max-width: 1579px) {
   .flexCol--physical__stories-col {
     padding: 50px !important;
+  }
+}
+
+.flexRow--selling-prices__category {
+  width: fit-content !important;
+}
+.flexRow--selling-prices__category .flexRowContent--selling-prices__category {
+  width: fit-content;
+  justify-content: flex-start;
+}
+.flexRow--shelf__category-price .flexRowContent {
+  flex-wrap: wrap;
+}
+@media (max-width: 1025px) {
+  .flexRow--shelf__category-price .flexRowContent {
+    flex-direction: column;
+    display: flex;
+  }
+  .flexRow--shelf__category-price .flexRowContent .stretchChildrenWidth {
+    display: contents;
   }
 }
 
@@ -1152,26 +1171,6 @@
     width: 70% !important;
   }
 }
-.flexRow--selling-prices__category {
-  width: fit-content !important;
-}
-.flexRow--selling-prices__category .flexRowContent--selling-prices__category {
-  width: fit-content;
-  justify-content: flex-start;
-}
-.flexRow--shelf__category-price .flexRowContent {
-  flex-wrap: wrap;
-}
-@media (max-width: 1025px) {
-  .flexRow--shelf__category-price .flexRowContent {
-    flex-direction: column;
-    display: flex;
-  }
-  .flexRow--shelf__category-price .flexRowContent .stretchChildrenWidth {
-    display: contents;
-  }
-}
-
 .flexRow--flags-pdp .stretchChildrenWidth {
   display: contents;
 }

@@ -225,6 +225,90 @@
 }
 
 :global(.render-route-store-home){
+  :global(.vtex-store-components-3-x-imageElement--search-bar) {
+    margin-top: 0!important;
+  }
+  :global(.vtex-store-drawer-0-x-openIconContainer--menu__drawer){
+    &::after{
+      background-image: url("assets/icons/menu-drawer.svg")!important;
+    }
+  }
+  :global(.vtex-store-components-3-x-imageElement--search-bar-initial){
+    display: block!important;
+  }
+  :global(.vtex-store-components-3-x-imageElement--search-bar-fixed),
+  :global(.vtex-store-components-3-x-logoContainer--logo-mobile-fixed){
+    display: none;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--header__content-mobile){
+    :global(.vtex-login-2-x-container){
+      :global(.vtex-button){
+        @media (max-width: 768px){
+          background: url(assets/icons/user-icon.svg)!important;
+          width: 28px;
+          height: 28px;
+          background-repeat: no-repeat;
+          background-size: 28px;
+        }
+      }
+    }
+    :global(.vtex-minicart-2-x-minicartContainer){
+      :global(.vtex-minicart-2-x-minicartIconContainer){
+        &::before{
+          @media (max-width: 768px){
+            background: url('assets/icons/bag-white.svg')!important;
+            width: 28px;
+            height: 28px;
+            background-size: 28px;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck){
+    :global(.vtex-store-drawer-0-x-openIconContainer--menu__drawer){
+      &::after{
+        background-image: url("assets/icons/header/drawer.svg")!important;
+      }
+    }
+    :global(.vtex-store-components-3-x-imageElement--search-bar-initial){
+      display: none!important;
+    }
+      :global(.vtex-flex-layout-0-x-flexRow--header__content-mobile){
+        :global(.vtex-login-2-x-container){
+          :global(.vtex-button){
+            @media (max-width: 768px){
+              background: url(assets/icons/user-black.svg)!important;
+              width: 28px;
+              height: 28px;
+              background-repeat: no-repeat;
+            background-size: 28px;
+            }
+          }
+        }
+        :global(.vtex-minicart-2-x-minicartContainer){
+          :global(.vtex-minicart-2-x-minicartIconContainer){
+            &::before{
+              @media (max-width: 768px){
+                background: url('assets/icons/bag-black.svg')!important;
+                width: 28px;
+                height: 28px;
+                background-size: 28px;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+        }
+
+    }
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--header__content-mobile){
+    @media (max-width: 768px){
+      background-color: transparent!important;
+    }
+  }
   :global(.vtex-sticky-layout-0-x-wrapper--hover-header){
     position: absolute!important;
     width: 100%!important;
@@ -288,7 +372,11 @@
         display: block;
         margin-left: -10px;
         margin-top: 30px;
+        @media (min-width: 768px){
+          margin-left: 100px;
+        }
       }
+
       :global(.vtex-store-components-3-x-logoImage--logo-hover){
         display: none;
       }
@@ -407,11 +495,7 @@
 }
 
 :global(.vtex-sticky-layout-0-x-wrapper--stuck){
-  :global(.vtex-store-drawer-0-x-openIconContainer--menu__drawer){
-    &::after{
-      background: url("assets/icons/header/drawer.svg");
-    }
-  }
+
   :global(.vtex-store-components-3-x-imageElement--search-bar-fixed),
   :global(.vtex-store-components-3-x-logoContainer--logo-mobile-fixed){
     display: block;
@@ -448,38 +532,6 @@
   }
 }
 
-:global(.vtex-store-components-3-x-imageElement--search-bar-fixed),
-:global(.vtex-store-components-3-x-logoContainer--logo-mobile-fixed){
-  display: none;
-}
-
-:global(.vtex-flex-layout-0-x-flexRow--header__content-mobile){
-  :global(.vtex-login-2-x-container){
-    :global(.vtex-button){
-      @media (max-width: 768px){
-        background: url(assets/icons/user-icon.svg);
-        width: 28px;
-        height: 28px;
-        background-repeat: no-repeat;
-        background-size: 28px;
-      }
-    }
-  }
-  :global(.vtex-minicart-2-x-minicartContainer){
-    :global(.vtex-minicart-2-x-minicartIconContainer){
-      &::before{
-        @media (max-width: 768px){
-          background: url('assets/icons/bag-white.svg');
-          width: 28px;
-          height: 28px;
-          background-size: 28px;
-          background-repeat: no-repeat;
-        }
-      }
-    }
-  }
-}
-
 
 :global(.vtex-flex-layout-0-x-flexRow--size-home-layout) {
   :global(.vtex-slider-layout-0-x-sliderTrackContainer) {
@@ -498,5 +550,59 @@
       justify-content: center;
       gap: 20px;
     }
+  }
+
+}
+
+:global(.render-route-store-search-department){
+  @media (min-width: 769px){
+    :global(.vtex-store-components-3-x-logoLink--logo-hover ){
+      display: none!important;
+    }
+    :global(.vtex-store-components-3-x-logoImage--logo-initial){
+      display: block;
+      margin-left: 40px;
+      margin-top: 15px;
+    }
+  }
+
+}
+
+:global(.render-container){
+  @media (max-width: 768px){
+    :global(.vtex-flex-layout-0-x-flexRow--header__content-mobile){
+      :global(.vtex-login-2-x-container){
+        :global(.vtex-button){
+          @media (max-width: 768px){
+            background: url(assets/icons/user-black.svg);
+            width: 28px;
+            height: 28px;
+            background-repeat: no-repeat;
+          background-size: 28px;
+          }
+        }
+      }
+      :global(.vtex-minicart-2-x-minicartContainer){
+        :global(.vtex-minicart-2-x-minicartIconContainer){
+          &::before{
+            @media (max-width: 768px){
+              background: url('assets/icons/bag-black.svg');
+              width: 28px;
+              height: 28px;
+              background-size: 28px;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+    }
+    :global(.vtex-store-drawer-0-x-openIconContainer--menu__drawer){
+      &::after{
+        background-image: url("assets/icons/header/drawer.svg");
+      }
+    }
+  }
+  :global(.vtex-store-components-3-x-imageElement--search-bar) {
+    margin-top: -15px;
   }
 }

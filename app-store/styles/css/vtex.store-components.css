@@ -372,7 +372,7 @@
 
 @media (min-width: 768px) {
   .logoLink--logo-hover {
-    margin-left: -15px;
+    margin-left: 100px;
     margin-top: -3px;
   }
 }
