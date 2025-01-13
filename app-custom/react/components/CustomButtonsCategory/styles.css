@@ -48,9 +48,9 @@
   box-shadow: none;
 }
 
-.ButtonCategory:hover {
+/* .ButtonCategory:hover {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .ButtonCategory span {
   background: #fff;
@@ -66,7 +66,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 250px;
-  height: 250px;
   object-fit: cover;
 }
 
@@ -94,6 +93,14 @@
   .CustomButtonsCategoryHome .ButtonCategory img {
       width: 150px;
       height: 150px;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 2250px) {
+  .ButtonCategory {
+    min-height: 250px;
+    width: 200px;
+    font-size: 12px;
   }
 }
 

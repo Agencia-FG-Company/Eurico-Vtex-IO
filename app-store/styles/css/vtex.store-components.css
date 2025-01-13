@@ -59,11 +59,6 @@
   color: #717171;
 }
 
-.container {
-  padding: 0;
-  max-width: unset;
-}
-
 .productNameContainer--product__info--name {
   margin-bottom: 10px;
 }
@@ -172,6 +167,11 @@
   background-color: #606060;
   border-radius: 5px;
   width: 40px;
+}
+
+.container {
+  padding: 0;
+  max-width: unset;
 }
 
 .imageElement--fixed__whatsapp {
