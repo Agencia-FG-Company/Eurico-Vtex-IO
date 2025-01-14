@@ -10,7 +10,6 @@
 }
 
 .CustomButtonsCategoryHome .ButtonCategory {
-  max-height: unset;
   width: 222px;
   height: 100%;
   color: #393939;
@@ -78,7 +77,11 @@
   transition: ease 0.3s;
 }
 
-
+@media (min-width: 1801px) {
+  .CustomButtonsCategoryHome :global(.vtex-list-context-0-x-list) {
+    height: 300px;
+  }
+}
 @media (max-width: 1800px) {
   .CustomButtonsCategoryHome :global(.vtex-list-context-0-x-list) {
     column-gap: 25px;
