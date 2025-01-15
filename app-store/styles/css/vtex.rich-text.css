@@ -486,6 +486,17 @@
   margin: 15px 0;
 }
 
+.paragraph--content-seo-category {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 1.5px;
+  color: #000;
+  margin: 0 !important;
+  margin-bottom: 20px !important;
+  -webkit-text-stroke: 0.2px;
+}
+
 .container--footer__column--title .paragraph {
   font-size: 14px;
   text-transform: uppercase;
