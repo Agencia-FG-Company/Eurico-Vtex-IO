@@ -390,4 +390,22 @@
   }
 }
 
+.flexRow--filter__size-desktop{
+  @media (max-width: 768px){
+    display: none;
+  }
+}
+
+.flexRow--filter__size-mobile{
+  @media (min-width: 769px){
+    display: none;
+  }
+}
+
+.flexCol--filter__size-mobile {
+  @media (max-width){
+    background: #fafafa;
+    padding: 20px 0;
+  }
+}
 

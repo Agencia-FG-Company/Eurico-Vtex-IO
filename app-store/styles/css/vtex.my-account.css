@@ -479,3 +479,74 @@
 :global(.render-container) :global(.vtex-store-components-3-x-imageElement--search-bar) {
   margin-top: -15px;
 }
+
+:global(.vtex-rich-text-0-x-paragraph--filter__size-title) {
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(57, 57, 57);
+}
+
+:global(.vtex-rich-text-0-x-paragraph--filter__size-filter) :global(.vtex-rich-text-0-x-link) {
+  text-decoration: none;
+  color: rgb(57, 57, 57);
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--filter__size-left) {
+  width: 200px !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--filter__size-princ) {
+  width: 100%;
+  justify-content: center;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+}
+@media (min-width: 769px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--filter__size-princ) :global(.vtex-flex-layout-0-x-stretchChildrenWidth:nth-child(1)) {
+    width: 14% !important;
+  }
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--filter__size-princ) :global(.vtex-flex-layout-0-x-flexRowContent--filter__size-right) {
+  justify-content: space-between;
+  gap: 5px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--filter__size-princ) :global(.vtex-flex-layout-0-x-flexRowContent--filter__size-right) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 10% !important;
+}
+
+@media (max-width: 768px) {
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carrossel) {
+    margin-top: -60px;
+  }
+}
+
+:global(.vtex-rich-text-0-x-paragraph--filter__size-filter) :global(.vtex-rich-text-0-x-link) {
+  border: 1px solid rgb(192, 0, 24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: rgb(57, 57, 57);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexColChild--filter__size-mobile) :global(.vtex-rich-text-0-x-container--filter__size-title) {
+    justify-content: center;
+    margin: 20px;
+  }
+  :global(.vtex-flex-layout-0-x-flexColChild--filter__size-mobile) :global(.vtex-rich-text-0-x-paragraph--filter__size-filter) :global(.vtex-rich-text-0-x-link) {
+    color: #393939;
+  }
+}

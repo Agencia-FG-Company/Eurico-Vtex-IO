@@ -1,0 +1,208 @@
+{
+  "flex-layout.row#filter__size": {
+    "title": "Sugestão de filtro",
+    "props": {
+      "blockClass": [
+        "filter__size",
+        "filter__size-princ",
+        "filter__size-desktop"
+      ]
+    },
+    "children": [
+      "flex-layout.col#filter__size-left",
+      "flex-layout.col#filter__size-right"
+    ]
+  },
+  "flex-layout.col#filter__size-left": {
+    "title": "Sugestão de filtro - Esquerda",
+    "props": {
+      "blockClass": "filter__size-left"
+    },
+    "children": [
+      "rich-text#filter__size-title"
+    ]
+  },
+  "flex-layout.col#filter__size-right": {
+    "title": "Sugestão de filtro - Direita",
+    "props": {
+      "blockClass": "filter__size-right"
+    },
+    "children": [
+      "flex-layout.row#filter__size-right"
+    ]
+  },
+  "flex-layout.row#filter__size-right": {
+    "title": "Sugestão de filtro - Direita",
+    "props": {
+      "blockClass": "filter__size-right"
+    },
+    "children": [
+      "rich-text#filter__size-filter-one",
+      "rich-text#filter__size-filter-secund",
+      "rich-text#filter__size-filter-third",
+      "rich-text#filter__size-filter-fourth",
+      "rich-text#filter__size-filter-fifth",
+      "rich-text#filter__size-filter-sixth",
+      "rich-text#filter__size-filter-seventh",
+      "rich-text#filter__size-filter-eighth",
+      "rich-text#filter__size-filter-ninth",
+      "rich-text#filter__size-filter-tenth"
+    ]
+  },
+  "rich-text#filter__size-title": {
+    "title": "Título da sugestão de filtros",
+    "props": {
+      "blockClass": "filter__size-title",
+      "text": "COMPRE POR NUMERAÇÃO"
+    }
+  },
+  "rich-text#filter__size-filter-one": {
+    "title": "Primeiro filtro",
+    "props": {
+      "blockClass": [
+        "filter__size-filter-one",
+        "filter__size-filter"
+      ],
+      "text": "[40](/feminino/tênis?O=OrderByReleaseDateDESC)"
+    }
+  },
+  "rich-text#filter__size-filter-secund": {
+    "title": "Segundo filtro",
+    "props": {
+      "blockClass": [
+        "filter__size-filter-secund",
+        "filter__size-filter"
+      ],
+      "text": "[41](/feminino/tênis?O=OrderByReleaseDateDESC)"
+    }
+  },
+  "rich-text#filter__size-filter-third": {
+    "title": "Terceiro filtro",
+    "props": {
+      "blockClass": [
+        "filter__size-filter-third",
+        "filter__size-filter"
+      ],
+      "text": "[42](/feminino/tênis?O=OrderByReleaseDateDESC)"
+    }
+  },
+  "rich-text#filter__size-filter-fourth": {
+    "title": "Quarto filtro",
+    "props": {
+      "blockClass": [
+        "filter__size-filter-fourth",
+        "filter__size-filter"
+      ],
+      "text": "[43](/feminino/tênis?O=OrderByReleaseDateDESC)"
+    }
+  },
+  "rich-text#filter__size-filter-fifth": {
+    "title": "Quinto filtro",
+    "props": {
+      "blockClass": [
+        "filter__size-filter-fifth",
+        "filter__size-filter"
+      ],
+      "text": "[44](/feminino/tênis?O=OrderByReleaseDateDESC)"
+    }
+  },
+  "rich-text#filter__size-filter-sixth": {
+    "title": "Sexto filtro",
+    "props": {
+      "blockClass": [
+        "filter__size-filter-sixth",
+        "filter__size-filter"
+      ],
+      "text": "[45](/feminino/tênis?O=OrderByReleaseDateDESC)"
+    }
+  },
+  "rich-text#filter__size-filter-seventh": {
+    "title": "Sétimo filtro",
+    "props": {
+      "blockClass": [
+        "filter__size-filter-seventh",
+        "filter__size-filter"
+      ],
+      "text": "[46](/feminino/tênis?O=OrderByReleaseDateDESC)"
+    }
+  },
+  "rich-text#filter__size-filter-eighth": {
+    "title": "Oitavo filtro",
+    "props": {
+      "blockClass": [
+        "filter__size-filter-eighth",
+        "filter__size-filter"
+      ],
+      "text": "[47](/feminino/tênis?O=OrderByReleaseDateDESC)"
+    }
+  },
+  "rich-text#filter__size-filter-ninth": {
+    "title": "Nono filtro",
+    "props": {
+      "blockClass": [
+        "filter__size-filter-ninth",
+        "filter__size-filter"
+      ],
+      "text": "[48](/feminino/tênis?O=OrderByReleaseDateDESC)"
+    }
+  },
+  "rich-text#filter__size-filter-tenth": {
+    "title": "Décimo filtro",
+    "props": {
+      "blockClass": [
+        "filter__size-filter-tenth",
+        "filter__size-filter"
+      ],
+      "text": "[49](/feminino/tênis?O=OrderByReleaseDateDESC)"
+    }
+  },
+  "flex-layout.row#filter__size-mobile": {
+    "props": {
+      "blockClass": [
+        "filter__size",
+        "filter__size-princ",
+        "filter__size-mobile"
+      ]
+    },
+    "children": [
+      "flex-layout.col#filter__size-mobile"
+    ]
+  },
+  "flex-layout.col#filter__size-mobile": {
+    "props": {
+      "blockClass": [
+        "filter__size",
+        "filter__size-princ",
+        "filter__size-mobile"
+      ]
+    },
+    "children": [
+      "rich-text#filter__size-title",
+      "slider-layout#buttons-size-home-mobile"
+    ]
+  },
+  "slider-layout#buttons-size-home-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 3,
+        "phone": 3
+      },
+      "infinite": false,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never"
+    },
+    "children": [
+      "rich-text#filter__size-filter-one",
+      "rich-text#filter__size-filter-secund",
+      "rich-text#filter__size-filter-third",
+      "rich-text#filter__size-filter-fourth",
+      "rich-text#filter__size-filter-fifth",
+      "rich-text#filter__size-filter-sixth",
+      "rich-text#filter__size-filter-seventh",
+      "rich-text#filter__size-filter-eighth",
+      "rich-text#filter__size-filter-ninth",
+      "rich-text#filter__size-filter-tenth"
+    ]
+  }
+}
