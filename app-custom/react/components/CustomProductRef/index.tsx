@@ -11,6 +11,8 @@ export const CustomProductRef = () => {
     // Obtenha a descrição adicional
     const additionalDescription = product?.selectedItem?.complementName;
 
+    console.log('bug pdp')
+
   return (
     <div className={styles.refDescription}>
         <span>Ref: </span>
