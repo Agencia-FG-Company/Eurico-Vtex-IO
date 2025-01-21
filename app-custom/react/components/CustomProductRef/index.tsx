@@ -6,15 +6,15 @@ import styles from './style.css'
 
 export const CustomProductRef = () => {
 
-    const product = useProduct()
+  const product = useProduct()
 
-    // Obtenha a descrição adicional
-    const additionalDescription = product?.selectedItem?.complementName;
+  // Obtenha a descrição adicional
+  const additionalDescription = product?.selectedItem?.complementName;
 
   return (
     <div className={styles.refDescription}>
-        <span>Ref: </span>
-        <span id="additional-description-value">{additionalDescription}</span>
+      <span>Ref: </span>
+      <span id="additional-description-value">{additionalDescription}</span>
     </div>
   );
 };
