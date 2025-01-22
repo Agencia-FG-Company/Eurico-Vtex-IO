@@ -99,10 +99,6 @@
   margin: 24px auto;
 }
 
-.flexRow--selling-price-savings .flexRowContent {
-  margin-bottom: 5px;
-}
-
 .flexRowContent--menu-link__content, .flexRowContent--header__content {
   padding: 0 0.5rem;
   background-color: white;
@@ -464,11 +460,15 @@
   }
 }
 
-@media (max-width) {
+@media (max-width: 768px) {
   .flexCol--filter__size-mobile {
     background: #fafafa;
     padding: 20px 0;
   }
+}
+
+.flexRow--selling-price-savings .flexRowContent {
+  margin-bottom: 5px;
 }
 
 .flexRow--search__not-found__text {
