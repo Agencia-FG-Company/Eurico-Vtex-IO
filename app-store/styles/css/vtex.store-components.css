@@ -5,6 +5,7 @@
 @media (max-width: 768px) {
   .imageElement--third__banner-area--img {
     width: 300px;
+    height: 100%;
   }
 }
 .imageElement--secund__area-banners--img {
