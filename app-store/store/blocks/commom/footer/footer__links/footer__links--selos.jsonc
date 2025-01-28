@@ -5,7 +5,8 @@
       "rich-text#footer__titulo--social",
       "flex-layout.row#footer__links-selos--row-01",
       "rich-text#footer__titulo--selo",
-      "flex-layout.row#footer__links-selos--row-02"
+      "flex-layout.row#footer__links-selos--row-02-desktop",
+      "flex-layout.row#footer__links-selos--row-02-mobile"
     ],
     "props": {
       "blockClass": "footer__column--images"
@@ -27,16 +28,77 @@
       "image#social-04"
     ]
   },
-  "flex-layout.row#footer__links-selos--row-02": {
+  "flex-layout.row#footer__links-selos--row-02-desktop": {
     "title": "Linha de Selos de Certificação - Linha 2",
     "props": {
       "colGap": 5,
-      "blockClass": "footer__links-selos--row",
+      "blockClass": [
+        "footer__links-selos--row",
+        "footer__links-selos--row-desktop"
+      ],
       "colSizing": "auto"
     },
     "children": [
       "image#selo-01",
       "image#selo-02",
+      "image#selo-03"
+    ]
+  },
+  "flex-layout.row#footer__links-selos--row-02-mobile": {
+    "title": "Linha de Selos de Certificação - Linha 2",
+    "props": {
+      "colGap": 5,
+      "blockClass": [
+        "footer__links-selos--row",
+        "footer__links-selos--mobile"
+      ],
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#footer__links-selos--row-02-mobile"
+    ]
+  },
+  "flex-layout.col#footer__links-selos--row-02-mobile": {
+    "title": "Linha de Selos de Certificação - Linha 2",
+    "props": {
+      "colGap": 5,
+      "blockClass": [
+        "footer__links-selos--row",
+        "footer__links-selos--mobile-col"
+      ],
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#footer__links-selos--row-02-sec-mobile",
+      "flex-layout.row#footer__links-selos--row-02-clear-mobile"
+    ]
+  },
+  "flex-layout.row#footer__links-selos--row-02-sec-mobile": {
+    "title": "Linha de Selos de Certificação - Linha 2",
+    "props": {
+      "colGap": 5,
+      "blockClass": [
+        "footer__links-selos--row",
+        "footer__links-selos--mobile-sec"
+      ],
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#selo-01",
+      "image#selo-02"
+    ]
+  },
+  "flex-layout.row#footer__links-selos--row-02-clear-mobile": {
+    "title": "Linha de Selos de Certificação - Linha 2",
+    "props": {
+      "colGap": 5,
+      "blockClass": [
+        "footer__links-selos--row",
+        "footer__links-selos--mobile-clear"
+      ],
+      "colSizing": "auto"
+    },
+    "children": [
       "image#selo-03"
     ]
   },
@@ -87,7 +149,10 @@
     "props": {
       "maxWidth": "50px",
       "src": "assets/icons/footer/encrypt.svg",
-      "blockClass": ["selo", "icon-encrypt"]
+      "blockClass": [
+        "selo",
+        "icon-encrypt"
+      ]
     }
   },
   "image#selo-02": {
@@ -95,7 +160,10 @@
     "props": {
       "maxWidth": "70px",
       "src": "assets/images/footer/vtex.png",
-      "blockClass": ["selo", "icon-vtex"]
+      "blockClass": [
+        "selo",
+        "icon-vtex"
+      ]
     }
   },
   "image#selo-03": {
@@ -103,7 +171,10 @@
     "props": {
       "maxWidth": "145px",
       "src": "assets/images/footer/cleasale.png",
-      "blockClass": ["selo", "icon-clearSale"]
+      "blockClass": [
+        "selo",
+        "icon-clearSale"
+      ]
     }
   }
 }

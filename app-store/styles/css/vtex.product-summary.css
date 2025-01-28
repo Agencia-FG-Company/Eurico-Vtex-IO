@@ -21,6 +21,7 @@
 }
 .container .clearLink .element .nameContainer {
   justify-content: center;
+  padding: 0;
 }
 .container .clearLink .element .nameContainer .productBrand {
   text-transform: uppercase;
@@ -33,6 +34,7 @@
   display: -webkit-box;
   font-size: 12px;
   -webkit-text-stroke: 0.2px;
+  margin-top: 18px;
   text-align: left;
 }
 @media (max-width: 768px) {
@@ -54,8 +56,7 @@
 }
 @media (max-width: 1025px) {
   .container .clearLink .element :global(.vtex-button) {
-    opacity: 1;
-    visibility: visible;
+    display: none;
   }
 }
 .container .clearLink .element :global(.vtex-button) :global(.vtex-button__label) {

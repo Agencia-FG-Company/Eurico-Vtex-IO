@@ -1,29 +1,37 @@
 {
   "header.full": {
     "title": "HEADER",
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "title": "Desktop",
+    "props": {
+      "blockClass": "header-layout__desktop"
+    },
     "children": [
-      "fg-Parallax",
-      "slider-layout#header__tipbar",
-      "flex-layout.row#header__content",
-      "flex-layout.row#category-menu",
+      "header-layout.desktop#topo"
+    ]
+  },
+  "header-layout.desktop#topo": {
+    "props": {
+      "blockClass": "header-layout__desktop-topo"
+    },
+    "children": [
+      "slider-layout#header__topbar--desktop",
+      "sticky-layout#header__menu",
       "sticky-layout#header__content"
     ]
   },
-
   "header-layout.mobile": {
     "title": "Mobile",
     "children": [
-      "fg-Parallax",
-      "slider-layout#header__tipbar",
-      "sticky-layout#header__content-mobile",
-      "search-bar#header__search"
+      "slider-layout#header__topbar--mobile",
+      "sticky-layout#header__content-mobile"
     ]
   },
-
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"

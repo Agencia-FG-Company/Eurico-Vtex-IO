@@ -1,0 +1,107 @@
+.wrapper--buy-fast-pdp--stuck {
+  height: 0 !important;
+}
+.wrapper--buy-fast-pdp--stuck .container--buy-fast-pdp:global(.vtex-limit-buy-fast) {
+  display: none;
+}
+
+.wrapper--sticky-header {
+  background-color: white !important;
+  position: absolute !important;
+  z-index: -1;
+}
+.wrapper--sticky-header--stuck {
+  position: relative;
+  z-index: 1000;
+}
+.wrapper--sticky-header .container--sticky-header {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: white;
+}
+.wrapper--sticky-header .container--sticky-header :global(.vtex-menu-2-x-menuContainer--main__menu) {
+  width: 100%;
+  margin-right: 10px;
+}
+.wrapper--sticky-header .container--sticky-header :global(.vtex-flex-layout-0-x-flexRow--menu__category) {
+  box-shadow: none;
+}
+.wrapper--sticky-header .container--sticky-header :global(.vtex-flex-layout-0-x-flexRowContent--header__content-sticky) {
+  height: 105px;
+  align-items: center;
+  gap: 8px;
+}
+.wrapper--sticky-header .container--sticky-header :global(.vtex-flex-layout-0-x-flexRowContent--header__content-sticky) :global(.vtex-menu-2-x-styledLinkContent--menu__item) {
+  color: #000 !important;
+}
+.wrapper--sticky-header .hover-header:hover .header__content,
+.wrapper--sticky-header .hover-header:hover .menu__category {
+  background: #FFF !important;
+}
+.wrapper--sticky-header .hover-header:hover .logo-hover,
+.wrapper--sticky-header .hover-header:hover .logo-hover {
+  display: none;
+}
+.wrapper--sticky-header .hover-header:hover .vtex-store-components-3-x-logoLink--logo-initial {
+  display: block !important;
+}
+.wrapper--sticky-header .hover-header:hover .menu__item {
+  color: #3f3f40;
+}
+.wrapper--sticky-header .hover-header:hover .vtex-store-components-3-x-searchBarContainer .vtex-store-components-3-x-searchBarIcon::before {
+  background: url(assets/icons/search.svg) no-repeat;
+  width: 24px;
+  height: 22px;
+}
+.wrapper--sticky-header .hover-header:hover .vtex-store-components-3-x-searchBarContainer .vtex-input-prefix__group {
+  border: 0;
+  border-bottom: 1px solid #393939;
+  flex-direction: row-reverse;
+}
+.wrapper--sticky-header .hover-header:hover .vtex-store-components-3-x-searchBarContainer .vtex-styleguide-9-x-input,
+.wrapper--sticky-header .hover-header:hover .vtex-store-components-3-x-searchBarContainer .vtex-styleguide-9-x-input::placeholder {
+  color: #949494;
+}
+.wrapper--sticky-header .hover-header:hover .vtex-login-2-x-container .vtex-button {
+  padding: 0;
+  margin: 0;
+  width: 28px;
+  height: 28px;
+  background: url(assets/icons/user-black.svg) no-repeat;
+  min-height: unset;
+  border: 0;
+}
+.wrapper--sticky-header .hover-header:hover .vtex-minicart-2-x-minicartContainer .vtex-minicart-2-x-minicartIconContainer::before {
+  content: "";
+  background: url(assets/icons/bag-black.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 28px;
+  height: 24px;
+  display: block;
+}
+.wrapper--sticky-header .hover-header .vtex-store-components-3-x-logoLink--logo-hover,
+.wrapper--sticky-header .hover-header .vtex-store-components-3-x-logoImage--logo-hover {
+  display: block;
+}
+.wrapper--sticky-header .hover-header .vtex-store-components-3-x-logoLink--logo-initial {
+  display: none !important;
+}
+.wrapper--sticky-header .hover-header .vtex-store-components-3-x-searchBarContainer .vtex-styleguide-9-x-input,
+.wrapper--sticky-header .hover-header .vtex-store-components-3-x-searchBarContainer .vtex-styleguide-9-x-input::placeholder {
+  color: #fff;
+}
+.wrapper--sticky-header .hover-header .vtex-menu-2-x-styledLink--menu__item {
+  color: #FFF;
+}
+.wrapper--sticky-header .vtex-sticky-layout-0-x-wrapper--hover-header:hover {
+  height: 120.797px !important;
+}
+.wrapper--sticky-header .vtex-sticky-layout-0-x-wrapper--stuck .vtex-store-components-3-x-logoLink--logo-hover {
+  display: none;
+}
+.wrapper--sticky-header .vtex-sticky-layout-0-x-wrapper--stuck .vtex-store-components-3-x-searchBarContainer .vtex-input-prefix__group {
+  border-bottom: 1px solid #727273;
+}
+.wrapper--sticky-header .vtex-sticky-layout-0-x-wrapper--stuck .vtex-store-components-3-x-searchBarIcon::before {
+  background: url(assets/icons/search.svg) no-repeat;
+}

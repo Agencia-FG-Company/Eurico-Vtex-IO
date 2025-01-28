@@ -21,9 +21,109 @@
       box-shadow: none;
     }
     :global(.vtex-flex-layout-0-x-flexRowContent--header__content-sticky) {
-      height: 84px;
+      height: 105px;
       align-items: center;
       gap: 8px;
+
+      :global(.vtex-menu-2-x-styledLinkContent--menu__item) {
+        color: #000 !important;
+      }
+    }
+  }
+
+  .hover-header {
+    height: 120.797px !important;
+    position: absolute!important;
+    width: 100%!important;
+
+    &:hover {
+      .header__content,
+      .menu__category {
+        background: #FFF !important;
+      }
+
+      .logo-hover,
+      .logo-hover {
+        display: none;
+      }
+
+      .vtex-store-components-3-x-logoLink--logo-initial {
+        display: block !important;
+      }
+
+      .menu__item {
+        color: #3f3f40;
+      }
+
+      .vtex-store-components-3-x-searchBarContainer .vtex-store-components-3-x-searchBarIcon::before {
+        background: url(assets/icons/search.svg) no-repeat;
+        width: 24px;
+        height: 22px;
+      }
+
+      .vtex-store-components-3-x-searchBarContainer .vtex-input-prefix__group {
+        border: 0;
+        border-bottom: 1px solid #393939;
+        flex-direction: row-reverse;
+      }
+
+      .vtex-store-components-3-x-searchBarContainer .vtex-styleguide-9-x-input,
+      .vtex-store-components-3-x-searchBarContainer .vtex-styleguide-9-x-input::placeholder {
+        color: #949494;
+      }
+
+      .vtex-login-2-x-container .vtex-button {
+        padding: 0;
+        margin: 0;
+        width: 28px;
+        height: 28px;
+        background: url(assets/icons/user-black.svg) no-repeat;
+        min-height: unset;
+        border: 0;
+      }
+
+      .vtex-minicart-2-x-minicartContainer .vtex-minicart-2-x-minicartIconContainer::before {
+        content: "";
+        background: url(assets/icons/bag-black.svg) no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 28px;
+        height: 24px;
+        display: block;
+      }
+    }
+
+    .vtex-store-components-3-x-logoLink--logo-hover,
+    .vtex-store-components-3-x-logoImage--logo-hover {
+      display: block;
+    }
+
+    .vtex-store-components-3-x-logoLink--logo-initial {
+      display: none !important;
+    }
+
+    .vtex-store-components-3-x-searchBarContainer .vtex-styleguide-9-x-input,
+    .vtex-store-components-3-x-searchBarContainer .vtex-styleguide-9-x-input::placeholder {
+      color: #fff;
+    }
+
+    .vtex-menu-2-x-styledLink--menu__item {
+      color: #FFF;
+    }
+  }
+
+
+  .vtex-sticky-layout-0-x-wrapper--stuck {
+    .vtex-store-components-3-x-logoLink--logo-hover {
+      display: none;
+    }
+
+    .vtex-store-components-3-x-searchBarContainer .vtex-input-prefix__group {
+      border-bottom: 1px solid #727273;
+    }
+
+    .vtex-store-components-3-x-searchBarIcon::before {
+      background: url(assets/icons/search.svg) no-repeat;
     }
   }
 }

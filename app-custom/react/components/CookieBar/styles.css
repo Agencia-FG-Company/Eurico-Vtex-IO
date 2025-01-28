@@ -1,0 +1,79 @@
+.cookieBar {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  right: 0;
+  background: #FFF;
+  width: 700px;
+  height: 132px;
+  z-index: 100;
+  box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.15);
+}
+
+.cookieBar__container {
+  margin: 0 auto;
+  padding: 0.75rem 0.9375rem;
+  z-index: 1;
+  height: 100%;
+}
+
+.cookieBar__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cookieBar__wrapper p,
+.cookieBar__wrapper a {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color: #393939;
+  width: 65%;
+}
+
+.cookieBar__wrapper button {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+  text-align: center;
+  background: #FFF;
+  border: 1px solid #393939;
+  width: 179px;
+  height: 40px;
+  cursor: pointer;
+  color: #393939;
+}
+
+.cookieBar__wrapper button:hover {
+  background: #393939;
+  color: #fff;
+}
+
+@media (max-width: 768px){
+  .cookieBar {
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .cookieBar__wrapper {
+      flex-direction: column;
+  }
+
+  .cookieBar__wrapper p,
+  .cookieBar__wrapper a {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+:global(.vtex-sticky-layout-0-x-container--hover-header):hover .flexRow--header__content,
+:global(.vtex-sticky-layout-0-x-container--hover-header):hover .flexRow--menu__category{
+    background: #FFF!important;
+}

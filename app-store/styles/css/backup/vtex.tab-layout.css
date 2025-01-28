@@ -1,0 +1,74 @@
+@media (max-width: 1024px) {
+  .container--home__shelf-tab .listContainer {
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: unset;
+    overflow-x: scroll;
+  }
+}
+.container--home__shelf-tab .listContainer .listItem :global(.vtex-button) {
+  width: 240px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #393939;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #C00018;
+}
+.container--home__shelf-tab .listContainer .listItem :global(.vtex-button):hover {
+  background: #C00018;
+  color: #FFFFFF;
+}
+.container--home__shelf-tab .listContainer .listItem :global(.vtex-button__label) {
+  padding: 0;
+}
+.container--home__shelf-tab .listContainer .listItemActive :global(.vtex-button) {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: center;
+  background: #C00018;
+}
+
+.container--product-payment-options {
+  padding: 20px 30px;
+  overflow: auto;
+}
+.container--product-payment-options .listContainer--product-payment-options {
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.container--product-payment-options .listContainer--product-payment-options .listItem {
+  padding: 0;
+  margin: 0 5px;
+}
+.container--product-payment-options .listContainer--product-payment-options .listItemActive :global(.vtex-button) {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #2e2e2e;
+}
+.container--product-payment-options .listContainer--product-payment-options .listItem :global(.vtex-button):hover {
+  background-color: transparent;
+}
+.container--product-payment-options .listContainer--product-payment-options .listItem :global(.vtex-button__label) {
+  color: #3f3f40;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0;
+  text-transform: initial;
+}
+.container--product-payment-options .contentItem :global(.vtex-rich-text-0-x-paragraph) {
+  border-bottom: 1px solid #f6f6f6;
+  padding-bottom: 10px;
+}

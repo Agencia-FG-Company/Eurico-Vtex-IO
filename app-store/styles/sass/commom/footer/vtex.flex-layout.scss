@@ -69,7 +69,6 @@
           &--footer__column--payments {
             @include mobile {
               align-items: center;
-              gap: 30px;
             }
           }
 
@@ -110,5 +109,16 @@
         gap: 30px;
       }
     }
+  }
+}
+
+.flexRow--footer__links-selos--row-desktop{
+  @media (max-width: 768px){
+    display: none!important;
+  }
+}
+.flexRowContent--footer__links-selos--mobile{
+  @media (min-width: 768px){
+    display: none!important;
   }
 }
