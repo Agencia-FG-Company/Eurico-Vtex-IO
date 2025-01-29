@@ -550,3 +550,18 @@
     color: #393939;
   }
 }
+
+:global(.vtex-availability-notify-1-x-content) {
+  flex-direction: column;
+  width: 70%;
+}
+
+:global(.vtex-availability-notify-1-x-input) :global(.vtex-styleguide-9-x-input) {
+  border: none;
+}
+
+@media (max-width: 768px) {
+  :global(.vtex-availability-notify-1-x-notiferContainer) {
+    margin: 0 5px;
+  }
+}

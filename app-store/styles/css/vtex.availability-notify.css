@@ -1,0 +1,8 @@
+:global(.vtex-availability-notify-1-x-content) {
+  flex-direction: column;
+  width: 70%;
+}
+
+:global(.vtex-availability-notify-1-x-input) :global(.vtex-styleguide-9-x-input) {
+  border: navajowhite;
+}

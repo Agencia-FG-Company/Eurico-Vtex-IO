@@ -69,5 +69,8 @@
     "vtex.list-context": "0.x",
     "vtex.recommendation-shelf": "1.x"
   },
+  "peerDependencies": {
+    "vtex.availability-notify": "1.x"
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

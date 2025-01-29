@@ -69,10 +69,6 @@
   opacity: 1;
 }
 
-.triggerContainer--search-bar {
-  margin-left: 15px;
-}
-
 .headerContainer--new-testimonial {
   position: absolute;
   border: 0;
@@ -81,4 +77,8 @@
 
 .triggerContainer--new-testimonial__trigger {
   width: fit-content !important;
+}
+
+.triggerContainer--search-bar {
+  margin-left: 15px;
 }

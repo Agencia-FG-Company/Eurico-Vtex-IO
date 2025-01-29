@@ -10,6 +10,7 @@ export const CustomProductRef = () => {
 
   // Obtenha a descrição adicional
   const additionalDescription = product?.selectedItem?.complementName;
+  console.log("aquii", product);
 
   return (
     <div className={styles.refDescription}>
