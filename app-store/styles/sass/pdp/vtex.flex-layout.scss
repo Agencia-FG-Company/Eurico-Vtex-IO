@@ -112,6 +112,11 @@
         }
       }
       .flexCol {
+        &--info-availability{
+          @include desktop {
+            padding-left: 40px;
+          }
+        }
         &--product__info-pdp {
           @include desktop {
             padding-left: 40px;
