@@ -598,7 +598,7 @@
 .flexRow--product-main {
   margin-left: 20px;
   margin-right: 20px;
-  max-width: calc(100% - 40px);
+  max-width: calc(100% - 100px);
 }
 .flexRow--product-main .flexRowContent--product-main {
   padding-top: 0;
@@ -659,7 +659,7 @@
   gap: 50px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
+  max-width: 1300px;
 }
 @media (min-width: 1025px) {
   .flexRow--buy-fast-pdp .flexRowContent--buy-fast-pdp {
@@ -671,7 +671,7 @@
 }
 .flexRow--buy-fast-pdp .flexRowContent--buy-fast-pdp .flexCol--buy-fast-pdp--col-2 {
   max-width: 280px;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 .flexRow--buy-fast-pdp :global(.vtex-flex-layout-0-x-flexRow--buy__button-pdp) {
   border: 0;
@@ -741,6 +741,11 @@
   display: flex;
   margin: 0 24px;
 }
+@media (max-width: 1400px) {
+  .flexRowContent--product-advantages .stretchChildrenWidth::before {
+    margin: 0 5px !important;
+  }
+}
 @media (max-width: 1024px) {
   .flexRowContent--product-advantages .stretchChildrenWidth::before {
     display: none;
@@ -755,6 +760,26 @@
 @media (min-width: 1455px) and (max-width: 1579px) {
   .flexCol--physical__stories-col {
     padding: 50px !important;
+  }
+}
+
+.flexRow--selling-prices__category {
+  width: fit-content !important;
+}
+.flexRow--selling-prices__category .flexRowContent--selling-prices__category {
+  width: fit-content;
+  justify-content: flex-start;
+}
+.flexRow--shelf__category-price .flexRowContent {
+  flex-wrap: wrap;
+}
+@media (max-width: 1025px) {
+  .flexRow--shelf__category-price .flexRowContent {
+    flex-direction: column;
+    display: flex;
+  }
+  .flexRow--shelf__category-price .flexRowContent .stretchChildrenWidth {
+    display: contents;
   }
 }
 
@@ -955,26 +980,6 @@
 }
 .flexRow--header__minicart--footer .flexRowContent--header__minicart--footer {
   flex-direction: column;
-}
-
-.flexRow--selling-prices__category {
-  width: fit-content !important;
-}
-.flexRow--selling-prices__category .flexRowContent--selling-prices__category {
-  width: fit-content;
-  justify-content: flex-start;
-}
-.flexRow--shelf__category-price .flexRowContent {
-  flex-wrap: wrap;
-}
-@media (max-width: 1025px) {
-  .flexRow--shelf__category-price .flexRowContent {
-    flex-direction: column;
-    display: flex;
-  }
-  .flexRow--shelf__category-price .flexRowContent .stretchChildrenWidth {
-    display: contents;
-  }
 }
 
 .flexRow--about-us-row {

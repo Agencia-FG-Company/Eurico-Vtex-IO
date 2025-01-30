@@ -66,6 +66,11 @@
   justify-content: center;
   gap: 124px;
 }
+@media (max-width: 1400px) {
+  .menuContainer--main__menu {
+    gap: 50px !important;
+  }
+}
 
 .styledLinkContainer--header__institucional--link {
   margin: 0;
