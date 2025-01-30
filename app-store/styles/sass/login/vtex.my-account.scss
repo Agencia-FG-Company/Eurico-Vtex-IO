@@ -720,3 +720,9 @@
     }
   }
 }
+
+:global(.vtex-product-summary-2-x-brandName--category){
+  @media (max-width: 768px){
+    text-align: left!important;
+  }
+}

@@ -188,7 +188,7 @@
         "tablet": 3,
         "phone": 3
       },
-      "infinite": false,
+      "infinite": true,
       "showNavigationArrows": "mobileOnly",
       "showPaginationDots": "never"
     },

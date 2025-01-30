@@ -573,3 +573,9 @@
     padding: 0 30px;
   }
 }
+
+@media (max-width: 768px) {
+  :global(.vtex-product-summary-2-x-brandName--category) {
+    text-align: left !important;
+  }
+}
