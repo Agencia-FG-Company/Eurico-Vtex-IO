@@ -60,6 +60,9 @@
     margin: auto;
     justify-content: center;
     gap: 124px;
+    @media (max-width: 1400px) {
+      gap: 50px!important;
+    }
   }
 }
 

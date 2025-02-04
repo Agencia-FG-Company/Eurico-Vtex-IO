@@ -1,7 +1,7 @@
 {
   "vendor": "eurico",
   "name": "fg-store",
-  "version": "0.0.104",
+  "version": "1.0.0",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",
@@ -68,6 +68,9 @@
     "vtex.similar-products-variants": "0.x",
     "vtex.list-context": "0.x",
     "vtex.recommendation-shelf": "1.x"
+  },
+  "peerDependencies": {
+    "vtex.availability-notify": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

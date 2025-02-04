@@ -101,7 +101,7 @@
   &--product-main {
     margin-left: 20px;
     margin-right: 20px;
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 100px);
     .flexRowContent--product-main {
       padding-top: 0;
       @include tablet {
@@ -112,6 +112,11 @@
         }
       }
       .flexCol {
+        &--info-availability{
+          @include desktop {
+            padding-left: 40px;
+          }
+        }
         &--product__info-pdp {
           @include desktop {
             padding-left: 40px;
@@ -169,7 +174,7 @@
       gap: 50px;
       margin-left: auto;
       margin-right: auto;
-      max-width: 1500px;
+      max-width: 1300px;
 
       @include desktop {
         padding: 10px 0;
@@ -181,7 +186,7 @@
 
       .flexCol--buy-fast-pdp--col-2 {
         max-width: 280px;
-        margin-left: 20%;
+        margin-left: 10%;
       }
     }
 
@@ -276,6 +281,10 @@
         background: #EBEBEB;
         display: flex;
         margin: 0 24px;
+
+        @media (max-width: 1400px) {
+          margin: 0 5px!important;
+        }
 
         @media (max-width: 1024px) {
           display: none;

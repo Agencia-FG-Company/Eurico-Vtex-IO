@@ -598,7 +598,7 @@
 .flexRow--product-main {
   margin-left: 20px;
   margin-right: 20px;
-  max-width: calc(100% - 40px);
+  max-width: calc(100% - 100px);
 }
 .flexRow--product-main .flexRowContent--product-main {
   padding-top: 0;
@@ -610,6 +610,11 @@
   }
   .flexRow--product-main .flexRowContent--product-main .stretchChildrenWidth {
     width: 100% !important;
+  }
+}
+@media (min-width: 1025px) {
+  .flexRow--product-main .flexRowContent--product-main .flexCol--info-availability {
+    padding-left: 40px;
   }
 }
 @media (min-width: 1025px) {
@@ -654,7 +659,7 @@
   gap: 50px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
+  max-width: 1300px;
 }
 @media (min-width: 1025px) {
   .flexRow--buy-fast-pdp .flexRowContent--buy-fast-pdp {
@@ -666,7 +671,7 @@
 }
 .flexRow--buy-fast-pdp .flexRowContent--buy-fast-pdp .flexCol--buy-fast-pdp--col-2 {
   max-width: 280px;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 .flexRow--buy-fast-pdp :global(.vtex-flex-layout-0-x-flexRow--buy__button-pdp) {
   border: 0;
@@ -735,6 +740,11 @@
   background: #EBEBEB;
   display: flex;
   margin: 0 24px;
+}
+@media (max-width: 1400px) {
+  .flexRowContent--product-advantages .stretchChildrenWidth::before {
+    margin: 0 5px !important;
+  }
 }
 @media (max-width: 1024px) {
   .flexRowContent--product-advantages .stretchChildrenWidth::before {
