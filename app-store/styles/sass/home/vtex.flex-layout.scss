@@ -403,7 +403,7 @@
 }
 
 .flexCol--filter__size-mobile {
-  @media (max-width){
+  @media (max-width: 768px){
     background: #fafafa;
     padding: 20px 0;
   }

@@ -5,6 +5,7 @@
 @media (max-width: 768px) {
   .imageElement--third__banner-area--img {
     width: 300px;
+    height: 100%;
   }
 }
 .imageElement--secund__area-banners--img {
@@ -368,6 +369,13 @@
     margin-left: 100px;
     margin-top: -3px;
   }
+}
+
+.imageElement--fixed__whatsapp {
+  display: block !important;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
 }
 
 .imageElement--fixed__whatsapp {
