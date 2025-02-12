@@ -1,5 +1,5 @@
 {
-  "search-banner#one": {
+  "search-banner": {
     "props": {
       "area": "one",
       "blockClass": "banner-category",
@@ -8,7 +8,7 @@
   },
   "flex-layout.row#banner-one": {
     "children": [
-      "search-banner#one"
+      "search-banner"
     ]
   }
 }
