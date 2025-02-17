@@ -1,7 +1,7 @@
 {
   "vendor": "eurico",
   "name": "fg-store",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",
@@ -67,7 +67,8 @@
     "eurico.agenciafg-custom": "0.x",
     "vtex.similar-products-variants": "0.x",
     "vtex.list-context": "0.x",
-    "vtex.recommendation-shelf": "1.x"
+    "vtex.recommendation-shelf": "1.x",
+    "vtex.search": "2.x"
   },
   "peerDependencies": {
     "vtex.availability-notify": "1.x"

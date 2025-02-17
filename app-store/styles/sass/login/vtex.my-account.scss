@@ -687,6 +687,50 @@
   }
 }
 
+
+:global(.vtex-product-summary-2-x-brandName){
+  @media (max-width: 768px){
+    text-align: center!important;
+  }
+}
+
+
+:global(.render-route-store-search-department){
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck){
+    :global(.vtex-store-components-3-x-imageElement--search-bar) {
+      margin-top: 0!important;
+    }
+  }
+
+  :global(.vtex-store-components-3-x-logoContainer--logo-mobile-fixed) {
+    margin-left: 30px;
+  }
+}
+
+:global(.render-route-store-product){
+  :global(.vtex-store-components-3-x-logoContainer--logo-mobile-fixed) {
+    margin-left: 30px;
+  }
+  @media (max-width: 768px){
+    :global(.vtex-store-components-3-x-logoImage--logo-mobile-initial){
+      opacity: 0;
+    }
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--filter__size-mobile){
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer) {
+    @media (max-width: 768px){
+      padding: 0 30px;
+    }
+  }
+}
+
+:global(.vtex-product-summary-2-x-brandName--category){
+  @media (max-width: 768px){
+    text-align: left!important;
+  }
+}
 :global(.vtex-availability-notify-1-x-content) {
   flex-direction: column;
   width: 70%;

@@ -432,6 +432,12 @@
   display: none;
 }
 
+@media (max-width: 768px) {
+  :global(.vtex-tab-layout-0-x-container--home__shelf-tab) :global(.vtex-tab-layout-0-x-listContainer) {
+    margin-bottom: 50px;
+  }
+}
+
 @media (min-width: 1025px) {
   .container {
     width: fit-content !important;

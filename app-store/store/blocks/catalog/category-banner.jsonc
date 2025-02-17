@@ -1,9 +1,14 @@
 {
-  "image#category-banner": {
-    "title": "Banner categoria",
+  "search-banner": {
     "props": {
-      "src": "",
-      "blockClass":"category-banner"
+      "area": "one",
+      "blockClass": "banner-category",
+      "horizontalAlignment": "center"
     }
+  },
+  "flex-layout.row#banner-one": {
+    "children": [
+      "search-banner"
+    ]
   }
 }

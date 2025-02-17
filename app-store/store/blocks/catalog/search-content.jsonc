@@ -2,7 +2,7 @@
   "search-result-layout.desktop": {
     "title": "Layout de resultado de busca para desktop",
     "children": [
-      "image#category-banner",
+      "flex-layout.row#banner-one",
       "flex-layout.row#searchinfo",
       "flex-layout.row#buttons-category",
       "flex-layout.row#filter__suggestion",

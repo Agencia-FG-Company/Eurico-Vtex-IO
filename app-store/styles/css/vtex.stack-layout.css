@@ -1,6 +1,6 @@
 .stackItem--prodsum__category--flags {
   width: 100%;
-  z-index: 999 !important;
+  z-index: 1 !important;
 }
 @media (max-width: 1025px) {
   .stackItem--prodsum__category--flags {
