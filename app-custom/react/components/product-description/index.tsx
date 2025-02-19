@@ -1,7 +1,7 @@
 import React from "react";
 import { useProduct } from "vtex.product-context";
 import { useState } from 'react';
-import {useCssHandles } from 'vtex.css-handles'
+import { useCssHandles } from 'vtex.css-handles'
 
 export const HANDLES_DESCRIPTION = [
   'product__description-container',
@@ -12,9 +12,9 @@ export const HANDLES_DESCRIPTION = [
 
 export const productDescription = () => {
 
-  const {handles} = useCssHandles(HANDLES_DESCRIPTION)
+  const { handles } = useCssHandles(HANDLES_DESCRIPTION)
 
-  console.log(useProduct(),'produto')
+  console.log(useProduct(), 'produto')
   const { product } = useProduct() || {};
 
   const description = product?.description ?? 'Descrição não disponível';
@@ -34,9 +34,10 @@ export const productDescription = () => {
   return (
     <div className={handles["product__description-container"]}>
       <p className={handles["product__description-title"]}>Descrição:</p>
-      <p className={handles.product__description}>
-        {isExpanded ? description : truncatedDescription}
-      </p>
+      <p
+        className={handles.product__description}
+        dangerouslySetInnerHTML={{ __html: isExpanded ? description : truncatedDescription }}
+      />
       {description.length > maxLength && (
         <button onClick={toggleExpand} className={handles["product__toggle-button--description"]}>
           {isExpanded ? 'Menos informações' : 'Mais informações'}
