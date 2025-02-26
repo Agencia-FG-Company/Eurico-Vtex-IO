@@ -49,7 +49,9 @@
       "type": "collection",
       "blockClass": "highlights"
     },
-    "children": ["product-highlight-wrapper"]
+    "children": [
+      "product-highlight-wrapper"
+    ]
   },
   "product-summary-name#category": {
     "title": "Nome do produto na categoria",
@@ -63,10 +65,10 @@
       "showBadge": false,
       "aspectRatio": "1:1",
       // "height": 390,
-      // "maxHeight": 400,
-      // "width":{
-      //   "mobile": "400"
-      // },
+      "maxHeight": 400,
+      "width": {
+        "mobile": "400"
+      },
       "hoverImage": {
         "criteria": "label",
         "label": "fotoVira"
@@ -86,7 +88,9 @@
   "product-installments#shelf__category": {
     "title": "Parcelamento na prateleira da categoria",
     "props": {
-      "markers": ["from"],
+      "markers": [
+        "from"
+      ],
       "message": "{installmentsNumber}x de {installmentValue}",
       "blockClass": "shelf__category"
     }
