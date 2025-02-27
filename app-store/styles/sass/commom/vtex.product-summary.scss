@@ -113,3 +113,9 @@
     }
   }
 }
+
+:global(.vtex-product-summary-2-x-imageNormal){
+  @media (max-width: 768px){
+    height: auto!important;
+  }
+}
