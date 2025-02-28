@@ -1,0 +1,17 @@
+{
+  "flex-layout.row#collection-banner": {
+    "children": [
+      "image#collection-banner"
+    ],
+    "props": {
+      "blockClass": "collection-banner"
+    }
+  },
+  "image#collection-banner": {
+    "title": "Banner categoria",
+    "props": {
+      "src": "",
+      "blockClass": "collection-banner-img"
+    }
+  }
+}

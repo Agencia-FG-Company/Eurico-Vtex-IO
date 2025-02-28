@@ -763,24 +763,36 @@
   }
 }
 
-.flexRow--selling-prices__category {
-  width: fit-content !important;
+.flexRow--header__icons .flexRowContent--header__icons {
+  gap: 40px;
 }
-.flexRow--selling-prices__category .flexRowContent--selling-prices__category {
-  width: fit-content;
-  justify-content: flex-start;
+.flexRow--header__icons .flexRowContent--header__icons .stretchChildrenWidth {
+  display: contents;
 }
-.flexRow--shelf__category-price .flexRowContent {
+
+.flexRow--flags .flexRowContent--flags {
+  display: flex !important;
   flex-wrap: wrap;
+  width: calc(100% - 25px);
+  gap: 7px;
+  z-index: 999 !important;
+  align-items: center;
 }
-@media (max-width: 1025px) {
-  .flexRow--shelf__category-price .flexRowContent {
-    flex-direction: column;
-    display: flex;
-  }
-  .flexRow--shelf__category-price .flexRowContent .stretchChildrenWidth {
-    display: contents;
-  }
+.flexRow--flags .flexRowContent--flags :global(.vtex__last-unit) {
+  width: 120px;
+  align-items: center;
+  background-color: white;
+  color: #606060;
+  display: flex;
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 12px;
+  font-style: normal;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  height: 26px;
+  line-height: 14px;
+  border: 1px solid #606060;
 }
 
 .flexRow--footer__newsletter {
@@ -907,38 +919,6 @@
   .flexRowContent--footer__links-selos--mobile {
     display: none !important;
   }
-}
-
-.flexRow--header__icons .flexRowContent--header__icons {
-  gap: 40px;
-}
-.flexRow--header__icons .flexRowContent--header__icons .stretchChildrenWidth {
-  display: contents;
-}
-
-.flexRow--flags .flexRowContent--flags {
-  display: flex !important;
-  flex-wrap: wrap;
-  width: calc(100% - 25px);
-  gap: 7px;
-  z-index: 999 !important;
-  align-items: center;
-}
-.flexRow--flags .flexRowContent--flags :global(.vtex__last-unit) {
-  width: 120px;
-  align-items: center;
-  background-color: white;
-  color: #606060;
-  display: flex;
-  font-family: Lato;
-  font-weight: 600;
-  font-size: 12px;
-  font-style: normal;
-  justify-content: center;
-  letter-spacing: 0.3px;
-  height: 26px;
-  line-height: 14px;
-  border: 1px solid #606060;
 }
 
 .flexRow--header__minicart--header {
@@ -1200,6 +1180,26 @@
     width: 70% !important;
   }
 }
+.flexRow--selling-prices__category {
+  width: fit-content !important;
+}
+.flexRow--selling-prices__category .flexRowContent--selling-prices__category {
+  width: fit-content;
+  justify-content: flex-start;
+}
+.flexRow--shelf__category-price .flexRowContent {
+  flex-wrap: wrap;
+}
+@media (max-width: 1025px) {
+  .flexRow--shelf__category-price .flexRowContent {
+    flex-direction: column;
+    display: flex;
+  }
+  .flexRow--shelf__category-price .flexRowContent .stretchChildrenWidth {
+    display: contents;
+  }
+}
+
 .flexRow--flags-pdp .stretchChildrenWidth {
   display: contents;
 }
