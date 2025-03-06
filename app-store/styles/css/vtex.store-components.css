@@ -175,13 +175,6 @@
   max-width: unset;
 }
 
-.imageElement--fixed__whatsapp {
-  display: block !important;
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-}
-
 .imageElement--footer__atendimento-img {
   max-width: 177px;
   margin-top: 15px;
@@ -215,6 +208,13 @@
 }
 .imageElement--agencia {
   height: fit-content;
+}
+
+.imageElement--fixed__whatsapp {
+  display: block !important;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
 }
 
 @media (max-width: 1025px) {
@@ -387,13 +387,6 @@
   }
 }
 
-.imageElement--contact-us__fullbanner {
-  width: 100%;
-}
-.imageElement--contact-us__store-img {
-  min-height: 400PX;
-}
-
 .imageElement--institucional__wrapper-faq-img {
   width: 49px;
   margin: 0 auto;
@@ -436,4 +429,11 @@
     display: block;
     margin: auto;
   }
+}
+
+.imageElement--contact-us__fullbanner {
+  width: 100%;
+}
+.imageElement--contact-us__store-img {
+  min-height: 400PX;
 }
