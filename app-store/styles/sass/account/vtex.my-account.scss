@@ -13,3 +13,8 @@
     opacity: 0;
   }
 }
+:global(.vtex-render__container-id-shelf__pdp__title ){
+  @media (max-width: 1024px) {  
+    margin-bottom:50px;
+  }
+}

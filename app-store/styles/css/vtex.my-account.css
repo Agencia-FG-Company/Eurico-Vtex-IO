@@ -14,6 +14,12 @@
   opacity: 0;
 }
 
+@media (max-width: 1024px) {
+  :global(.vtex-render__container-id-shelf__pdp__title) {
+    margin-bottom: 50px;
+  }
+}
+
 .menuLinks .menuLink {
   border: 1px solid #ccc;
   margin: 0;

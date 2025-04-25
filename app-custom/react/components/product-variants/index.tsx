@@ -90,7 +90,7 @@ export function SimilarProductsVariants({
               src={productCurrentImg}
               alt={productCurrentImgAlt}
               height="50px"
-              className={`${handles['similar__products-variants--img']} ${handles['similar__products-variants--img-current']} mr3`}
+              className={`${handles['similar__products-variants--img']} ${handles['similar__products-variants--img-current']}`}
             />
           </div>
         </div>
@@ -109,7 +109,7 @@ export function SimilarProductsVariants({
             src={productCurrentImg}
             alt={productCurrentImgAlt}
             height="50px"
-            className={`${handles['similar__products-variants--img']} ${handles['similar__products-variants--img-current']} mr3`}
+            className={`${handles['similar__products-variants--img']} ${handles['similar__products-variants--img-current']} `}
           />
         </div>
         {items.map((element: ProductTypes.Product) => {
@@ -135,7 +135,7 @@ export function SimilarProductsVariants({
                   src={srcImage}
                   alt={element.productName}
                   height="50px"
-                  className={`${handles['similar__products-variants--img']} mr3 ${route?.params?.slug === element.linkText ? 'o-50' : ''}`}
+                  className={`${handles['similar__products-variants--img']} ${route?.params?.slug === element.linkText ? 'o-50' : ''}`}
                 />
               </div>
             </Link>

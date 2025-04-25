@@ -1,3 +1,48 @@
+.minicartContainer .cartIcon {
+  display: none;
+}
+.minicartContainer .minicartIconContainer::before {
+  content: "";
+  background: url(assets/icons/cart.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 19px;
+  height: 24px;
+  display: block;
+}
+.minicartContainer .openIconContainer--minicart,
+.minicartContainer .openIconContainer--minicart-header__minicart {
+  padding: 0.75em 0;
+}
+.minicartContainer .openIconContainer :global(.vtex-button):hover {
+  background-color: transparent;
+}
+.minicartContainer .minicartQuantityBadge {
+  width: 10px;
+  height: 10px;
+  background: #c00018;
+  font-size: 10px;
+}
+.minicartContainer .minicartQuantityBadgeDefault {
+  top: -0.1rem;
+  right: -0.3rem;
+}
+.minicartContainer :global(.vtex-button__label) {
+  padding: 0;
+}
+.minicartContainer .minicartIconContainer::before {
+  content: "";
+  background: url(assets/icons/bag-white.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 28px;
+  height: 24px;
+  display: block;
+}
+.minicartContainer .minicartWrapperContainer--header__minicart {
+  width: 28px !important;
+}
+
 .drawer--header__minicart {
   z-index: 1001;
 }
@@ -62,49 +107,4 @@
   letter-spacing: 1px;
   font-size: 12px;
   color: #fff;
-}
-
-.minicartContainer .cartIcon {
-  display: none;
-}
-.minicartContainer .minicartIconContainer::before {
-  content: "";
-  background: url(assets/icons/cart.svg) no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 19px;
-  height: 24px;
-  display: block;
-}
-.minicartContainer .openIconContainer--minicart,
-.minicartContainer .openIconContainer--minicart-header__minicart {
-  padding: 0.75em 0;
-}
-.minicartContainer .openIconContainer :global(.vtex-button):hover {
-  background-color: transparent;
-}
-.minicartContainer .minicartQuantityBadge {
-  width: 10px;
-  height: 10px;
-  background: #c00018;
-  font-size: 10px;
-}
-.minicartContainer .minicartQuantityBadgeDefault {
-  top: -0.1rem;
-  right: -0.3rem;
-}
-.minicartContainer :global(.vtex-button__label) {
-  padding: 0;
-}
-.minicartContainer .minicartIconContainer::before {
-  content: "";
-  background: url(assets/icons/bag-white.svg) no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 28px;
-  height: 24px;
-  display: block;
-}
-.minicartContainer .minicartWrapperContainer--header__minicart {
-  width: 28px !important;
 }

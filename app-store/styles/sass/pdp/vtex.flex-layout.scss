@@ -101,7 +101,7 @@
   &--product-main {
     margin-left: 20px;
     margin-right: 20px;
-    max-width: calc(100% - 100px);
+    max-width: calc(100% - 40px)!important;
     .flexRowContent--product-main {
       padding-top: 0;
       @include tablet {
