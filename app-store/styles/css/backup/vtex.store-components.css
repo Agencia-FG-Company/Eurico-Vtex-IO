@@ -145,7 +145,7 @@
   margin: 0;
 }
 .carouselContainer--product-image-slide .carouselGaleryCursor .productImagesGallerySwiperContainer--product-image-slide {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .carouselContainer--product-image-slide .swiper-pagination {
   width: fit-content;
