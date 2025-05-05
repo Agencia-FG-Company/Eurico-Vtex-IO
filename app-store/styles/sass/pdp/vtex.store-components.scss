@@ -87,6 +87,7 @@
 
 .carouselContainer--product-image-slide {
   justify-content: center;
+
   .carouselGaleryThumbs--product-image-slide {
     display: none;
   }
@@ -94,7 +95,7 @@
   .carouselGaleryCursor {
     margin: 0;
     .productImagesGallerySwiperContainer--product-image-slide {
-      padding-bottom: 20px;
+      padding-bottom: 40px;
     }
   }
 
@@ -110,6 +111,7 @@
     padding: 5px 10px;
     position: absolute;
     transform: translateX(-50%);
+
     .swiperBullet {
       background-color: #fff;
       border-radius: 50%;
