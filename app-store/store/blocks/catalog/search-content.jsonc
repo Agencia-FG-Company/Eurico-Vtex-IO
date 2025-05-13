@@ -6,7 +6,7 @@
       // "flex-layout.row#collection-banner",
       "flex-layout.row#searchinfo",
       "flex-layout.row#buttons-category",
-      "flex-layout.row#filter__suggestion",
+      // "flex-layout.row#filter__suggestion",
       "flex-layout.row#searchtitle",
       "__fold__",
       "flex-layout.row#result",
@@ -125,12 +125,12 @@
         {
           "name": "grid-1",
           "component": "GridSummary",
-          "itemsPerRow": 1
+          "itemsPerRow": 2
         },
         {
           "name": "grid-2",
           "component": "GridSummary",
-          "itemsPerRow": 2
+          "itemsPerRow": 1
         },
         {
           "name": "grid-4",

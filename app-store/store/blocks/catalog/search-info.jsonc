@@ -4,11 +4,17 @@
     "props": {
       "blockClass": "searchinfo"
     },
-    "children": ["flex-layout.col#searchinfo", "flex-layout.row#orderByAndSwitcher"]
+    "children": [
+      "flex-layout.col#searchinfo",
+      "flex-layout.row#orderByAndSwitcher"
+    ]
   },
   "flex-layout.row#orderByAndSwitcher": {
     "title": "Ordenar e Alternar Visualização",
-    "children": ["order-by.v2", "gallery-layout-switcher"],
+    "children": [
+      "order-by.v2",
+      "gallery-layout-switcher"
+    ],
     "props": {
       "horizontalAlign": "right",
       "preventHorizontalStretch": true,
@@ -18,7 +24,10 @@
   },
   "flex-layout.col#searchinfo": {
     "title": "Informações da busca - Coluna",
-    "children": ["flex-layout.row#searchbread", "total-products.v2"],
+    "children": [
+      "flex-layout.row#searchbread",
+      "total-products.v2"
+    ],
     "props": {
       "blockClass": "searchinfo__col-left"
     }
@@ -41,7 +50,7 @@
     "title": "Opção de Layout Grid 2",
     "props": {
       "blockClass": "category-grid-2",
-      "name": "grid-2"
+      "name": "grid-1"
     },
     "children": [
       "icon-grid"
@@ -51,7 +60,7 @@
     "title": "Opção de Layout Grid 1",
     "props": {
       "blockClass": "category-grid-1",
-      "name": "grid-1"
+      "name": "grid-2"
     },
     "children": [
       "icon-inline-grid"
