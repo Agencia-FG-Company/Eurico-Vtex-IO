@@ -24,3 +24,13 @@
     }
   }
 }
+
+.paragraph{
+  &--together-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 15px !important;
+  }
+}

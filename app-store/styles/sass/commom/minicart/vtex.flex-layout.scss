@@ -1,7 +1,5 @@
 .flexRow {
   &--header__minicart--header {
-    border-bottom: 1px solid #dbdbdb;
-    margin-bottom: 20px;
     .flexRowContent {
       justify-content: center;
     }
@@ -23,13 +21,13 @@
 
       .flexCol--header__minicart--item__info {
         gap: 10px;
+        margin-left: 10px;
+
         :global(.vtex-product-list-0-x-productName--header__minicart--name) {
-          color: #393939;
+          color: #000000;
           font-size: 12px;
-          margin-bottom: 10px;
-          margin-top: 30px;
+          font-weight: 400;
           text-transform: uppercase;
-          letter-spacing: 1px;
           font-family: Lato, sans-serif;
         }
       }
@@ -47,5 +45,13 @@
     .flexRowContent--header__minicart--footer{
       flex-direction: column;
     }
+  }
+}
+
+.flexRow{
+  &--header__minicart--footer {
+    background-color: #F5F5F5;
+    border: 1px solid #D5D5D5;
+    margin: 10px;
   }
 }

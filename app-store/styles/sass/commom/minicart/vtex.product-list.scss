@@ -2,10 +2,10 @@
   .quantitySelectorWrapper--header__minicart--quantity {
     .quantitySelectorButton {
       &--header__minicart--quantity {
-        border: 1px solid black;
-        color: black;
+        border: 1px solid #898989;
+        color: #252525;
         width: 30px;
-        padding: 7px 0;
+        padding: 0;
         border-radius: 0;
         background-color: transparent;
 
@@ -13,10 +13,10 @@
           content: "";
           display: block;
           width: 20px;
-          font-size: 20px;
+          font-size: 13.5px;
           height: 100%;
           line-height: 30px;
-          font-weight: 700;
+          font-weight: 400;
           text-align: center;
         }
 
@@ -37,11 +37,11 @@
       }
     }
     .inputContainer {
-      width: 40px;
+      width: 35px;
       padding: 0;
       flex: none;
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
+      border-top: 1px solid #898989;
+      border-bottom: 1px solid #898989;
       :first-child{
         font-weight: 700;
       }
@@ -51,16 +51,11 @@
 
 .unitPriceContainer--header__minicart--price{
   .unitPricePerUnitCurrency--header__minicart--price{
-    left: 105px;
-    top: 67%;
-    width: 100%;
-    text-align: center;
-    font-size: 15px;
+    text-align: left;
+    font-size: 16px;
     color: #000;
-    font-weight: 800;
-    display: block;
+    font-weight: 700;
     font-family: Lato;
-    letter-spacing: 1px;
   }
   .unitPriceMeasurementUnit--header__minicart--price{
     display: none;
@@ -70,16 +65,37 @@
 .removeButtonContainer--header__minicart--remove{
   .removeButton--header__minicart--remove {
     &::after{
-      content: "+";
-      font-size: 45px;
-      transform: rotate(45deg);
-      display: inline-block;
-      font-weight: 300;
-      font-family: lato;
-      color: #d2d2d2;
+      content: "";
+      background-image: url(/arquivos/icon-removeButton.png);
+      display: block;
+      width: 20px;
+      height: 22px;
+      background-repeat: no-repeat;
     }
     .deleteIcon{
       display: none;
     }
   }
+}
+
+.unitPriceContainer{
+  &--header__minicart--price {
+    text-align: left;
+  }
+}
+
+.quantitySelectorDecrease{
+  &--header__minicart--quantity {
+    border-right: none !important;
+  }
+}
+
+.quantitySelectorIncrease{
+  &--header__minicart--quantity {
+    border-left: none !important;
+  }
+}
+
+.item--header__minicart--remove {
+  height: 115px;
 }

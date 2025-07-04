@@ -749,10 +749,6 @@
   border: 1px solid #606060;
 }
 
-.flexRow--header__minicart--header {
-  border-bottom: 1px solid #dbdbdb;
-  margin-bottom: 20px;
-}
 .flexRow--header__minicart--header .flexRowContent {
   justify-content: center;
 }
@@ -774,12 +770,9 @@
   gap: 10px;
 }
 .flexRow--header__minicart--item .flexRowContent--header__minicart--item .flexCol--header__minicart--item__info :global(.vtex-product-list-0-x-productName--header__minicart--name) {
-  color: #393939;
   font-size: 12px;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 1px;
   font-family: Lato, sans-serif;
 }
 .flexRow--header__minicart--item__info--quantity .flexRowContent {
