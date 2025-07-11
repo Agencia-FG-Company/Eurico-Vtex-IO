@@ -21,7 +21,7 @@
     "children": [
       "flex-layout.row#minicart-header",
       "minicart-product-list",
-      "flex-layout.row#minicart-buytogether",
+      //"flex-layout.row#minicart-buytogether",
       "flex-layout.row#minicart-footer"
     ]
   },

@@ -96,6 +96,10 @@
   display: none;
 }
 
+.minicartSideBarContentWrapper--header__minicart .minicartTitle {
+  font-size: 0;
+}
+
 .minicartSummary--header__minicart--resume :global(.vtex-checkout-summary-0-x-summarySmallContent) :global(.vtex-checkout-summary-0-x-summaryItemLabel--header__minicart--resume) {
   font-size: 0;
 }
