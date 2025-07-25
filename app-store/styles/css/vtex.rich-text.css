@@ -1,27 +1,4 @@
 @charset "UTF-8";
-.container--content-seo .wrapper {
-  width: 80%;
-  margin: 0 auto 25px auto;
-}
-.container--content-seo .heading {
-  font-size: 25px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 400;
-  color: #000;
-  margin-bottom: 45px;
-}
-.container--content-seo .paragraph {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 1.5px;
-  color: #000;
-  margin-bottom: 20px;
-  -webkit-text-stroke: 0.2px;
-}
-
 .container--filter__suggestion-filter-one, .container--filter__suggestion-filter-secund, .container--filter__suggestion-filter-third, .container--filter__suggestion-filter-fourth, .container--filter__suggestion-filter-fifth {
   align-items: center;
   border-radius: 5px;
@@ -83,6 +60,37 @@
   margin: 0;
   margin-bottom: 20px;
   -webkit-text-stroke: 0.2px;
+}
+
+.container--content-seo .wrapper {
+  width: 80%;
+  margin: 0 auto 25px auto;
+}
+.container--content-seo .heading {
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 45px;
+}
+.container--content-seo .paragraph {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 1.5px;
+  color: #000;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 0.2px;
+}
+
+.paragraph--together-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 15px !important;
 }
 
 .container--deals {
@@ -466,6 +474,37 @@
   font-weight: 700;
 }
 
+.container--content-seo-category {
+  width: 80%;
+  margin: 0 auto 25px auto;
+}
+.container--content-seo-category .heading {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container--content-seo-category .paragraph--content-seo {
+  color: #3e3e3e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.paragraph--content-seo-category {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 1.5px;
+  color: #000;
+  margin: 0 !important;
+  margin-bottom: 20px !important;
+  -webkit-text-stroke: 0.2px;
+}
+
 .container--footer__column--title .paragraph {
   font-size: 14px;
   text-transform: uppercase;
@@ -804,48 +843,17 @@
   }
 }
 .container--header__minicart--title .paragraph {
-  font-size: 23px;
+  font-size: 20px;
   text-transform: uppercase;
   display: block;
-  padding: 30px 0;
-  color: #393939;
+  padding: 30px 0 15px 0;
+  color: #000000;
   background: #fff;
   letter-spacing: 1px;
   width: 100%;
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
   font-family: Lato;
-}
-
-.container--content-seo-category {
-  width: 80%;
-  margin: 0 auto 25px auto;
-}
-.container--content-seo-category .heading {
-  color: #000;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-}
-.container--content-seo-category .paragraph--content-seo {
-  color: #3e3e3e;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  margin: 15px 0;
-}
-
-.paragraph--content-seo-category {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 1.5px;
-  color: #000;
-  margin: 0 !important;
-  margin-bottom: 20px !important;
-  -webkit-text-stroke: 0.2px;
 }
 
 .container--about-us__title .heading {

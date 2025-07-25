@@ -1,8 +1,60 @@
 .flexRow{
-
   &--selling-price-savings{
     .flexRowContent{
       margin-bottom: 5px;
     }
+  }
+}
+
+
+.flexColChild{
+  &--together-info {
+    :global(.vtex-button) {
+      opacity: 1 !important;
+      visibility: visible !important;
+      background-color: #3A3C3A !important;
+      color: #fff !important;
+      border: none !important;
+      display: flex !important;
+      margin-top: -13px !important;
+
+      @media (max-width: 767px) {
+        margin-top: 0 !important;
+      }
+    }
+    :global(.vtex-button__label){
+      &:hover {
+        background-color: #3A3C3A !important;
+      }
+    }
+    :global(.vtex-button__label){
+      &::after {
+        background-color: #3A3C3A !important;
+      }
+    }
+  }
+}
+
+.flexCol{
+  &--minicart-buytogether-content {
+    margin-right: 20px;
+  }
+
+  &--together-info {
+    @media (max-width: 767px) {
+      margin-left: 10px;
+    }
+  }
+}
+
+.flexRowContent{
+  &--together-content {
+    justify-content: space-around;
+  }
+}
+
+.flexRow{
+  &--minicart-buytogether {
+    margin: 0 10px;
   }
 }

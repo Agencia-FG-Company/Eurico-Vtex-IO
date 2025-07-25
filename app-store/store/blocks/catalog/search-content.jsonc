@@ -8,9 +8,9 @@
       "flex-layout.row#buttons-category",
       // "flex-layout.row#filter__suggestion",
       "flex-layout.row#searchtitle",
-      "__fold__",
       "flex-layout.row#result",
-      "rich-text#content-seo-category"
+      "rich-text#content-seo-category",
+      "__fold__"
     ],
     "props": {
       "showProductsCount": true,

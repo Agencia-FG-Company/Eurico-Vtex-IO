@@ -56,3 +56,28 @@
     width: 28px!important;
   }
 }
+
+.opened--header__minicart {
+  z-index: 9999 !important;
+}
+
+.drawerContent--header__minicart {
+  z-index: 9999 !important;
+  height: 100%;
+}
+
+.overlay--header__minicart--visible {
+  z-index: 9999 !important;
+}
+
+.childrenContainer{
+  &--header__minicart {
+    height: 100%;
+  }
+}
+
+.minicartSideBarContentWrapper{
+  &--header__minicart {
+    height: 100% !important;
+  }
+}

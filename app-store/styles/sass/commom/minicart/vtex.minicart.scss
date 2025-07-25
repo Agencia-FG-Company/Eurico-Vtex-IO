@@ -1,3 +1,13 @@
+.closeIconButton--header__minicart {
+  &::after {
+    content: '';
+    background-image: url(/arquivos/icon-closeButton.png);
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .drawer--header__minicart{
   z-index: 1001;
   @include tablet{
@@ -7,10 +17,15 @@
   .drawerContent--header__minicart{
     .closeIconContainer--header__minicart{
       position: absolute;
-      right: 20px;
-      top: 20px;
       .closeIcon{
         color: gray;
+        display: none;
+
+
+        &::after {
+          content: '';
+          background-image: url(/arquivos/icon-closeButton.png);
+        }
       }
     }
 
@@ -22,25 +37,33 @@
   }
 }
 
+.minicartSideBarContentWrapper{
+  &--header__minicart {
+    .minicartTitle {
+      font-size: 0;
+    }
+  }
+}
+
 .minicartSummary--header__minicart--resume{
   :global(.vtex-checkout-summary-0-x-summarySmallContent){
     :global(.vtex-checkout-summary-0-x-summaryItemLabel--header__minicart--resume){
       font-size: 0;
 
       &::before{
-        content: "Total:";
-        font-size: 15px;
-        letter-spacing: 2px;
-        font-weight: 600;
+        content: "Total";
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 800;
         text-transform: uppercase;
-
+        color: #000;
       }
     }
 
     :global(.vtex-checkout-summary-0-x-summaryItemPrice--header__minicart--resume){
-      font-size: 22px;
+      font-size: 20px;
       color: #000;
-      font-weight: 600;
+      font-weight: 800;
       font-style: normal;
       display: block;
       letter-spacing: 1px;
@@ -58,7 +81,7 @@
   :global(.vtex-button){
     border-radius: 0;
     height: 50px;
-    background-color: #6bc66b;
+    background-color: #1F752E;
     border: 0;
 
     :global(.vtex-button__label){
@@ -67,11 +90,33 @@
         content: "Finalizar compra";
         line-height: 12px;
         text-transform: uppercase;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 1px;
-        font-size: 12px;
+        font-size: 15px;
         color: #fff;
       }
+      &::after{
+        content: "";
+        background-image: url(/arquivos/icon-buyButtonv2.png);
+        display: block;
+        width: 10px;
+        height: 16px;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+      }
     }
+  }
+}
+
+.minicartProductListContainer {
+  border: 1px solid #D5D5D5;
+  margin: 0 10px;
+  width: auto;
+  padding: 15px 12px;
+}
+
+.minicartSummary{
+  &--header__minicart--resume {
+    padding: 5px 27px;
   }
 }

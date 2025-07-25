@@ -42,8 +42,6 @@
 }
 .drawer--header__minicart .drawerContent--header__minicart .closeIconContainer--header__minicart {
   position: absolute;
-  right: 20px;
-  top: 20px;
 }
 .drawer--header__minicart .drawerContent--header__minicart .closeIconContainer--header__minicart .closeIcon {
   color: gray;
@@ -56,16 +54,17 @@
   font-size: 0;
 }
 .minicartSummary--header__minicart--resume :global(.vtex-checkout-summary-0-x-summarySmallContent) :global(.vtex-checkout-summary-0-x-summaryItemLabel--header__minicart--resume)::before {
-  content: "Total:";
-  font-size: 15px;
-  letter-spacing: 2px;
-  font-weight: 600;
+  content: "Total";
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 800;
   text-transform: uppercase;
+  color: #000;
 }
 .minicartSummary--header__minicart--resume :global(.vtex-checkout-summary-0-x-summarySmallContent) :global(.vtex-checkout-summary-0-x-summaryItemPrice--header__minicart--resume) {
-  font-size: 22px;
+  font-size: 20px;
   color: #000;
-  font-weight: 600;
+  font-weight: 800;
   font-style: normal;
   display: block;
   letter-spacing: 1px;
@@ -81,18 +80,17 @@
 .minicartCheckoutButton :global(.vtex-button) {
   border-radius: 0;
   height: 50px;
-  background-color: #6bc66b;
+  background-color: #1F752E;
   border: 0;
 }
 .minicartCheckoutButton :global(.vtex-button) :global(.vtex-button__label) {
   font-size: 0;
 }
 .minicartCheckoutButton :global(.vtex-button) :global(.vtex-button__label)::before {
-  content: "Finalizar compra";
   line-height: 12px;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 15px;
   color: #fff;
 }

@@ -6,10 +6,10 @@
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#filter-switcher-mobile",
       // "flex-layout.row#filter__suggestion",
-      "__fold__",
       "flex-layout.row#contentmobile",
       "fg-Pagination",
-      "rich-text#content-seo-category"
+      "rich-text#content-seo-category",
+      "__fold__"
     ],
     "props": {
       "showFacetQuantity": true,
