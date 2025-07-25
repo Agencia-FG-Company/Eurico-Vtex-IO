@@ -1,0 +1,2782 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.container.container-main.container-cart {
+  max-width: 90%;
+}
+
+#vtex-callcenter {
+  display: none;
+}
+
+/* header footer */
+.project-checkout__title {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #000;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+}
+
+.project-checkout__center {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.project-header__center {
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  box-shadow: 0 4px 4px -2px #98989824;
+}
+
+.project-header__center svg {
+  width: 115px;
+}
+
+.project-checkout__bottom {
+  margin-top: 5px;
+  padding: 15px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+
+.project-checkout__bottom p {
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 16px;
+}
+
+.project-checkout__svg {
+  padding: 40px 0 35px;
+  margin: auto;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.project-checkout__address {
+  display: block;
+  padding: 0 40px;
+  text-align: center;
+}
+
+
+
+.project-checkout__first {
+  margin-right: 100px;
+}
+
+.project-checkout__address {
+  display: block;
+  padding: 0 70px;
+}
+
+.checkout_footer_icon-desk {
+  display: flex;
+  margin: auto;
+}
+
+.checkout_footer_icon-mobile {
+  display: none;
+}
+
+@media (max-width:720px) {
+  .checkout_footer_icon-mobile {
+    display: block;
+    padding: 0 40px;
+  }
+
+  .checkout_footer_icon-desk {
+    display: none;
+  }
+
+}
+
+/* header footer fim */
+
+.cart-template #cartLoadedDiv:before {
+  content: "Minha Sacola";
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.cart-more-options,
+.cart-template-holder .cart {
+  padding: 0;
+
+}
+
+.table.cart-items tbody {
+  border: 1px solid #D5D5D5;
+  margin-right: 20px;
+}
+
+.table.cart-items td.product-image a,
+.table.cart-items td.product-image img {
+  width: 128px;
+}
+
+.product-name .brand,
+.product-name .seller {
+  display: none !important;
+}
+
+.table.cart-items td.product-name a {
+  text-transform: uppercase;
+}
+
+
+.table.cart-items thead tr th.quantity-price {
+  display: block;
+  margin-right: 45px;
+  text-transform: uppercase;
+}
+
+.table.cart-items tbody tr td.quantity-price {
+  display: block !important;
+}
+
+.table.cart-items thead tr th.product {
+  text-transform: uppercase;
+  padding-left: 0;
+}
+
+.table.cart-items thead tr th.product-price {
+  order: 4;
+  margin: 0 30px 0 0;
+  text-transform: uppercase;
+}
+
+.table.cart-items tbody tr td.product-price {
+  order: 4;
+  margin: 0 32px 0 0;
+  text-transform: uppercase;
+}
+
+.table.cart-items tbody tr td.quantity {
+  order: 5;
+  margin: 0 30px 0 0;
+  text-transform: uppercase;
+}
+
+.table.cart-items thead tr th.quantity {
+  order: 5;
+  margin: 0 50px 0 0;
+  text-transform: uppercase;
+}
+
+.table.cart-items tbody tr td.item-remove {
+  order: 10;
+  margin-right: 15px;
+}
+
+.table.cart-items i.icon.icon-remove.item-remove-ico:before {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6H5M5 6H21M5 6V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V6M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M10 11V17M14 11V17" stroke="%231E1E1E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+}
+
+.table.cart-items td.quantity .item-quantity-change .icon-plus-sign {
+  margin-right: 25px;
+}
+
+.table.cart-items td.quantity .item-quantity-change .icon-minus-sign {
+  margin-left: 25px;
+}
+
+.table.cart-items td.quantity {
+  border-radius: 0;
+}
+
+.table.cart-items tbody tr td.quantity input {
+  margin: 0 5px;
+}
+
+.link-print-cart-wrapper {
+  display: none !important;
+}
+
+.cart-active .srp-container {
+  background: #fff;
+  border: 1px solid #D5D5D5;
+  padding: 20px;
+  margin-top: 14px;
+}
+
+.srp-content.onda-v1 .srp-main-title {
+  font-size: 0;
+  line-height: 19px;
+  text-transform: initial;
+}
+
+.summary-template-holder {
+  margin-top: 0px;
+  max-width: 392px;
+}
+
+.srp-icon-arrow-down{
+  width: 30px;
+  height: 30px;
+}
+.srp-icon-arrow-down g{
+  fill: #3f3f40;
+}
+
+.firstChange {
+  display: flex;
+  margin-top: 20px;
+}
+
+.firstChangetext1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 7%;
+  text-transform: uppercase;
+
+}
+
+.firstChangetext2 {
+  margin: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 7%;
+  text-transform: uppercase;
+}
+
+.firstChange::before {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none"><mask id="mask0_699_148" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="26" height="26"><path d="M25.381 0.619141H0.619049V25.381H25.381V0.619141Z" fill="white"/></mask><g mask="url(%23mask0_699_148)"><path d="M8.77 17.2301L3.44135 15.2665C3.29442 15.2122 3.16764 15.1143 3.0781 14.9858C2.98855 14.8573 2.94055 14.7044 2.94055 14.5477C2.94055 14.3911 2.98855 14.2383 3.0781 14.1098C3.16764 13.9813 3.29442 13.8834 3.44135 13.8291L8.77 11.8656L10.7335 6.53693C10.7878 6.39001 10.8857 6.26322 11.0142 6.17369C11.1427 6.08415 11.2956 6.03613 11.4522 6.03613C11.6088 6.03613 11.7617 6.08415 11.8902 6.17369C12.0187 6.26322 12.1167 6.39001 12.1709 6.53693L14.1344 11.8656L19.4631 13.8291C19.61 13.8834 19.7368 13.9813 19.8263 14.1098C19.9158 14.2383 19.9639 14.3911 19.9639 14.5477C19.9639 14.7044 19.9158 14.8573 19.8263 14.9858C19.7368 15.1143 19.61 15.2122 19.4631 15.2665L14.1344 17.2301L12.1709 22.5587C12.1167 22.7055 12.0187 22.8323 11.8902 22.922C11.7617 23.0115 11.6088 23.0594 11.4522 23.0594C11.2956 23.0594 11.1427 23.0115 11.0142 22.922C10.8857 22.8323 10.7878 22.7055 10.7335 22.5587L8.77 17.2301Z" stroke="%23C00018" stroke-width="1.85714" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.6429 2.16675V6.8096" stroke="%23C00018" stroke-width="1.85714" stroke-linecap="round" stroke-linejoin="round"/><path d="M22.2858 7.5835V10.6787" stroke="%23C00018" stroke-width="1.85714" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.3215 4.48828H19.9644" stroke="%23C00018" stroke-width="1.85714" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.7382 9.1311H23.8334" stroke="%23C00018" stroke-width="1.85714" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+  margin-right: 10px;
+}
+
+.srp-content.onda-v1 .srp-main-title::after {
+  content: "Veja as opções de entrega para seus itens, com todos os prazos e valores.";
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  line-height: 19px;
+
+}
+
+.body-cart-vertical .summary-template-holder {
+  padding: 0;
+}
+
+#checkoutMainContainer .cart-template.full-cart.span12.active .summary-template-holder::before {
+  content: "Entrega";
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.summary-template-holder .cart-links-bottom {
+  background: #F5F5F5;
+  border: solid #D5D5D5;
+  padding: 20px;
+  border-width: 0 1px 1px;
+  margin-top: -4px;
+  max-width: 351px;
+  margin-bottom: 180px;
+
+}
+
+.summary-template-holder .row-fluid.summary {
+  border: 0;
+  margin-top: 50px;
+  max-width: 393px;
+  position: relative;
+}
+
+
+
+.cart-template .summary-template-holder .row-fluid.summary::before {
+  content: "RESUMO DO PEDIDO";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: absolute;
+  top: -18px;
+  transform: translate(40%, -50%);
+}
+
+.custom-cart-template-wrap .summary-template-holder .row-fluid.summary::before {
+  display: none;
+}
+
+@media (max-width:720px) {
+  .row-fluid.summary::before {
+    transform: translate(36%, -50%);
+  }
+
+}
+
+.whatsapp-support-box {
+  max-width: 362px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+
+@media (max-width:1470px) {
+  .whatsapp-support-box {
+    width: -webkit-fill-available;
+  }
+
+}
+
+@media (max-width:1310px) {
+  .whatsapp-support-box {
+    bottom: -17px;
+  }
+
+}
+
+.body-cart-vertical .cart-template.full-cart.active .totalizers.summary-totalizers.cart-totalizers {
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  background: #F5F5F5;
+  border: solid #D5D5D5;
+  border-width: 1px 1px 0;
+}
+
+
+
+.summary-template-holder .cart-links-bottom .btn-success {
+  background: #1F752E;
+  border: 0;
+  border-radius: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 0px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.summary-template-holder .cart-links-bottom .btn-success::before {
+  content: "Finalizar Compra";
+  font-size: 16px;
+}
+
+.summary-template-holder .cart-links-bottom .btn-success::after {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15" fill="none"><path d="M8.38911 6.95368L2.15898 0.723655C2.01488 0.579446 1.82253 0.5 1.61742 0.5C1.41232 0.5 1.21997 0.579446 1.07587 0.723655L0.617064 1.18235C0.318515 1.48124 0.318515 1.96702 0.617064 2.26545L5.84866 7.49705L0.611259 12.7345C0.467164 12.8787 0.387604 13.0709 0.387604 13.2759C0.387604 13.4811 0.467164 13.6734 0.611259 13.8177L1.07007 14.2763C1.21427 14.4205 1.40652 14.4999 1.61162 14.4999C1.81672 14.4999 2.00908 14.4205 2.15317 14.2763L8.38911 8.04054C8.53355 7.89588 8.61288 7.70272 8.61243 7.49739C8.61288 7.29127 8.53355 7.09823 8.38911 6.95368Z" fill="white"/></svg>');
+  position: relative;
+  top: 2px;
+  right: -11px;
+}
+
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset>div[style*=none] p.coupon-label {
+  display: block;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#cart-coupon {
+  padding: 0;
+  margin: 0;
+  width: 172px;
+  height: 50px !important;
+  padding-left: 19px;
+  gap: 10px;
+  border-width: 1px;
+  border: 1px solid #3A3C3A;
+  border-right: 0;
+  border-radius: 0;
+}
+
+.summary-template-holder tbody.totalizers-list {
+  padding-top: 30px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+}
+
+.summary-template-holder tr:not(.Shipping) {
+  margin-bottom: 12px;
+}
+
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type=submit] {
+  width: 100%;
+  height: 50px !important;
+  gap: 10px;
+  background-color: #3A3C3A;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+
+}
+
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type=submit]:hover {
+  width: 100%;
+  height: 50px !important;
+  gap: 10px;
+  background-color: #3A3C3A;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+
+}
+
+#cart-coupon-add {
+  height: 50px !important;
+}
+
+.summary-template-holder tfoot tr td.monetary {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.summary-template-holder tbody {
+  border-bottom: 0;
+}
+
+
+.summary-template-holder tfoot tr td {
+  padding: 0 !important;
+
+}
+
+.onda-v1 .blu {
+  color: #FFFFFF;
+  background: #313131;
+  border: 0;
+}
+
+.onda-v1 .br-pill {
+  border: 0;
+}
+
+.onda-v1 .blue {
+  color: #313131;
+}
+
+
+body #shipping-preview-container button {
+  border: 1px solid #313131;
+  background: #fff;
+  color: #313131;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15.23px;
+  text-align: center;
+  padding: 13px;
+}
+
+body #shipping-preview-container .vtex-pickup-points-modal-3-x-locationReset.pkpmodal-location-reset {
+  margin-left: 10px;
+  height: auto;
+}
+
+body #shipping-preview-container .vtex-pickup-points-modal-3-x-locationReset.pkpmodal-location-reset:after {
+  content: " frete";
+}
+
+.vtex-pickup-points-modal-3-x-backChevron path {
+  fill: #fff;
+}
+
+.vtex-shipping-preview-0-x-postalCodeForgotten {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.vtex-shipping-preview-0-x-pc .ship-postalCode .help.error {
+  position: absolute;
+  bottom: -13px;
+}
+
+body .vtex-shipping-preview-0-x-postalCodeForgotten {
+  margin-top: 0;
+  align-items: center;
+}
+
+body .vtex-shipping-preview-0-x-pc .ship-postalCode #ship-postalCode {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #8F8F8F;
+  opacity: 1;
+  border-radius: 0;
+}
+
+body .vtex-shipping-preview-0-x-pc .ship-postalCode a {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.23px;
+  text-align: left;
+  text-decoration: underline;
+  color: #666666;
+}
+
+.vtex-shipping-preview-0-x-postalCodeForgotten .ship-postalCode {
+  width: 50% !important;
+  margin-bottom: 0;
+}
+
+.vtex-shipping-preview-0-x-postalCodeForgotten .ship-postalCode label {
+  margin-bottom: 0;
+  font-size: 0;
+}
+
+.vtex-shipping-preview-0-x-postalCodeForgotten .ship-postalCode label:after {
+  content: "INFORME SEU CEP";
+  font-size: 13px;
+}
+
+body #shipping-preview-container button {
+  height: 50px;
+  color: #fff;
+  background-color: #3A3C3A;
+  border-radius: 0;
+  margin-left: 0;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+body #shipping-preview-container #cart-shipping-calculate:after {
+  content: " frete";
+}
+
+
+body .srp-toggle__delivery.gray.blue,
+body .srp-toggle__pickup.gray.blue {
+  color: #FFFFFF !important;
+  background: #313131 !important;
+  line-height: 23px;
+}
+
+body .srp-toggle__pickup.gray {
+  width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+  background: #E3E3E3;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15.23px;
+  text-align: center;
+  border: 0;
+  padding: 0;
+}
+
+body #deliver-at-text .srp-address-title {
+  text-decoration: underline !important;
+}
+
+.continueBuyingWrapper1,
+.continueBuyingWrapper2 {
+  margin-top: 20px;
+}
+
+.continueBuyingBtn {
+  height: 57px;
+  width: 100%;
+  border-width: 1px;
+  background-color: #fff;
+  border: 1px solid #1E1E1E;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.continueBuyingBtn:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.continueBuyingBtn::before {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none"><g clip-path="url(%23clip0_699_198)"><path d="M3.6109 6.95368L9.84104 0.723655C9.98513 0.579446 10.1775 0.5 10.3826 0.5C10.5877 0.5 10.78 0.579446 10.9241 0.723655L11.383 1.18235C11.6815 1.48124 11.6815 1.96702 11.383 2.26545L6.15135 7.49705L11.3888 12.7345C11.5329 12.8787 11.6124 13.0709 11.6124 13.2759C11.6124 13.4811 11.5329 13.6734 11.3888 13.8177L10.9299 14.2763C10.7857 14.4205 10.5935 14.4999 10.3884 14.4999C10.1833 14.4999 9.99094 14.4205 9.84684 14.2763L3.6109 8.04054C3.46646 7.89588 3.38713 7.70272 3.38759 7.49739C3.38713 7.29127 3.46646 7.09823 3.6109 6.95368Z" fill="%231E1E1E"/></g><defs><clipPath id="clip0_699_198"><rect width="13.9999" height="13.9999" fill="white" transform="matrix(-1 0 0 1 14.5 0.5)"/></clipPath></defs></svg>');
+  top: 2px;
+  right: 11px;
+  position: relative;
+}
+
+.table.cart-items tbody tr td.product-price>span.list-price,
+.table.cart-items tbody tr td.product-price>span.best-price {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.table.cart-items tbody tr td.product-price .old-product-price-label {
+  display: block;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.table.cart-items tbody tr .list-price.hide .old-product-price-label {
+  display: none;
+}
+
+.table.cart-items tbody tr td.product-price .new-product-price-label {
+  display: block;
+  margin-right: 5px;
+}
+
+.table.cart-items tbody tr td.product-price .new-product-price-label.hide {
+  display: none;
+}
+
+.new-product-price-label.hide,
+.old-product-price-label.hide {
+  display: none;
+}
+
+/* payment */
+
+/* Client data section */
+
+body .checkout-container .orderform-template .row-fluid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 16px;
+}
+
+body .checkout-container .orderform-template .box-client-info .row-fluid {
+  display: block;
+}
+
+body .checkout-container .orderform-template .box-step-content [data-event="finishPayment"].row-fluid {
+  display: initial;
+}
+
+body .checkout-container .orderform-template .row-fluid #client-profile-data {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #fff;
+  border: 0;
+  box-shadow: none;
+  height: auto;
+  padding: 0 10px;
+}
+
+.orderform-template .cart-template.mini-cart .cart {
+  max-height: none;
+
+}
+
+.orderform-template-holder #client-profile-data .step.client-profile-data {
+  padding: 0;
+}
+
+.accordion-body .accordion-inner,
+.shipping-data .accordion-inner {
+  border: 1px solid #D5D5D5;
+  padding: 20px !important;
+}
+
+#checkoutMainContainer>div.container.container-main.container-cart>div.checkout-container.row-fluid.cart-active>div.cart-template.full-cart.span12.active>div.summary-template-holder>div.row-fluid.summary>div.span5.totalizers.summary-totalizers.cart-totalizers.pull-right>div:nth-child(2)>div>div.accordion-body.collapse.in>div {
+  padding: 20px 0 !important;
+}
+
+body .checkout-container .orderform-template .row-fluid #shipping-data,
+body .checkout-container .orderform-template .row-fluid #payment-data {
+  grid-column: 2;
+  /* Ocupa a segunda coluna */
+  grid-row: 1;
+  /* Ocupa a primeira linha da segunda coluna */
+  height: fit-content;
+  /* margin: 0; */
+}
+
+.orderform-template-holder #payment-data {
+  margin-top: 120px;
+}
+
+.payment-data .step.accordion-group.filled:after {
+  background-image: url("https://eurico.vtexassets.com/assets/vtex.file-manager-graphql/images/f08dd751-0f2c-4f0c-892a-29e34359d34b___25dfd2e8de470a52ef0bb77f87a4ea00.svg");
+  content: "";
+  width: 330px;
+  height: 320px;
+  display: block;
+  background-size: 340px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 44px;
+  left: 6px;
+}
+
+body .checkout-container .orderform-template .row-fluid #shipping-data {
+  margin-bottom: 0 !important;
+  position: relative;
+}
+
+body .checkout-container .orderform-template .row-fluid #shipping-data .accordion-group2:not(.vtex-omnishipping-1-x-shippingDataDev):after {
+  background-image: url("https://eurico.vtexassets.com/assets/vtex.file-manager-graphql/images/be47e99b-c50b-45e3-8566-7aa2df97dba4___9d6e5da13de440858a22261e1015d296.svg");
+  content: "";
+  width: 330px;
+  height: 320px;
+  display: block;
+  background-size: 350px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50px;
+  left: 6px;
+  opacity: 1;
+}
+
+@media (max-width:1230px) {
+
+  .payment-data .step.accordion-group.filled:after,
+  body .checkout-container .orderform-template .row-fluid #shipping-data .accordion-group:after {
+    background-size: 300px;
+
+  }
+
+  .body .checkout-container .orderform-template .row-fluid #shipping-data .accordion-group:after {
+    top: 80px;
+    left: 21px;
+  }
+
+  body .checkout-container .orderform-template .row-fluid #shipping-data .accordion-group:not(.vtex-omnishipping-1-x-shippingDataDev):after {
+    top: 80px;
+    left: 21px;
+  }
+}
+
+@media (max-width:720px) {
+
+  .payment-data .step.accordion-group.filled:after,
+  body .checkout-container .orderform-template .row-fluid #shipping-data .accordion-group:after {
+    background-size: 330px;
+  }
+
+}
+
+body .checkout-container .orderform-template .row-fluid #shipping-data .accordion-group.active:after {
+  display: none;
+}
+
+body.js-vcustom-hideEmailStep #shipping-data,
+body.js-vcustom-hideEmailStep #payment-data {
+  background-color: transparent;
+  /* border: 1px solid #E3E3E3; */
+  padding: 0;
+}
+
+body.js-vcustom-hideEmailStep #payment-data {
+  height: fit-content;
+}
+
+#postalCode-finished-loading .vtex-omnishipping-1-x-deliveryChannelsWrapper:not(.shipping-valid-postal-code) {
+  display: none;
+}
+
+
+
+body.js-vcustom-hideEmailStep #client-profile-data,
+body.js-vcustom-hideEmailStep.v-custom-step-shipping #client-profile-data,
+body.js-vcustom-hideEmailStep.v-custom-step-shipping #shipping-data,
+body.js-vcustom-hideEmailStep.v-custom-step-payment #client-profile-data,
+body.js-vcustom-hideEmailStep.v-custom-step-payment #shipping-data,
+body.js-vcustom-hideEmailStep.v-custom-step-payment #payment-data {
+  background-color: #fff !important;
+  border: 0;
+}
+
+body.js-vcustom-hideEmailStep.v-custom-step-shipping #payment-data,
+body.js-vcustom-hideEmailStep.v-custom-step-payment #payment-data {
+  margin-top: 0 !important;
+  grid-row: 2 !important;
+}
+
+body.js-vcustom-hideEmailStep.v-custom-step-payment #payment-data {
+  grid-column: span 2 !important;
+}
+
+body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before,
+body.js-vcustom-hideEmailStep .shipping-data .accordion-toggle:before,
+body.v-custom-step-payment .payment-data .accordion-toggle>span:not(.payment-edit-link):before {
+  background: #313131;
+  border-color: #313131;
+  color: #fff;
+  display: none;
+}
+
+body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-edit-link):before {
+  display: none;
+}
+
+body .orderform-template-holder #client-profile-data .step.client-profile-data .accordion-toggle>span,
+body .orderform-template-holder #shipping-data .accordion-toggle>span,
+body .orderform-template-holder #payment-data .accordion-toggle>span {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+
+}
+
+body .orderform-template-holder #client-profile-data span.accordion-toggle,
+body .orderform-template-holder #shipping-data span.accordion-toggle,
+body .orderform-template-holder #payment-data span.accordion-toggle {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: left;
+  color: #313131;
+}
+
+body .step.client-profile-data.active .box-step .form-step[style*="display: block"],
+body .step.shipping-data.active .accordion-inner.shipping-container,
+body #payment-data .box-step form.form-step {}
+
+body .orderform-template-holder .step.client-profile-data .client-notice.notice {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+  color: #313131;
+  display: none;
+}
+
+.vcustom--vtex-omnishipping-1-x-address input,
+#app-container input[type=text],
+#app-container input[type=tel],
+#app-container input[type=email],
+#app-container select,
+.orderform-template .summary-note .note-textarea,
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressFormPart1.vtex-omnishipping-1-x-geolocation input,
+.orderform-template-holder #client-profile-data form.client-pre-email input[type=text]:not(.pac-target-input),
+.orderform-template-holder #client-profile-data form.client-pre-email input[type=tel]:not(.pac-target-input),
+.orderform-template-holder #client-profile-data form.client-pre-email input[type=email]:not(.pac-target-input),
+.orderform-template-holder #client-profile-data form.client-pre-email select:not(.pac-target-input),
+.orderform-template-holder #client-profile-data .step.client-profile-data input[type=text]:not(.pac-target-input),
+.orderform-template-holder #client-profile-data .step.client-profile-data input[type=tel]:not(.pac-target-input),
+.orderform-template-holder #client-profile-data .step.client-profile-data input[type=email]:not(.pac-target-input),
+.orderform-template-holder #client-profile-data .step.client-profile-data select:not(.pac-target-input),
+.orderform-template-holder #shipping-data input[type=text]:not(.pac-target-input),
+.orderform-template-holder #shipping-data input[type=tel]:not(.pac-target-input),
+.orderform-template-holder #shipping-data input[type=email]:not(.pac-target-input),
+.orderform-template-holder #shipping-data select:not(.pac-target-input),
+.orderform-template-holder #payment-data input[type=text]:not(.pac-target-input),
+.orderform-template-holder #payment-data input[type=tel]:not(.pac-target-input),
+.orderform-template-holder #payment-data input[type=email]:not(.pac-target-input),
+.orderform-template-holder #payment-data select:not(.pac-target-input),
+.cart-more-options .srp-container .vtex-shipping-preview-0-x-addressFormPart1.vtex-shipping-preview-0-x-geolocation input,
+.cart-more-options .srp-container select,
+.cart-more-options .srp-container input[type=text]:not(.pac-target-input),
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset input[type=text],
+
+
+.table.cart-items tbody tr td .product-service select,
+.table.cart-items tr.item-attachments-content input,
+.table.cart-items tr.item-attachments-content select,
+#vtexIdContainer input {
+  height: 40px;
+  max-height: initial;
+  display: inline-block;
+  padding: 0px 12px;
+  border-radius: 2px;
+  border: 1px solid #8F8F8F;
+  outline: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #666666;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.vcustom--vtex-omnishipping-1-x-address label,
+.orderform-template-holder .step .input.text label {
+  margin: 0 0 4px 0 !important;
+  display: block;
+  color: #666;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.orderform-template-holder .step .form-step fieldset p {
+  margin: 0 0 30px 0;
+}
+
+.orderform-template-holder .step .form-step fieldset p[data-bind="if: hasDifferentPhone()"] {
+  margin: 0;
+}
+
+.orderform-template-holder .step .input.text label:after,
+.orderform-template-holder .step .form-step fieldset p.client-different-document {
+  content: "*";
+}
+
+#cart-choose-products {
+  background-color: #3A3C3A;
+  border-radius: 3px;
+  border: 0;
+}
+
+@media(min-width: 1024px) {
+
+  .orderform-template-holder .step .form-step fieldset p.client-first-name,
+  .orderform-template-holder .step .form-step fieldset p.client-different-document,
+  .orderform-template-holder .step .form-step fieldset p.client-document,
+  .orderform-template-holder .step .form-step fieldset p.client-company-ie,
+  .orderform-template-holder .step .form-step fieldset p.client-company-postal-code,
+  .orderform-template-holder .step .form-step fieldset p.client-document-type,
+  .orderform-template-holder .step .form-step fieldset p.payment-card-due-date {
+    margin-right: 12px;
+  }
+
+  .orderform-template-holder .step.client-profile-data .client-document,
+  .orderform-template-holder .step.client-profile-data .client-phone,
+  .orderform-template-holder .step .form-step fieldset p.client-last-name,
+  .orderform-template-holder .step .form-step fieldset p.client-first-name,
+  .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-address p.ship-number,
+  .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-address p.ship-complement,
+  .orderform-template-holder .step .form-step fieldset p.client-company-document,
+  .orderform-template-holder .step .form-step fieldset p.client-company-ie {
+    width: 100%
+  }
+
+  .orderform-template-holder .step .form-step fieldset p.client-birthdate {
+    width: calc(50% - 6px) !important;
+  }
+}
+
+
+
+body .box-client-info .newsletter label.checkbox.newsletter-label,
+body .box-client-info .newsletter__termo label,
+body .box-client-info .state-inscription-box label {
+  display: flex;
+  align-items: center;
+  min-height: 0;
+}
+
+body .box-client-info .newsletter label.checkbox.newsletter-label span,
+body .box-client-info .newsletter__termo label span,
+body .box-client-info .state-inscription-box label span {
+  width: 369px;
+
+}
+
+body .box-client-info .newsletter label.checkbox.newsletter-label input#opt-in-newsletter,
+body .box-client-info input#opt-in-save-data,
+body .box-client-info .newsletter__termo input,
+body .box-client-info .state-inscription-box input {
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+  float: none;
+  margin-bottom: 10px;
+}
+
+
+.orderform-template-holder .step .form-step fieldset.box-client-info-pj {
+  padding-top: 12px;
+  padding-bottom: 20px;
+  min-width: unset;
+}
+
+.client-profile-data ul {
+  display: inline-block;
+  margin: 0;
+}
+
+.orderform-template-holder .step .form-step #is-corporate-client,
+h5.corporate-title.visible {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000;
+  text-decoration-style: solid;
+
+}
+
+.save-data {
+  display: block;
+}
+
+.orderform-template-holder #not-corporate-client {
+  display: block !important;
+  font-size: 0px;
+}
+
+.orderform-template-holder .corporate-hide-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.orderform-template-holder #not-corporate-client:after {
+  content: 'Remover';
+  color: #666;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.newsletter,
+.save-data {
+  margin: 0;
+}
+
+.newsletter__termo {
+  display: flex;
+  margin: 12px 0 25px;
+}
+
+.orderform-template-holder #go-to-shipping,
+.orderform-template-holder #btn-go-to-payment,
+.orderform-template-holder #go-to-payment {
+  height: 50px;
+  width: 100%;
+  border-radius: 2px;
+  background: #313131;
+  border-color: #313131;
+
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+}
+
+.orderform-template-holder #go-to-shipping::after {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15" fill="none"><path d="M8.38911 6.95368L2.15898 0.723655C2.01488 0.579446 1.82253 0.5 1.61742 0.5C1.41232 0.5 1.21997 0.579446 1.07587 0.723655L0.617064 1.18235C0.318515 1.48124 0.318515 1.96702 0.617064 2.26545L5.84866 7.49705L0.611259 12.7345C0.467164 12.8787 0.387604 13.0709 0.387604 13.2759C0.387604 13.4811 0.467164 13.6734 0.611259 13.8177L1.07007 14.2763C1.21427 14.4205 1.40652 14.4999 1.61162 14.4999C1.81672 14.4999 2.00908 14.4205 2.15317 14.2763L8.38911 8.04054C8.53355 7.89588 8.61288 7.70272 8.61243 7.49739C8.61288 7.29127 8.53355 7.09823 8.38911 6.95368Z" fill="white"/></svg>');
+  position: relative;
+  top: 2px;
+  right: -11px;
+}
+
+.vtex-omnishipping-1-x-pickupPointChange {
+  border-radius: 2px;
+  background: #313131;
+  border-color: #313131 !important;
+  color: #FFFFFF;
+}
+
+.vtex-omnishipping-1-x-pickupPointChange:hover {
+  color: #313131;
+}
+
+.vtex-pickup-points-modal-3-x-secondary {
+  border-radius: 2px;
+  background: #313131;
+  border-color: #313131;
+  color: #FFFFFF;
+}
+
+.vtex-pickup-points-modal-3-x-closeButton {
+  height: 50px;
+  color: #fff !important;
+  background-color: #3A3C3A !important;
+  border-radius: 0 !important;
+  margin-left: 0;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.vtex-pickup-points-modal-3-x-showListButton {
+  color: #fff !important;
+  background-color: #3A3C3A !important;
+  border-radius: 0 !important;
+  margin-left: 0;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 3px;
+  border: 0 !important;
+}
+
+.vtex-pickup-points-modal-3-x-locationReset::after {
+  content: " frete";
+}
+
+.vtex-pickup-points-modal-3-x-locationReset {
+  height: 43px;
+  color: #fff;
+  background-color: #3A3C3A;
+  border-radius: 0;
+  margin-left: 11px;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.orderform-template-holder #btn-go-to-payment {
+  margin-top: 24px;
+}
+
+.orderform-template-holder .btn-submit-wrapper {
+  margin: 0;
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsOption {
+  background: #fff;
+  border: 0;
+  border-radius: 0 2px 2px 0;
+  border: 1px solid;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15.23px;
+  text-align: center;
+  color: #666666;
+  text-transform: uppercase;
+}
+
+.vtex-omnishipping-1-x-deliveryChannelsOption {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  outline: none;
+  padding: 6px 0;
+  transition: 0.3s;
+  width: 50%;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  min-height: 40px;
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsWrapper {
+  border: 0 !important;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 16px 0;
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-pickupButton,
+.orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-pickupViewOptionActive,
+.orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-pickupViewOptionActive:hover,
+.orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-pickupViewOptionActive:active,
+.orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-pickupViewOptionActive:focus,
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsTogglePickup,
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsOption.vtex-omnishipping-1-x-deliveryOptionActive {
+  background: #313131;
+  border-color: #313131;
+  border-radius: 4px 0 0 4px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15.23px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.vtex-omnishipping-1-x-addressFormPart1 small {
+  margin-left: 0 !important;
+  margin-top: 8px;
+  display: block;
+}
+
+.vtex-omnishipping-1-x-addressFormPart1 {}
+
+.vtex-omnishipping-1-x-addressFormPart1 small a {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.23px;
+  text-align: left;
+  text-decoration: underline;
+  color: #666666;
+}
+
+.orderform-template-holder .step.shipping-data .box-step>*.vtex-omnishipping-1-x-deliveryGroup {
+  order: 1 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+svg.pickup-marker-blue,
+svg.pickup-marker-blue path,
+svg.pkpmodal-pickup-point-marker-image,
+svg.pkpmodal-pickup-point-marker-image path,
+svg.vtex-omnishipping-1-x-svg,
+svg.vtex-omnishipping-1-x-svg path,
+svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
+  fill: #313131;
+}
+
+svg.vtex-omnishipping-1-x-svg {
+  fill: #8f8f8f;
+
+}
+
+vtex-omnishipping-1-x-leanShippingOption svg.vtex-omnishipping-1-x-svg {
+  fill: #8f8f8f !important;
+}
+
+.vtex-omnishipping-1-x-leanShippingOptionActive svg.vtex-omnishipping-1-x-svg,
+.vtex-omnishipping-1-x-leanShippingOptionActive svg.vtex-omnishipping-1-x-svg path {
+  fill: #313131;
+}
+
+.vtex-omnishipping-1-x-leanShippingTextLabel {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+}
+
+.vtex-omnishipping-1-x-leanShippingOptionActive.vtex-omnishipping-1-x-leanShippingOption {
+  color: #313131;
+  border: 1px solid #313131;
+}
+
+.vtex-omnishipping-1-x-leanShippingOption {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  color: #666666;
+  border-radius: 2px;
+
+  display: flex;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 11px 15px;
+  margin-bottom: 8px;
+}
+
+.vtex-omnishipping-1-x-leanShippingText {
+  border-right: 1px solid #e3e3e3;
+  flex: auto;
+}
+
+.vtex-omnishipping-1-x-optionPrice {
+  position: relative;
+  margin-left: auto;
+  padding-left: 16px;
+  min-width: 62px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 13px;
+  text-align: right;
+  color: #313131;
+
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-leanShippingGroupList {
+  border: 0 !important;
+  margin: 0;
+}
+
+.vtex-omnishipping-1-x-shippingSectionTitle {
+  font-family: "Lato", sans-serif;
+  font-size: 13px !important;
+  font-weight: 600;
+  line-height: 15.23px;
+  text-align: left;
+  margin-top: 32px;
+  margin-bottom: 20px !important;
+  color: #313131 !important;
+  text-transform: uppercase;
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressSummaryActive .address-summary {
+  background: #FAFAFA !important;
+  border: 0 !important;
+  padding: 14px 16px;
+  position: relative;
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressSummaryActive .address-summary span {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #666666;
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressSummaryActive .address-summary .vtex-omnishipping-1-x-linkEdit {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressSummaryActive .address-summary .vtex-omnishipping-1-x-linkEdit::before {
+  content: "Editar";
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #666666;
+  text-decoration: underline;
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-summaryChange {
+  /* height: 45px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border: 1px solid #3A3C3A;
+  color: #3A3C3A;
+  background-color: #fff;
+
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-address div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 12px;
+  align-items: end;
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-address div p {
+  width: 100%;
+}
+
+body.js-vcustom-hideEmailStep.v-custom-step-profile #shipping-preview-container,
+body.js-vcustom-hideEmailStep.v-custom-step-shipping #shipping-preview-container,
+body.js-vcustom-hideEmailStep.v-custom-step-payment #shipping-preview-container,
+body.js-vcustom-hideEmailStep.v-custom-step-profile .summary-template-holder .cart-select-gift-placeholder,
+body.js-vcustom-hideEmailStep.v-custom-step-shipping .summary-template-holder .cart-select-gift-placeholder,
+body.js-vcustom-hideEmailStep.v-custom-step-payment .summary-template-holder .cart-select-gift-placeholder {
+  display: none !important;
+}
+
+body.js-vcustom-hideEmailStep.v-custom-step-profile .summary-template-holder,
+body.js-vcustom-hideEmailStep.v-custom-step-shipping .summary-template-holder,
+body.js-vcustom-hideEmailStep.v-custom-step-payment .summary-template-holder {
+  padding: 0 !important;
+}
+
+body.js-vcustom-hideEmailStep.v-custom-step-profile .summary-template-holder .row-fluid,
+body.js-vcustom-hideEmailStep.v-custom-step-shipping .summary-template-holder .row-fluid,
+body.js-vcustom-hideEmailStep.v-custom-step-payment .summary-template-holder .row-fluid {
+  display: initial !important;
+}
+
+body .orderform-template .cart-template.mini-cart .quantity {
+  min-width: unset;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #313131;
+  border-radius: 50%;
+
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.23px;
+  text-align: left;
+  color: #313131;
+  top: 4px;
+  left: -6px;
+  font-style: normal !important;
+}
+
+body .orderform-template .cart-template.mini-cart .cart,
+body .orderform-template .custom-cart-template-wrap .summary-cart-template-holder {
+  overflow: visible;
+}
+
+body .orderform-template .custom-cart-template-wrap {
+  padding: 0;
+  width: 430px;
+
+}
+
+.orderform-template .cart-template.mini-cart #go-to-cart-button {
+  display: none;
+}
+
+@media(max-width: 1025px) {
+  body .orderform-template .custom-cart-template-wrap {
+    padding: 24px;
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+body .orderform-template .custom-cart-template-wrap [data-i18n="totalizers.summary"] {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: left;
+  color: #313131;
+  margin-bottom: 0;
+}
+
+
+.mini-cart .cart-items {
+  border-width: 1px;
+  border: 1px solid #D5D5D5;
+  padding: 5px;
+}
+
+.orderform-template .cart-template.mini-cart .item:last-child {}
+
+
+body .orderform-template .cart-template.mini-cart .item .url {
+  margin-right: 15px;
+}
+
+body .orderform-template .cart-template.mini-cart .item .photo {
+  height: 128px;
+  width: 128px;
+  display: block;
+}
+
+body .orderform-template .cart-template.mini-cart .item .product-name {
+  max-width: 241px;
+  width: 100%;
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.23px;
+  text-align: left;
+  color: #313131;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: unset;
+  font-style: normal;
+}
+
+@media(max-width: 1024px) {
+  body .orderform-template .cart-template.mini-cart .item .product-name {
+    /* max-width: 173px; */
+    width: 100%;
+    float: none;
+  }
+}
+
+body .orderform-template .cart-template.mini-cart .item .shipping-date {
+  margin-top: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  text-align: left;
+  color: #666666;
+}
+
+@media(max-width: 1024px) {
+  body .orderform-template .cart-template.mini-cart .item .shipping-date {
+    margin-top: 0;
+  }
+}
+
+body .orderform-template .cart-template.mini-cart .item .description {
+  display: block;
+  margin: 0;
+}
+
+@media(max-width: 768px) {
+  body .orderform-template .cart-template.mini-cart .item .description {
+    display: inline-grid;
+    margin: 8px 0 0;
+    grid-template-columns: 1fr;
+    float: left;
+    width: 50%;
+  }
+}
+
+body .orderform-template .cart-template.mini-cart .item [data-bind="text: sellingPriceLabel"] {
+  position: absolute;
+  top: 65px;
+  left: 143px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: left;
+  color: #313131;
+
+}
+
+body .orderform-template .cart-template.mini-cart .item [data-bind="text: priceLabel"] {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  text-decoration: line-through;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  margin-right: 5px;
+  line-height: 15.23px;
+  text-align: left;
+  border: none;
+  text-shadow: none;
+  font-weight: 700;
+}
+
+@media(max-width: 1024px) {
+  body .orderform-template .cart-template.mini-cart .item .price.pull-right {
+    position: unset;
+    float: left;
+    margin-top: 8px;
+  }
+
+  body .containerHeader {
+    width: unset;
+  }
+
+}
+
+body .orderform-template .cart-template.mini-cart .item [data-bind="text: i18n.t('global.free')"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: left;
+  color: #313131;
+  font-style: normal;
+}
+
+
+body body .orderform-template .cart-template.mini-cart .summary-totalizers tbody {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+body .orderform-template .cart-template.mini-cart .summary-totalizers tbody td {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #313131;
+
+}
+
+body .orderform-template .cart-template.mini-cart .summary-template-holder {
+  max-width: unset;
+}
+
+body .orderform-template .cart-more-options {
+  display: none !important;
+}
+
+
+body .orderform-template .cart-template .accordion-inner tfoot {
+  margin-bottom: 20px !important;
+}
+
+body .orderform-template .accordion-inner table.table tfoot tr td.info,
+body .orderform-template .accordion-inner table.table tfoot tr td.monetary {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: left;
+  color: #313131 !important;
+  padding: 0 !important;
+}
+
+body .orderform-template .accordion-inner table.table tfoot tr td.monetary {
+  font-weight: 700;
+}
+
+body .orderform-template .cart-template.mini-cart .summary-totalizers tbody td {
+  padding: 0 !important;
+  margin-bottom: 12px;
+}
+
+body .orderform-template .cart-template.mini-cart .summary-totalizers tbody tr.srp-summary-result td.info {}
+
+body .orderform-template .cart-template.mini-cart .summary-totalizers tfoot {
+  padding: 0 !important;
+  margin-bottom: 12px;
+  border: 0;
+}
+
+body .orderform-template .cart-template.mini-cart .summary-template-holder .summary>.summary-coupon-wrap {
+  padding: 20px 10px 10px;
+  border: 0;
+}
+
+body .orderform-template .cart-template .totalizers-list {
+  padding: 20px 0 0 !important;
+}
+
+body .orderform-template .cart-template #payment-data-submit {
+  background: #1F752E;
+  border: 0;
+  border-radius: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 0px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+body .orderform-template .cart-template #payment-data-submit::after {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15" fill="none"><path d="M8.38911 6.95368L2.15898 0.723655C2.01488 0.579446 1.82253 0.5 1.61742 0.5C1.41232 0.5 1.21997 0.579446 1.07587 0.723655L0.617064 1.18235C0.318515 1.48124 0.318515 1.96702 0.617064 2.26545L5.84866 7.49705L0.611259 12.7345C0.467164 12.8787 0.387604 13.0709 0.387604 13.2759C0.387604 13.4811 0.467164 13.6734 0.611259 13.8177L1.07007 14.2763C1.21427 14.4205 1.40652 14.4999 1.61162 14.4999C1.81672 14.4999 2.00908 14.4205 2.15317 14.2763L8.38911 8.04054C8.53355 7.89588 8.61288 7.70272 8.61243 7.49739C8.61288 7.29127 8.53355 7.09823 8.38911 6.95368Z" fill="white"/></svg>');
+  position: relative;
+  top: 2px;
+  right: -11px;
+}
+
+#payment-data-submit .icon-lock::before {
+  display: none;
+}
+
+.orderform-template .cart-template.mini-cart .summary-totalizers tbody tr.Discounts td.monetary {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: right;
+  color: #666;
+}
+
+.orderform-template .cart-template.mini-cart .summary-totalizers tbody,
+.orderform-template .cart-template.mini-cart .accordion-inner {
+  border: 0;
+}
+
+body .orderform-template .cart-template.mini-cart {
+  padding: 0 !important;
+}
+
+.orderform-template .payment-confirmation-wrap .payment-submit-wrap {
+  position: unset;
+}
+
+@media (max-width: 767px) {
+  body .full-cart .cart table thead {
+    display: block !important;
+  }
+
+  .table.cart-items thead tr th.product {
+    display: none;
+  }
+
+  .cart-template #cartLoadedDiv:before {
+    margin-bottom: 20px;
+  }
+
+  body .full-cart .cart table thead tr .shipping-date,
+  body .full-cart .cart table thead tr .product-price,
+  body .full-cart .cart table thead tr .quantity,
+  body .full-cart .cart table thead tr .quantity-price,
+  body .full-cart .cart table thead tr .item-remove {
+    display: none;
+  }
+
+  body .cart-select-gift-placeholder .available-gift-item {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    row-gap: 12px;
+  }
+
+  body .product-image {
+    margin: 0 !important;
+  }
+
+  body .product-image img {
+    color: transparent;
+    height: 55px;
+    max-width: 40px;
+    width: 40px;
+  }
+
+
+}
+
+@media (min-width: 769px) {
+  body .checkout-container .orderform-template .orderform-template-holder {
+    width: calc(100% - 32px) !important;
+    margin-right: 32px;
+    max-width: 1002px;
+    float: left;
+    box-sizing: border-box;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1558px) {
+  body .checkout-container .orderform-template .orderform-template-holder {
+    /* max-width: calc(100% - 517px); */
+  }
+}
+
+@media (max-width: 1025px) {
+  body .checkout-container .orderform-template .row-fluid {
+    display: initial;
+    grid-auto-columns: 1fr;
+  }
+
+  body .checkout-container .orderform-template .row-fluid #shipping-data,
+  body .checkout-container .orderform-template .row-fluid #client-profile-data,
+  body .checkout-container .orderform-template .row-fluid #payment-data {
+    margin-bottom: 20px !important;
+  }
+
+  body .row-fluid .orderform-template.active {
+    flex-direction: column;
+  }
+
+  body .checkout-container .orderform-template .orderform-template-holder {
+    width: 100% !important;
+    margin-right: 0;
+    max-width: unset;
+
+  }
+}
+
+.free-shipping {
+  margin-bottom: 8px;
+}
+
+.free-shipping__container {
+  display: block;
+  width: 100%;
+  height: 8px;
+  margin: 12px 0 20PX;
+  position: relative;
+  background: #d9d9d9;
+  border-radius: 12px;
+}
+
+.free-shipping__container.sucess .free-shipping__progress-bar {
+  background: #313131;
+}
+
+.free-shipping__required-value {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #313131;
+}
+
+.free-shipping__progress-bar {
+  background-color: #313131;
+  width: 0;
+  display: block;
+  height: 8px;
+  transition: ease-in 0.22s all;
+  color: white;
+  text-align: center;
+  position: relative;
+  border-radius: 12px;
+}
+
+.free-shipping__progress-bar>div {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+.free-shipping__progress-bar>div span {
+  display: block;
+}
+
+.free-shipping__progress-bar__description {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: black;
+}
+
+.free-shipping__title {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.free-shipping__text {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  text-align: center;
+  color: #313131;
+}
+
+.free-shipping__text span {
+  font-weight: 700;
+}
+
+.containerFooter .whatsapp .containerWhatsApp {
+  display: none;
+}
+
+
+body .srp-pickup-empty__my-location::before {
+  content: "";
+  display: block;
+  max-width: 321px;
+  width: 100%;
+  height: 61px;
+  margin-bottom: 12px;
+  background-color: #FAFAFA;
+  background-image: url("data:image/svg+xml,%3Csvg width='321' height='62' viewBox='0 0 321 62' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='321' height='62' fill='%23FAFAFA'/%3E%3Cmask id='mask0_643_1093' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='25' y='11' width='40' height='40'%3E%3Ccircle cx='45' cy='31' r='20' fill='%230B63CE'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_643_1093)'%3E%3Ccircle cx='45' cy='31' r='20' fill='%23313131'/%3E%3Crect x='17.5' y='33.0381' width='41.4615' height='41.4615' stroke='%23666666'/%3E%3Crect x='0.269531' y='17.6533' width='41.4615' height='41.4615' stroke='%23666666'/%3E%3Crect x='-6.5' y='23.1924' width='41.4615' height='41.4615' stroke='%23666666'/%3E%3C/g%3E%3Cg clip-path='url(%23clip0_643_1093)'%3E%3Cpath d='M45.3083 22.6924C43.5136 22.6944 41.793 23.4083 40.524 24.6773C39.2549 25.9463 38.5411 27.6669 38.5391 29.4616C38.5391 35.2539 44.6929 39.6285 44.9552 39.8116C45.0587 39.8841 45.182 39.923 45.3083 39.923C45.4346 39.923 45.5579 39.8841 45.6614 39.8116C45.9237 39.6285 52.0775 35.2539 52.0775 29.4616C52.0755 27.6669 51.3617 25.9463 50.0926 24.6773C48.8236 23.4083 47.103 22.6944 45.3083 22.6924ZM45.3083 27.0001C45.7951 27.0001 46.2711 27.1444 46.6759 27.4149C47.0806 27.6854 47.3962 28.0698 47.5825 28.5196C47.7688 28.9694 47.8175 29.4643 47.7225 29.9418C47.6276 30.4193 47.3931 30.8579 47.0489 31.2022C46.7046 31.5464 46.266 31.7809 45.7885 31.8759C45.311 31.9708 44.8161 31.9221 44.3663 31.7358C43.9165 31.5495 43.5321 31.234 43.2616 30.8292C42.9911 30.4244 42.8468 29.9485 42.8468 29.4616C42.8468 28.8088 43.1061 28.1827 43.5677 27.721C44.0294 27.2594 44.6555 27.0001 45.3083 27.0001Z' fill='white'/%3E%3C/g%3E%3Cpath d='M84.0078 33.6289V35H79.0947V33.6289H84.0078ZM79.6279 25.7578V35H77.8823V25.7578H79.6279ZM83.3667 29.5728V30.9121H79.0947V29.5728H83.3667ZM83.9888 25.7578V27.1353H79.0947V25.7578H83.9888ZM86.7373 29.5981V35H85.0615V28.1318H86.6357L86.7373 29.5981ZM86.4707 31.3184H85.9756C85.9798 30.819 86.0475 30.3662 86.1787 29.96C86.3099 29.5537 86.494 29.2046 86.731 28.9126C86.9722 28.6206 87.2578 28.3963 87.5879 28.2397C87.918 28.0832 88.2861 28.0049 88.6924 28.0049C89.0225 28.0049 89.3208 28.0514 89.5874 28.1445C89.854 28.2376 90.0825 28.3857 90.2729 28.5889C90.4676 28.792 90.6157 29.0586 90.7173 29.3887C90.8231 29.7145 90.876 30.1165 90.876 30.5947V35H89.1875V30.582C89.1875 30.2689 89.141 30.0213 89.0479 29.8394C88.959 29.6574 88.8278 29.5283 88.6543 29.4521C88.485 29.376 88.2756 29.3379 88.0259 29.3379C87.7677 29.3379 87.5413 29.3908 87.3467 29.4966C87.1562 29.5981 86.9954 29.7399 86.8643 29.9219C86.7373 30.1038 86.64 30.3133 86.5723 30.5503C86.5046 30.7873 86.4707 31.0433 86.4707 31.3184ZM95.1733 33.8066C95.4103 33.8066 95.6219 33.7601 95.8081 33.667C95.9943 33.5739 96.1424 33.4427 96.2524 33.2734C96.3667 33.1042 96.4281 32.9074 96.4365 32.6831H98.0171C98.0086 33.1486 97.8774 33.5654 97.6235 33.9336C97.3696 34.3018 97.0311 34.5938 96.6079 34.8096C96.189 35.0212 95.7192 35.127 95.1987 35.127C94.6698 35.127 94.2085 35.0381 93.8149 34.8604C93.4214 34.6826 93.0934 34.4351 92.8311 34.1177C92.5729 33.8003 92.3783 33.4321 92.2471 33.0132C92.1201 32.5942 92.0566 32.1457 92.0566 31.6675V31.4644C92.0566 30.9862 92.1201 30.5376 92.2471 30.1187C92.3783 29.6997 92.5729 29.3315 92.8311 29.0142C93.0934 28.6968 93.4214 28.4492 93.8149 28.2715C94.2085 28.0938 94.6676 28.0049 95.1924 28.0049C95.7467 28.0049 96.2334 28.1128 96.6523 28.3286C97.0755 28.5444 97.4056 28.8491 97.6426 29.2427C97.8838 29.6362 98.0086 30.0996 98.0171 30.6328H96.4365C96.4281 30.3874 96.373 30.1673 96.2715 29.9727C96.1699 29.778 96.026 29.6214 95.8398 29.5029C95.6536 29.3844 95.4272 29.3252 95.1606 29.3252C94.8771 29.3252 94.6401 29.3844 94.4497 29.5029C94.2635 29.6214 94.1175 29.7843 94.0117 29.9917C93.9102 30.1948 93.8382 30.4233 93.7959 30.6772C93.7578 30.9269 93.7388 31.1893 93.7388 31.4644V31.6675C93.7388 31.9468 93.7578 32.2134 93.7959 32.4673C93.8382 32.7212 93.9102 32.9497 94.0117 33.1528C94.1175 33.3517 94.2635 33.5104 94.4497 33.6289C94.6401 33.7474 94.8813 33.8066 95.1733 33.8066ZM98.8359 31.6357V31.5024C98.8359 30.9989 98.9079 30.5355 99.0518 30.1123C99.1956 29.6849 99.4051 29.3146 99.6802 29.0015C99.9552 28.6883 100.292 28.445 100.689 28.2715C101.087 28.0938 101.54 28.0049 102.048 28.0049C102.564 28.0049 103.021 28.0938 103.419 28.2715C103.821 28.445 104.16 28.6883 104.435 29.0015C104.71 29.3146 104.919 29.6849 105.063 30.1123C105.207 30.5355 105.279 30.9989 105.279 31.5024V31.6357C105.279 32.1351 105.207 32.5985 105.063 33.0259C104.919 33.4491 104.71 33.8193 104.435 34.1367C104.16 34.4499 103.823 34.6932 103.425 34.8667C103.028 35.0402 102.573 35.127 102.061 35.127C101.553 35.127 101.098 35.0402 100.696 34.8667C100.294 34.6932 99.9552 34.4499 99.6802 34.1367C99.4051 33.8193 99.1956 33.4491 99.0518 33.0259C98.9079 32.5985 98.8359 32.1351 98.8359 31.6357ZM100.512 31.5024V31.6357C100.512 31.9362 100.541 32.2176 100.601 32.48C100.66 32.7424 100.751 32.973 100.874 33.1719C100.996 33.3708 101.155 33.5273 101.35 33.6416C101.549 33.7516 101.785 33.8066 102.061 33.8066C102.331 33.8066 102.564 33.7516 102.759 33.6416C102.953 33.5273 103.112 33.3708 103.235 33.1719C103.362 32.973 103.455 32.7424 103.514 32.48C103.573 32.2176 103.603 31.9362 103.603 31.6357V31.5024C103.603 31.2062 103.573 30.929 103.514 30.6709C103.455 30.4085 103.362 30.1779 103.235 29.979C103.112 29.7759 102.951 29.6172 102.752 29.5029C102.558 29.3844 102.323 29.3252 102.048 29.3252C101.777 29.3252 101.544 29.3844 101.35 29.5029C101.155 29.6172 100.996 29.7759 100.874 29.979C100.751 30.1779 100.66 30.4085 100.601 30.6709C100.541 30.929 100.512 31.2062 100.512 31.5024ZM108.142 29.5981V35H106.466V28.1318H108.04L108.142 29.5981ZM107.875 31.3184H107.38C107.384 30.819 107.452 30.3662 107.583 29.96C107.714 29.5537 107.898 29.2046 108.135 28.9126C108.376 28.6206 108.662 28.3963 108.992 28.2397C109.322 28.0832 109.69 28.0049 110.097 28.0049C110.427 28.0049 110.725 28.0514 110.992 28.1445C111.258 28.2376 111.487 28.3857 111.677 28.5889C111.872 28.792 112.02 29.0586 112.122 29.3887C112.227 29.7145 112.28 30.1165 112.28 30.5947V35H110.592V30.582C110.592 30.2689 110.545 30.0213 110.452 29.8394C110.363 29.6574 110.232 29.5283 110.059 29.4521C109.889 29.376 109.68 29.3379 109.43 29.3379C109.172 29.3379 108.946 29.3908 108.751 29.4966C108.561 29.5981 108.4 29.7399 108.269 29.9219C108.142 30.1038 108.044 30.3133 107.977 30.5503C107.909 30.7873 107.875 31.0433 107.875 31.3184ZM117.009 28.1318V29.3379H113.074V28.1318H117.009ZM114.127 26.4434H115.81V33.0195C115.81 33.2227 115.837 33.3792 115.892 33.4893C115.947 33.5993 116.03 33.6733 116.14 33.7114C116.25 33.7495 116.381 33.7686 116.533 33.7686C116.643 33.7686 116.745 33.7622 116.838 33.7495C116.931 33.7368 117.009 33.7241 117.073 33.7114L117.079 34.9683C116.939 35.0148 116.781 35.0529 116.603 35.0825C116.43 35.1121 116.233 35.127 116.013 35.127C115.636 35.127 115.306 35.0635 115.022 34.9365C114.739 34.8053 114.519 34.5959 114.362 34.3081C114.206 34.0161 114.127 33.631 114.127 33.1528V26.4434ZM119.802 29.5347V35H118.126V28.1318H119.713L119.802 29.5347ZM121.891 28.0874L121.865 29.6489C121.772 29.632 121.666 29.6193 121.548 29.6108C121.434 29.6024 121.326 29.5981 121.224 29.5981C120.966 29.5981 120.74 29.6341 120.545 29.7061C120.35 29.7738 120.187 29.8732 120.056 30.0044C119.929 30.1356 119.832 30.2964 119.764 30.4868C119.696 30.673 119.658 30.8846 119.65 31.1216L119.288 31.0771C119.288 30.6413 119.333 30.2371 119.421 29.8647C119.51 29.4924 119.639 29.1665 119.809 28.8872C119.978 28.6079 120.189 28.3921 120.443 28.2397C120.701 28.0832 120.998 28.0049 121.332 28.0049C121.425 28.0049 121.525 28.0133 121.63 28.0303C121.74 28.043 121.827 28.062 121.891 28.0874ZM125.769 35.127C125.249 35.127 124.781 35.0423 124.366 34.873C123.951 34.7038 123.598 34.4689 123.306 34.1685C123.018 33.8638 122.796 33.5104 122.64 33.1084C122.487 32.7021 122.411 32.2663 122.411 31.8008V31.5469C122.411 31.0179 122.487 30.5376 122.64 30.106C122.792 29.6701 123.008 29.2956 123.287 28.9824C123.566 28.6693 123.901 28.4281 124.29 28.2588C124.679 28.0895 125.109 28.0049 125.579 28.0049C126.065 28.0049 126.495 28.0874 126.867 28.2524C127.24 28.4132 127.551 28.6418 127.8 28.938C128.05 29.2342 128.238 29.5897 128.365 30.0044C128.492 30.4149 128.556 30.8698 128.556 31.3691V32.0737H123.173V30.9185H126.905V30.7915C126.897 30.5249 126.846 30.2816 126.753 30.0615C126.66 29.8372 126.516 29.6595 126.321 29.5283C126.127 29.3929 125.875 29.3252 125.566 29.3252C125.316 29.3252 125.098 29.3802 124.912 29.4902C124.73 29.596 124.578 29.7484 124.455 29.9473C124.337 30.1419 124.248 30.3747 124.188 30.6455C124.129 30.9163 124.1 31.2168 124.1 31.5469V31.8008C124.1 32.0885 124.138 32.3551 124.214 32.6006C124.294 32.846 124.411 33.0597 124.563 33.2417C124.72 33.4194 124.906 33.5591 125.122 33.6606C125.342 33.758 125.591 33.8066 125.871 33.8066C126.222 33.8066 126.539 33.7389 126.823 33.6035C127.111 33.4639 127.36 33.2586 127.572 32.9878L128.416 33.8638C128.272 34.0754 128.077 34.2785 127.832 34.4731C127.591 34.6678 127.299 34.8265 126.956 34.9492C126.613 35.0677 126.218 35.127 125.769 35.127ZM134.592 29.4521V37.6406H132.91V28.1318H134.465L134.592 29.4521ZM139.004 31.4961V31.6294C139.004 32.1287 138.945 32.5921 138.826 33.0195C138.712 33.4427 138.543 33.813 138.318 34.1304C138.094 34.4435 137.815 34.689 137.48 34.8667C137.15 35.0402 136.77 35.127 136.338 35.127C135.915 35.127 135.547 35.0465 135.233 34.8857C134.92 34.7207 134.656 34.488 134.44 34.1875C134.224 33.887 134.051 33.5379 133.919 33.1401C133.792 32.7381 133.697 32.3001 133.634 31.8262V31.4009C133.697 30.8973 133.792 30.4403 133.919 30.0298C134.051 29.6151 134.224 29.2575 134.44 28.957C134.656 28.6523 134.918 28.4175 135.227 28.2524C135.54 28.0874 135.906 28.0049 136.325 28.0049C136.761 28.0049 137.144 28.0874 137.474 28.2524C137.808 28.4175 138.09 28.6545 138.318 28.9634C138.547 29.2723 138.718 29.6405 138.833 30.0679C138.947 30.4953 139.004 30.9714 139.004 31.4961ZM137.322 31.6294V31.4961C137.322 31.1914 137.294 30.91 137.239 30.6519C137.184 30.3895 137.1 30.161 136.985 29.9663C136.871 29.7674 136.723 29.613 136.541 29.5029C136.359 29.3929 136.139 29.3379 135.881 29.3379C135.623 29.3379 135.401 29.3802 135.214 29.4648C135.028 29.5495 134.876 29.6701 134.757 29.8267C134.639 29.9832 134.546 30.1694 134.478 30.3853C134.415 30.5968 134.372 30.8317 134.351 31.0898V32.1436C134.389 32.4567 134.463 32.7381 134.573 32.9878C134.683 33.2375 134.844 33.4364 135.056 33.5845C135.271 33.7326 135.551 33.8066 135.894 33.8066C136.152 33.8066 136.372 33.7495 136.554 33.6353C136.736 33.521 136.884 33.3644 136.998 33.1655C137.112 32.9624 137.195 32.7297 137.246 32.4673C137.296 32.2049 137.322 31.9256 137.322 31.6294ZM139.931 31.6357V31.5024C139.931 30.9989 140.003 30.5355 140.146 30.1123C140.29 29.6849 140.5 29.3146 140.775 29.0015C141.05 28.6883 141.386 28.445 141.784 28.2715C142.182 28.0938 142.635 28.0049 143.143 28.0049C143.659 28.0049 144.116 28.0938 144.514 28.2715C144.916 28.445 145.254 28.6883 145.529 29.0015C145.804 29.3146 146.014 29.6849 146.158 30.1123C146.302 30.5355 146.374 30.9989 146.374 31.5024V31.6357C146.374 32.1351 146.302 32.5985 146.158 33.0259C146.014 33.4491 145.804 33.8193 145.529 34.1367C145.254 34.4499 144.918 34.6932 144.52 34.8667C144.122 35.0402 143.667 35.127 143.155 35.127C142.647 35.127 142.193 35.0402 141.791 34.8667C141.389 34.6932 141.05 34.4499 140.775 34.1367C140.5 33.8193 140.29 33.4491 140.146 33.0259C140.003 32.5985 139.931 32.1351 139.931 31.6357ZM141.606 31.5024V31.6357C141.606 31.9362 141.636 32.2176 141.695 32.48C141.755 32.7424 141.846 32.973 141.968 33.1719C142.091 33.3708 142.25 33.5273 142.444 33.6416C142.643 33.7516 142.88 33.8066 143.155 33.8066C143.426 33.8066 143.659 33.7516 143.854 33.6416C144.048 33.5273 144.207 33.3708 144.33 33.1719C144.457 32.973 144.55 32.7424 144.609 32.48C144.668 32.2176 144.698 31.9362 144.698 31.6357V31.5024C144.698 31.2062 144.668 30.929 144.609 30.6709C144.55 30.4085 144.457 30.1779 144.33 29.979C144.207 29.7759 144.046 29.6172 143.847 29.5029C143.653 29.3844 143.418 29.3252 143.143 29.3252C142.872 29.3252 142.639 29.3844 142.444 29.5029C142.25 29.6172 142.091 29.7759 141.968 29.979C141.846 30.1779 141.755 30.4085 141.695 30.6709C141.636 30.929 141.606 31.2062 141.606 31.5024ZM149.236 29.5981V35H147.561V28.1318H149.135L149.236 29.5981ZM148.97 31.3184H148.475C148.479 30.819 148.547 30.3662 148.678 29.96C148.809 29.5537 148.993 29.2046 149.23 28.9126C149.471 28.6206 149.757 28.3963 150.087 28.2397C150.417 28.0832 150.785 28.0049 151.191 28.0049C151.521 28.0049 151.82 28.0514 152.086 28.1445C152.353 28.2376 152.582 28.3857 152.772 28.5889C152.967 28.792 153.115 29.0586 153.216 29.3887C153.322 29.7145 153.375 30.1165 153.375 30.5947V35H151.687V30.582C151.687 30.2689 151.64 30.0213 151.547 29.8394C151.458 29.6574 151.327 29.5283 151.153 29.4521C150.984 29.376 150.775 29.3379 150.525 29.3379C150.267 29.3379 150.04 29.3908 149.846 29.4966C149.655 29.5981 149.494 29.7399 149.363 29.9219C149.236 30.1038 149.139 30.3133 149.071 30.5503C149.004 30.7873 148.97 31.0433 148.97 31.3184ZM158.104 28.1318V29.3379H154.168V28.1318H158.104ZM155.222 26.4434H156.904V33.0195C156.904 33.2227 156.932 33.3792 156.987 33.4893C157.042 33.5993 157.124 33.6733 157.234 33.7114C157.344 33.7495 157.476 33.7686 157.628 33.7686C157.738 33.7686 157.84 33.7622 157.933 33.7495C158.026 33.7368 158.104 33.7241 158.167 33.7114L158.174 34.9683C158.034 35.0148 157.875 35.0529 157.698 35.0825C157.524 35.1121 157.327 35.127 157.107 35.127C156.731 35.127 156.401 35.0635 156.117 34.9365C155.834 34.8053 155.614 34.5959 155.457 34.3081C155.3 34.0161 155.222 33.631 155.222 33.1528V26.4434ZM158.758 31.6357V31.5024C158.758 30.9989 158.83 30.5355 158.974 30.1123C159.118 29.6849 159.327 29.3146 159.602 29.0015C159.877 28.6883 160.214 28.445 160.611 28.2715C161.009 28.0938 161.462 28.0049 161.97 28.0049C162.486 28.0049 162.943 28.0938 163.341 28.2715C163.743 28.445 164.081 28.6883 164.356 29.0015C164.632 29.3146 164.841 29.6849 164.985 30.1123C165.129 30.5355 165.201 30.9989 165.201 31.5024V31.6357C165.201 32.1351 165.129 32.5985 164.985 33.0259C164.841 33.4491 164.632 33.8193 164.356 34.1367C164.081 34.4499 163.745 34.6932 163.347 34.8667C162.949 35.0402 162.494 35.127 161.982 35.127C161.475 35.127 161.02 35.0402 160.618 34.8667C160.216 34.6932 159.877 34.4499 159.602 34.1367C159.327 33.8193 159.118 33.4491 158.974 33.0259C158.83 32.5985 158.758 32.1351 158.758 31.6357ZM160.434 31.5024V31.6357C160.434 31.9362 160.463 32.2176 160.522 32.48C160.582 32.7424 160.673 32.973 160.795 33.1719C160.918 33.3708 161.077 33.5273 161.271 33.6416C161.47 33.7516 161.707 33.8066 161.982 33.8066C162.253 33.8066 162.486 33.7516 162.681 33.6416C162.875 33.5273 163.034 33.3708 163.157 33.1719C163.284 32.973 163.377 32.7424 163.436 32.48C163.495 32.2176 163.525 31.9362 163.525 31.6357V31.5024C163.525 31.2062 163.495 30.929 163.436 30.6709C163.377 30.4085 163.284 30.1779 163.157 29.979C163.034 29.7759 162.873 29.6172 162.674 29.5029C162.48 29.3844 162.245 29.3252 161.97 29.3252C161.699 29.3252 161.466 29.3844 161.271 29.5029C161.077 29.6172 160.918 29.7759 160.795 29.979C160.673 30.1779 160.582 30.4085 160.522 30.6709C160.463 30.929 160.434 31.2062 160.434 31.5024ZM170.196 33.1211C170.196 32.9772 170.158 32.8481 170.082 32.7339C170.006 32.6196 169.862 32.516 169.65 32.4229C169.443 32.3255 169.138 32.2345 168.736 32.1499C168.381 32.0737 168.053 31.9785 167.752 31.8643C167.452 31.75 167.194 31.6125 166.978 31.4517C166.762 31.2866 166.593 31.0941 166.47 30.874C166.352 30.6497 166.292 30.3916 166.292 30.0996C166.292 29.8161 166.354 29.5495 166.477 29.2998C166.599 29.0459 166.777 28.8237 167.01 28.6333C167.243 28.4386 167.526 28.2863 167.86 28.1763C168.195 28.062 168.571 28.0049 168.99 28.0049C169.574 28.0049 170.076 28.1001 170.495 28.2905C170.918 28.481 171.242 28.7433 171.466 29.0776C171.69 29.4077 171.802 29.7801 171.802 30.1948H170.126C170.126 30.0129 170.084 29.8478 170 29.6997C169.919 29.5516 169.794 29.4331 169.625 29.3442C169.456 29.2511 169.242 29.2046 168.984 29.2046C168.751 29.2046 168.554 29.2427 168.394 29.3188C168.237 29.395 168.118 29.4945 168.038 29.6172C167.958 29.7399 167.917 29.8753 167.917 30.0234C167.917 30.1335 167.939 30.2329 167.981 30.3218C168.028 30.4064 168.102 30.4847 168.203 30.5566C168.305 30.6286 168.442 30.6942 168.616 30.7534C168.793 30.8127 169.011 30.8698 169.27 30.9248C169.782 31.0264 170.228 31.1618 170.609 31.3311C170.994 31.4961 171.294 31.7161 171.51 31.9912C171.726 32.2663 171.834 32.6175 171.834 33.0449C171.834 33.3496 171.768 33.6289 171.637 33.8828C171.506 34.1325 171.316 34.3504 171.066 34.5366C170.816 34.7228 170.518 34.8688 170.171 34.9746C169.824 35.0762 169.432 35.127 168.997 35.127C168.366 35.127 167.833 35.0148 167.397 34.7905C166.961 34.562 166.631 34.2743 166.407 33.9272C166.182 33.576 166.07 33.2121 166.07 32.8354H167.676C167.689 33.1021 167.761 33.3158 167.892 33.4766C168.023 33.6374 168.188 33.7537 168.387 33.8257C168.59 33.8934 168.804 33.9272 169.028 33.9272C169.282 33.9272 169.496 33.8934 169.669 33.8257C169.843 33.7537 169.974 33.6585 170.063 33.54C170.152 33.4173 170.196 33.2777 170.196 33.1211ZM180.467 33.54V25.25H182.155V35H180.632L180.467 33.54ZM176.055 31.6484V31.5151C176.055 30.9904 176.114 30.5143 176.233 30.0869C176.356 29.6553 176.533 29.285 176.766 28.9761C176.999 28.6672 177.28 28.4281 177.61 28.2588C177.945 28.0895 178.323 28.0049 178.747 28.0049C179.157 28.0049 179.515 28.0874 179.819 28.2524C180.128 28.4175 180.391 28.6523 180.606 28.957C180.826 29.2617 181.002 29.6235 181.133 30.0425C181.264 30.4572 181.36 30.9142 181.419 31.4136V31.7754C181.36 32.262 181.264 32.7085 181.133 33.1147C181.002 33.521 180.826 33.8765 180.606 34.1812C180.391 34.4816 180.128 34.7144 179.819 34.8794C179.51 35.0444 179.149 35.127 178.734 35.127C178.315 35.127 177.938 35.0402 177.604 34.8667C177.274 34.6932 176.993 34.4499 176.76 34.1367C176.531 33.8236 176.356 33.4554 176.233 33.0322C176.114 32.609 176.055 32.1478 176.055 31.6484ZM177.737 31.5151V31.6484C177.737 31.9447 177.763 32.2218 177.813 32.48C177.864 32.7381 177.947 32.9666 178.061 33.1655C178.175 33.3602 178.321 33.5125 178.499 33.6226C178.681 33.7326 178.901 33.7876 179.159 33.7876C179.489 33.7876 179.76 33.7157 179.972 33.5718C180.188 33.4237 180.355 33.2227 180.473 32.9688C180.592 32.7106 180.668 32.4207 180.702 32.0991V31.1025C180.685 30.8486 180.64 30.6138 180.568 30.3979C180.501 30.1821 180.403 29.9959 180.276 29.8394C180.154 29.6828 180.001 29.5601 179.819 29.4712C179.637 29.3823 179.422 29.3379 179.172 29.3379C178.914 29.3379 178.694 29.395 178.512 29.5093C178.33 29.6193 178.182 29.7738 178.067 29.9727C177.953 30.1715 177.868 30.4022 177.813 30.6646C177.763 30.9269 177.737 31.2104 177.737 31.5151ZM186.757 35.127C186.237 35.127 185.769 35.0423 185.354 34.873C184.94 34.7038 184.586 34.4689 184.294 34.1685C184.007 33.8638 183.785 33.5104 183.628 33.1084C183.476 32.7021 183.399 32.2663 183.399 31.8008V31.5469C183.399 31.0179 183.476 30.5376 183.628 30.106C183.78 29.6701 183.996 29.2956 184.275 28.9824C184.555 28.6693 184.889 28.4281 185.278 28.2588C185.668 28.0895 186.097 28.0049 186.567 28.0049C187.054 28.0049 187.483 28.0874 187.855 28.2524C188.228 28.4132 188.539 28.6418 188.789 28.938C189.038 29.2342 189.227 29.5897 189.354 30.0044C189.48 30.4149 189.544 30.8698 189.544 31.3691V32.0737H184.161V30.9185H187.894V30.7915C187.885 30.5249 187.834 30.2816 187.741 30.0615C187.648 29.8372 187.504 29.6595 187.31 29.5283C187.115 29.3929 186.863 29.3252 186.554 29.3252C186.305 29.3252 186.087 29.3802 185.9 29.4902C185.718 29.596 185.566 29.7484 185.443 29.9473C185.325 30.1419 185.236 30.3747 185.177 30.6455C185.118 30.9163 185.088 31.2168 185.088 31.5469V31.8008C185.088 32.0885 185.126 32.3551 185.202 32.6006C185.283 32.846 185.399 33.0597 185.551 33.2417C185.708 33.4194 185.894 33.5591 186.11 33.6606C186.33 33.758 186.58 33.8066 186.859 33.8066C187.21 33.8066 187.528 33.7389 187.811 33.6035C188.099 33.4639 188.348 33.2586 188.56 32.9878L189.404 33.8638C189.26 34.0754 189.066 34.2785 188.82 34.4731C188.579 34.6678 188.287 34.8265 187.944 34.9492C187.602 35.0677 187.206 35.127 186.757 35.127ZM195.581 29.5347V35H193.905V28.1318H195.492L195.581 29.5347ZM197.669 28.0874L197.644 29.6489C197.55 29.632 197.445 29.6193 197.326 29.6108C197.212 29.6024 197.104 29.5981 197.002 29.5981C196.744 29.5981 196.518 29.6341 196.323 29.7061C196.129 29.7738 195.966 29.8732 195.834 30.0044C195.708 30.1356 195.61 30.2964 195.542 30.4868C195.475 30.673 195.437 30.8846 195.428 31.1216L195.066 31.0771C195.066 30.6413 195.111 30.2371 195.2 29.8647C195.289 29.4924 195.418 29.1665 195.587 28.8872C195.756 28.6079 195.968 28.3921 196.222 28.2397C196.48 28.0832 196.776 28.0049 197.11 28.0049C197.203 28.0049 197.303 28.0133 197.409 28.0303C197.519 28.043 197.605 28.062 197.669 28.0874ZM201.547 35.127C201.027 35.127 200.559 35.0423 200.145 34.873C199.73 34.7038 199.376 34.4689 199.084 34.1685C198.797 33.8638 198.575 33.5104 198.418 33.1084C198.266 32.7021 198.189 32.2663 198.189 31.8008V31.5469C198.189 31.0179 198.266 30.5376 198.418 30.106C198.57 29.6701 198.786 29.2956 199.065 28.9824C199.345 28.6693 199.679 28.4281 200.068 28.2588C200.458 28.0895 200.887 28.0049 201.357 28.0049C201.844 28.0049 202.273 28.0874 202.646 28.2524C203.018 28.4132 203.329 28.6418 203.579 28.938C203.828 29.2342 204.017 29.5897 204.144 30.0044C204.271 30.4149 204.334 30.8698 204.334 31.3691V32.0737H198.951V30.9185H202.684V30.7915C202.675 30.5249 202.624 30.2816 202.531 30.0615C202.438 29.8372 202.294 29.6595 202.1 29.5283C201.905 29.3929 201.653 29.3252 201.344 29.3252C201.095 29.3252 200.877 29.3802 200.69 29.4902C200.508 29.596 200.356 29.7484 200.233 29.9473C200.115 30.1419 200.026 30.3747 199.967 30.6455C199.908 30.9163 199.878 31.2168 199.878 31.5469V31.8008C199.878 32.0885 199.916 32.3551 199.992 32.6006C200.073 32.846 200.189 33.0597 200.341 33.2417C200.498 33.4194 200.684 33.5591 200.9 33.6606C201.12 33.758 201.37 33.8066 201.649 33.8066C202 33.8066 202.318 33.7389 202.601 33.6035C202.889 33.4639 203.139 33.2586 203.35 32.9878L204.194 33.8638C204.05 34.0754 203.856 34.2785 203.61 34.4731C203.369 34.6678 203.077 34.8265 202.734 34.9492C202.392 35.0677 201.996 35.127 201.547 35.127ZM208.708 28.1318V29.3379H204.772V28.1318H208.708ZM205.826 26.4434H207.508V33.0195C207.508 33.2227 207.535 33.3792 207.59 33.4893C207.645 33.5993 207.728 33.6733 207.838 33.7114C207.948 33.7495 208.079 33.7686 208.231 33.7686C208.341 33.7686 208.443 33.7622 208.536 33.7495C208.629 33.7368 208.708 33.7241 208.771 33.7114L208.777 34.9683C208.638 35.0148 208.479 35.0529 208.301 35.0825C208.128 35.1121 207.931 35.127 207.711 35.127C207.334 35.127 207.004 35.0635 206.721 34.9365C206.437 34.8053 206.217 34.5959 206.061 34.3081C205.904 34.0161 205.826 33.631 205.826 33.1528V26.4434ZM211.602 28.1318V35H209.92V28.1318H211.602ZM209.806 26.3354C209.806 26.0858 209.89 25.8784 210.06 25.7134C210.233 25.5483 210.466 25.4658 210.758 25.4658C211.05 25.4658 211.28 25.5483 211.45 25.7134C211.623 25.8784 211.71 26.0858 211.71 26.3354C211.71 26.5809 211.623 26.7861 211.45 26.9512C211.28 27.1162 211.05 27.1987 210.758 27.1987C210.466 27.1987 210.233 27.1162 210.06 26.9512C209.89 26.7861 209.806 26.5809 209.806 26.3354ZM214.877 29.5347V35H213.202V28.1318H214.789L214.877 29.5347ZM216.966 28.0874L216.94 29.6489C216.847 29.632 216.742 29.6193 216.623 29.6108C216.509 29.6024 216.401 29.5981 216.299 29.5981C216.041 29.5981 215.815 29.6341 215.62 29.7061C215.425 29.7738 215.263 29.8732 215.131 30.0044C215.004 30.1356 214.907 30.2964 214.839 30.4868C214.772 30.673 214.734 30.8846 214.725 31.1216L214.363 31.0771C214.363 30.6413 214.408 30.2371 214.497 29.8647C214.585 29.4924 214.715 29.1665 214.884 28.8872C215.053 28.6079 215.265 28.3921 215.519 28.2397C215.777 28.0832 216.073 28.0049 216.407 28.0049C216.5 28.0049 216.6 28.0133 216.706 28.0303C216.816 28.043 216.902 28.062 216.966 28.0874ZM221.454 33.54V30.3726C221.454 30.1398 221.413 29.9388 221.333 29.7695C221.253 29.6003 221.13 29.4691 220.965 29.376C220.8 29.2829 220.59 29.2363 220.336 29.2363C220.112 29.2363 219.915 29.2744 219.746 29.3506C219.581 29.4268 219.454 29.5347 219.365 29.6743C219.276 29.8097 219.232 29.9663 219.232 30.144H217.55C217.55 29.8605 217.618 29.5918 217.753 29.3379C217.888 29.0798 218.081 28.8512 218.331 28.6523C218.584 28.4492 218.887 28.2905 219.238 28.1763C219.594 28.062 219.992 28.0049 220.432 28.0049C220.952 28.0049 221.416 28.0938 221.822 28.2715C222.232 28.445 222.554 28.7074 222.787 29.0586C223.024 29.4098 223.142 29.8521 223.142 30.3853V33.3813C223.142 33.7241 223.163 34.0182 223.206 34.2637C223.252 34.5049 223.32 34.7144 223.409 34.8921V35H221.701C221.621 34.8265 221.559 34.6064 221.517 34.3398C221.475 34.069 221.454 33.8024 221.454 33.54ZM221.688 30.8169L221.701 31.8135H220.641C220.379 31.8135 220.148 31.841 219.949 31.896C219.75 31.9468 219.587 32.0229 219.46 32.1245C219.333 32.2218 219.238 32.3403 219.175 32.48C219.111 32.6154 219.08 32.7699 219.08 32.9434C219.08 33.1126 219.118 33.265 219.194 33.4004C219.274 33.5358 219.389 33.6437 219.537 33.7241C219.689 33.8003 219.867 33.8384 220.07 33.8384C220.366 33.8384 220.624 33.7791 220.844 33.6606C221.064 33.5379 221.236 33.3898 221.358 33.2163C221.481 33.0428 221.547 32.8778 221.555 32.7212L222.038 33.4448C221.978 33.6183 221.889 33.8024 221.771 33.9971C221.653 34.1917 221.5 34.3737 221.314 34.543C221.128 34.7122 220.903 34.8519 220.641 34.9619C220.379 35.0719 220.074 35.127 219.727 35.127C219.283 35.127 218.885 35.0381 218.534 34.8604C218.182 34.6826 217.905 34.4393 217.702 34.1304C217.499 33.8215 217.397 33.4702 217.397 33.0767C217.397 32.7127 217.465 32.3911 217.601 32.1118C217.736 31.8325 217.937 31.5977 218.204 31.4072C218.47 31.2126 218.8 31.0666 219.194 30.9692C219.592 30.8677 220.047 30.8169 220.559 30.8169H221.688ZM228.772 33.54V25.25H230.461V35H228.938L228.772 33.54ZM224.361 31.6484V31.5151C224.361 30.9904 224.42 30.5143 224.539 30.0869C224.661 29.6553 224.839 29.285 225.072 28.9761C225.305 28.6672 225.586 28.4281 225.916 28.2588C226.25 28.0895 226.629 28.0049 227.052 28.0049C227.463 28.0049 227.82 28.0874 228.125 28.2524C228.434 28.4175 228.696 28.6523 228.912 28.957C229.132 29.2617 229.308 29.6235 229.439 30.0425C229.57 30.4572 229.665 30.9142 229.725 31.4136V31.7754C229.665 32.262 229.57 32.7085 229.439 33.1147C229.308 33.521 229.132 33.8765 228.912 34.1812C228.696 34.4816 228.434 34.7144 228.125 34.8794C227.816 35.0444 227.454 35.127 227.04 35.127C226.621 35.127 226.244 35.0402 225.91 34.8667C225.58 34.6932 225.298 34.4499 225.065 34.1367C224.837 33.8236 224.661 33.4554 224.539 33.0322C224.42 32.609 224.361 32.1478 224.361 31.6484ZM226.043 31.5151V31.6484C226.043 31.9447 226.068 32.2218 226.119 32.48C226.17 32.7381 226.252 32.9666 226.367 33.1655C226.481 33.3602 226.627 33.5125 226.805 33.6226C226.987 33.7326 227.207 33.7876 227.465 33.7876C227.795 33.7876 228.066 33.7157 228.277 33.5718C228.493 33.4237 228.66 33.2227 228.779 32.9688C228.897 32.7106 228.973 32.4207 229.007 32.0991V31.1025C228.99 30.8486 228.946 30.6138 228.874 30.3979C228.806 30.1821 228.709 29.9959 228.582 29.8394C228.459 29.6828 228.307 29.5601 228.125 29.4712C227.943 29.3823 227.727 29.3379 227.478 29.3379C227.219 29.3379 226.999 29.395 226.817 29.5093C226.635 29.6193 226.487 29.7738 226.373 29.9727C226.259 30.1715 226.174 30.4022 226.119 30.6646C226.068 30.9269 226.043 31.2104 226.043 31.5151ZM235.761 33.54V30.3726C235.761 30.1398 235.721 29.9388 235.641 29.7695C235.56 29.6003 235.438 29.4691 235.272 29.376C235.107 29.2829 234.898 29.2363 234.644 29.2363C234.42 29.2363 234.223 29.2744 234.054 29.3506C233.889 29.4268 233.762 29.5347 233.673 29.6743C233.584 29.8097 233.54 29.9663 233.54 30.144H231.857C231.857 29.8605 231.925 29.5918 232.061 29.3379C232.196 29.0798 232.389 28.8512 232.638 28.6523C232.892 28.4492 233.195 28.2905 233.546 28.1763C233.901 28.062 234.299 28.0049 234.739 28.0049C235.26 28.0049 235.723 28.0938 236.129 28.2715C236.54 28.445 236.861 28.7074 237.094 29.0586C237.331 29.4098 237.45 29.8521 237.45 30.3853V33.3813C237.45 33.7241 237.471 34.0182 237.513 34.2637C237.56 34.5049 237.627 34.7144 237.716 34.8921V35H236.009C235.928 34.8265 235.867 34.6064 235.825 34.3398C235.782 34.069 235.761 33.8024 235.761 33.54ZM235.996 30.8169L236.009 31.8135H234.949C234.686 31.8135 234.456 31.841 234.257 31.896C234.058 31.9468 233.895 32.0229 233.768 32.1245C233.641 32.2218 233.546 32.3403 233.482 32.48C233.419 32.6154 233.387 32.7699 233.387 32.9434C233.387 33.1126 233.425 33.265 233.501 33.4004C233.582 33.5358 233.696 33.6437 233.844 33.7241C233.997 33.8003 234.174 33.8384 234.377 33.8384C234.674 33.8384 234.932 33.7791 235.152 33.6606C235.372 33.5379 235.543 33.3898 235.666 33.2163C235.789 33.0428 235.854 32.8778 235.863 32.7212L236.345 33.4448C236.286 33.6183 236.197 33.8024 236.079 33.9971C235.96 34.1917 235.808 34.3737 235.622 34.543C235.435 34.7122 235.211 34.8519 234.949 34.9619C234.686 35.0719 234.382 35.127 234.035 35.127C233.59 35.127 233.193 35.0381 232.841 34.8604C232.49 34.6826 232.213 34.4393 232.01 34.1304C231.807 33.8215 231.705 33.4702 231.705 33.0767C231.705 32.7127 231.773 32.3911 231.908 32.1118C232.044 31.8325 232.245 31.5977 232.511 31.4072C232.778 31.2126 233.108 31.0666 233.501 30.9692C233.899 30.8677 234.354 30.8169 234.866 30.8169H235.996ZM243.874 29.4521V37.6406H242.191V28.1318H243.747L243.874 29.4521ZM248.285 31.4961V31.6294C248.285 32.1287 248.226 32.5921 248.107 33.0195C247.993 33.4427 247.824 33.813 247.6 34.1304C247.375 34.4435 247.096 34.689 246.762 34.8667C246.432 35.0402 246.051 35.127 245.619 35.127C245.196 35.127 244.828 35.0465 244.515 34.8857C244.201 34.7207 243.937 34.488 243.721 34.1875C243.505 33.887 243.332 33.5379 243.201 33.1401C243.074 32.7381 242.979 32.3001 242.915 31.8262V31.4009C242.979 30.8973 243.074 30.4403 243.201 30.0298C243.332 29.6151 243.505 29.2575 243.721 28.957C243.937 28.6523 244.199 28.4175 244.508 28.2524C244.821 28.0874 245.188 28.0049 245.606 28.0049C246.042 28.0049 246.425 28.0874 246.755 28.2524C247.09 28.4175 247.371 28.6545 247.6 28.9634C247.828 29.2723 248 29.6405 248.114 30.0679C248.228 30.4953 248.285 30.9714 248.285 31.4961ZM246.603 31.6294V31.4961C246.603 31.1914 246.576 30.91 246.521 30.6519C246.465 30.3895 246.381 30.161 246.267 29.9663C246.152 29.7674 246.004 29.613 245.822 29.5029C245.64 29.3929 245.42 29.3379 245.162 29.3379C244.904 29.3379 244.682 29.3802 244.496 29.4648C244.309 29.5495 244.157 29.6701 244.039 29.8267C243.92 29.9832 243.827 30.1694 243.759 30.3853C243.696 30.5968 243.653 30.8317 243.632 31.0898V32.1436C243.67 32.4567 243.744 32.7381 243.854 32.9878C243.965 33.2375 244.125 33.4364 244.337 33.5845C244.553 33.7326 244.832 33.8066 245.175 33.8066C245.433 33.8066 245.653 33.7495 245.835 33.6353C246.017 33.521 246.165 33.3644 246.279 33.1655C246.394 32.9624 246.476 32.7297 246.527 32.4673C246.578 32.2049 246.603 31.9256 246.603 31.6294ZM251.186 29.5347V35H249.51V28.1318H251.097L251.186 29.5347ZM253.274 28.0874L253.249 29.6489C253.156 29.632 253.05 29.6193 252.932 29.6108C252.817 29.6024 252.709 29.5981 252.608 29.5981C252.35 29.5981 252.123 29.6341 251.929 29.7061C251.734 29.7738 251.571 29.8732 251.44 30.0044C251.313 30.1356 251.216 30.2964 251.148 30.4868C251.08 30.673 251.042 30.8846 251.034 31.1216L250.672 31.0771C250.672 30.6413 250.716 30.2371 250.805 29.8647C250.894 29.4924 251.023 29.1665 251.192 28.8872C251.362 28.6079 251.573 28.3921 251.827 28.2397C252.085 28.0832 252.382 28.0049 252.716 28.0049C252.809 28.0049 252.908 28.0133 253.014 28.0303C253.124 28.043 253.211 28.062 253.274 28.0874ZM253.719 31.6357V31.5024C253.719 30.9989 253.791 30.5355 253.935 30.1123C254.078 29.6849 254.288 29.3146 254.563 29.0015C254.838 28.6883 255.174 28.445 255.572 28.2715C255.97 28.0938 256.423 28.0049 256.931 28.0049C257.447 28.0049 257.904 28.0938 258.302 28.2715C258.704 28.445 259.042 28.6883 259.317 29.0015C259.592 29.3146 259.802 29.6849 259.946 30.1123C260.09 30.5355 260.162 30.9989 260.162 31.5024V31.6357C260.162 32.1351 260.09 32.5985 259.946 33.0259C259.802 33.4491 259.592 33.8193 259.317 34.1367C259.042 34.4499 258.706 34.6932 258.308 34.8667C257.91 35.0402 257.455 35.127 256.943 35.127C256.436 35.127 255.981 35.0402 255.579 34.8667C255.177 34.6932 254.838 34.4499 254.563 34.1367C254.288 33.8193 254.078 33.4491 253.935 33.0259C253.791 32.5985 253.719 32.1351 253.719 31.6357ZM255.395 31.5024V31.6357C255.395 31.9362 255.424 32.2176 255.483 32.48C255.543 32.7424 255.634 32.973 255.756 33.1719C255.879 33.3708 256.038 33.5273 256.232 33.6416C256.431 33.7516 256.668 33.8066 256.943 33.8066C257.214 33.8066 257.447 33.7516 257.642 33.6416C257.836 33.5273 257.995 33.3708 258.118 33.1719C258.245 32.973 258.338 32.7424 258.397 32.48C258.456 32.2176 258.486 31.9362 258.486 31.6357V31.5024C258.486 31.2062 258.456 30.929 258.397 30.6709C258.338 30.4085 258.245 30.1779 258.118 29.979C257.995 29.7759 257.834 29.6172 257.635 29.5029C257.441 29.3844 257.206 29.3252 256.931 29.3252C256.66 29.3252 256.427 29.3844 256.232 29.5029C256.038 29.6172 255.879 29.7759 255.756 29.979C255.634 30.1779 255.543 30.4085 255.483 30.6709C255.424 30.929 255.395 31.2062 255.395 31.5024ZM256.099 27.1797L257.343 25.25H259.197L257.464 27.1797H256.099ZM262.555 28.1318L263.78 30.3154L265.024 28.1318H266.846L264.827 31.4961L266.928 35H265.106L263.792 32.7085L262.472 35H260.65L262.745 31.4961L260.739 28.1318H262.555ZM269.594 28.1318V35H267.912V28.1318H269.594ZM267.798 26.3354C267.798 26.0858 267.882 25.8784 268.052 25.7134C268.225 25.5483 268.458 25.4658 268.75 25.4658C269.042 25.4658 269.273 25.5483 269.442 25.7134C269.615 25.8784 269.702 26.0858 269.702 26.3354C269.702 26.5809 269.615 26.7861 269.442 26.9512C269.273 27.1162 269.042 27.1987 268.75 27.1987C268.458 27.1987 268.225 27.1162 268.052 26.9512C267.882 26.7861 267.798 26.5809 267.798 26.3354ZM272.863 29.541V35H271.188V28.1318H272.768L272.863 29.541ZM272.616 31.3184H272.102C272.102 30.8402 272.159 30.4001 272.273 29.998C272.391 29.596 272.565 29.2469 272.793 28.9507C273.022 28.6502 273.303 28.4175 273.638 28.2524C273.976 28.0874 274.368 28.0049 274.812 28.0049C275.121 28.0049 275.404 28.0514 275.663 28.1445C275.921 28.2334 276.143 28.3752 276.329 28.5698C276.52 28.7603 276.666 29.0099 276.767 29.3188C276.869 29.6235 276.919 29.9896 276.919 30.417V35H275.244V30.5884C275.244 30.2668 275.197 30.015 275.104 29.833C275.015 29.651 274.886 29.5241 274.717 29.4521C274.548 29.376 274.344 29.3379 274.107 29.3379C273.845 29.3379 273.619 29.3908 273.428 29.4966C273.242 29.5981 273.088 29.7399 272.965 29.9219C272.846 30.1038 272.757 30.3133 272.698 30.5503C272.643 30.7873 272.616 31.0433 272.616 31.3184ZM276.792 31.0073L276.101 31.1343C276.105 30.7026 276.164 30.2985 276.278 29.9219C276.393 29.541 276.56 29.2088 276.78 28.9253C277.004 28.6375 277.281 28.4132 277.611 28.2524C277.946 28.0874 278.331 28.0049 278.767 28.0049C279.105 28.0049 279.41 28.0535 279.681 28.1509C279.956 28.244 280.191 28.3942 280.385 28.6016C280.58 28.8047 280.728 29.0692 280.83 29.395C280.935 29.7209 280.988 30.1187 280.988 30.5884V35H279.3V30.582C279.3 30.2477 279.253 29.9917 279.16 29.814C279.071 29.6362 278.942 29.5135 278.773 29.4458C278.604 29.3739 278.405 29.3379 278.176 29.3379C277.944 29.3379 277.74 29.3823 277.567 29.4712C277.398 29.5558 277.254 29.6743 277.135 29.8267C277.021 29.979 276.934 30.1567 276.875 30.3599C276.82 30.5588 276.792 30.7746 276.792 31.0073ZM282.194 31.6357V31.5024C282.194 30.9989 282.266 30.5355 282.41 30.1123C282.554 29.6849 282.764 29.3146 283.039 29.0015C283.314 28.6883 283.65 28.445 284.048 28.2715C284.446 28.0938 284.898 28.0049 285.406 28.0049C285.923 28.0049 286.38 28.0938 286.777 28.2715C287.179 28.445 287.518 28.6883 287.793 29.0015C288.068 29.3146 288.278 29.6849 288.421 30.1123C288.565 30.5355 288.637 30.9989 288.637 31.5024V31.6357C288.637 32.1351 288.565 32.5985 288.421 33.0259C288.278 33.4491 288.068 33.8193 287.793 34.1367C287.518 34.4499 287.181 34.6932 286.784 34.8667C286.386 35.0402 285.931 35.127 285.419 35.127C284.911 35.127 284.456 35.0402 284.054 34.8667C283.652 34.6932 283.314 34.4499 283.039 34.1367C282.764 33.8193 282.554 33.4491 282.41 33.0259C282.266 32.5985 282.194 32.1351 282.194 31.6357ZM283.87 31.5024V31.6357C283.87 31.9362 283.9 32.2176 283.959 32.48C284.018 32.7424 284.109 32.973 284.232 33.1719C284.355 33.3708 284.513 33.5273 284.708 33.6416C284.907 33.7516 285.144 33.8066 285.419 33.8066C285.69 33.8066 285.923 33.7516 286.117 33.6416C286.312 33.5273 286.471 33.3708 286.593 33.1719C286.72 32.973 286.813 32.7424 286.873 32.48C286.932 32.2176 286.961 31.9362 286.961 31.6357V31.5024C286.961 31.2062 286.932 30.929 286.873 30.6709C286.813 30.4085 286.72 30.1779 286.593 29.979C286.471 29.7759 286.31 29.6172 286.111 29.5029C285.916 29.3844 285.681 29.3252 285.406 29.3252C285.135 29.3252 284.903 29.3844 284.708 29.5029C284.513 29.6172 284.355 29.7759 284.232 29.979C284.109 30.1779 284.018 30.4085 283.959 30.6709C283.9 30.929 283.87 31.2062 283.87 31.5024ZM293.633 33.1211C293.633 32.9772 293.595 32.8481 293.519 32.7339C293.442 32.6196 293.299 32.516 293.087 32.4229C292.88 32.3255 292.575 32.2345 292.173 32.1499C291.817 32.0737 291.489 31.9785 291.189 31.8643C290.889 31.75 290.63 31.6125 290.415 31.4517C290.199 31.2866 290.029 31.0941 289.907 30.874C289.788 30.6497 289.729 30.3916 289.729 30.0996C289.729 29.8161 289.79 29.5495 289.913 29.2998C290.036 29.0459 290.214 28.8237 290.446 28.6333C290.679 28.4386 290.963 28.2863 291.297 28.1763C291.631 28.062 292.008 28.0049 292.427 28.0049C293.011 28.0049 293.512 28.1001 293.931 28.2905C294.354 28.481 294.678 28.7433 294.902 29.0776C295.127 29.4077 295.239 29.7801 295.239 30.1948H293.563C293.563 30.0129 293.521 29.8478 293.436 29.6997C293.356 29.5516 293.231 29.4331 293.062 29.3442C292.892 29.2511 292.679 29.2046 292.42 29.2046C292.188 29.2046 291.991 29.2427 291.83 29.3188C291.674 29.395 291.555 29.4945 291.475 29.6172C291.394 29.7399 291.354 29.8753 291.354 30.0234C291.354 30.1335 291.375 30.2329 291.417 30.3218C291.464 30.4064 291.538 30.4847 291.64 30.5566C291.741 30.6286 291.879 30.6942 292.052 30.7534C292.23 30.8127 292.448 30.8698 292.706 30.9248C293.218 31.0264 293.665 31.1618 294.045 31.3311C294.431 31.4961 294.731 31.7161 294.947 31.9912C295.163 32.2663 295.271 32.6175 295.271 33.0449C295.271 33.3496 295.205 33.6289 295.074 33.8828C294.943 34.1325 294.752 34.3504 294.502 34.5366C294.253 34.7228 293.954 34.8688 293.607 34.9746C293.26 35.0762 292.869 35.127 292.433 35.127C291.803 35.127 291.269 35.0148 290.833 34.7905C290.398 34.562 290.068 34.2743 289.843 33.9272C289.619 33.576 289.507 33.2121 289.507 32.8354H291.113C291.125 33.1021 291.197 33.3158 291.329 33.4766C291.46 33.6374 291.625 33.7537 291.824 33.8257C292.027 33.8934 292.241 33.9272 292.465 33.9272C292.719 33.9272 292.932 33.8934 293.106 33.8257C293.279 33.7537 293.411 33.6585 293.5 33.54C293.588 33.4173 293.633 33.2777 293.633 33.1211Z' fill='%23666666'/%3E%3Cdefs%3E%3CclipPath id='clip0_643_1093'%3E%3Crect width='19.6923' height='19.6923' fill='white' transform='translate(35.4629 21.4619)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media(max-width: 768px) {
+  body .srp-pickup-empty__my-location::before {
+    max-width: unset;
+    height: 55px;
+  }
+}
+
+body input.success:not([invalid="true"]) {
+  position: relative;
+  background-image: none;
+  background-position: unset;
+  background-repeat: unset;
+}
+
+body input.success::after {
+  content: "";
+  height: 8px;
+  width: 12px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.125 5.21875L4.54891 8.5L12.375 1' stroke='%23313131' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.vitrineWeb {
+  display: none !important;
+}
+
+#shipping-preview-container .srp-main-title {
+  /* font-size: 16px; */
+  font-weight: 600;
+  line-height: 18px;
+}
+
+body .checkout-container .orderform-template .custom-cart-template-wrap .row-fluid {
+  display: block !important;
+  margin-left: 10px;
+}
+
+@media (max-width:720px) {
+  body .checkout-container .orderform-template .custom-cart-template-wrap .row-fluid {
+    display: block !important;
+    margin-left: 0px;
+  }
+
+}
+
+body .checkout-container .orderform-template .row-fluid #payment-data {
+  border: 0;
+}
+
+
+.orderform-template-holder #payment-data .payment-group-item span.payment-group-item-text,
+#show-gift-card-group {
+  font-size: 13px !important;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+body {
+  padding-bottom: 0px !important;
+}
+
+.btn#payment-data-submit span,
+.orderform-template-holder #payment-data .payment-discounts-list table td.action a#payment-data-submit span,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a#payment-data-submit span {
+  font-size: 16px;
+}
+
+
+
+.icon-edit:before {
+  /* content: '';
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='73' height='24' viewBox='0 0 73 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M69.25 19.4997H59.8094L67.5344 11.784L70 9.30903C70.14 9.17043 70.2512 9.00543 70.327 8.8236C70.4029 8.64176 70.442 8.44669 70.442 8.24966C70.442 8.05263 70.4029 7.85756 70.327 7.67572C70.2512 7.49389 70.14 7.32889 70 7.19028L65.8094 2.99966C65.527 2.72141 65.1464 2.56543 64.75 2.56543C64.3536 2.56543 63.973 2.72141 63.6906 2.99966L52.4406 14.2497C52.3008 14.3884 52.1899 14.5534 52.1143 14.7353C52.0387 14.9171 51.9998 15.1121 52 15.309V19.4997C52 19.8975 52.158 20.279 52.4393 20.5603C52.7206 20.8416 53.1022 20.9997 53.5 20.9997H69.25C69.4489 20.9997 69.6397 20.9206 69.7803 20.78C69.921 20.6393 70 20.4486 70 20.2497C70 20.0507 69.921 19.86 69.7803 19.7193C69.6397 19.5787 69.4489 19.4997 69.25 19.4997ZM53.5 15.309L62.5 6.30903L66.6906 10.4997L57.6906 19.4997H53.5V15.309Z' fill='%230B63CE'/%3e%3cpath d='M6.94434 15.0034V16H2.05029V15.0034H6.94434ZM2.29785 6.75781V16H1.07275V6.75781H2.29785ZM6.29688 10.7314V11.728H2.05029V10.7314H6.29688ZM6.88086 6.75781V7.76074H2.05029V6.75781H6.88086ZM13.1358 14.667V6.25H14.3165V16H13.2374L13.1358 14.667ZM8.51475 12.6421V12.5088C8.51475 11.984 8.57822 11.508 8.70518 11.0806C8.83636 10.6489 9.02044 10.2786 9.25742 9.96973C9.49863 9.66081 9.78428 9.42383 10.1144 9.25879C10.4487 9.08952 10.8211 9.00488 11.2315 9.00488C11.6632 9.00488 12.0398 9.08105 12.3614 9.2334C12.6873 9.38151 12.9623 9.59945 13.1866 9.88721C13.4151 10.1707 13.595 10.5135 13.7262 10.9155C13.8574 11.3175 13.9483 11.7725 13.9991 12.2803V12.8643C13.9526 13.3678 13.8616 13.8206 13.7262 14.2227C13.595 14.6247 13.4151 14.9674 13.1866 15.251C12.9623 15.5345 12.6873 15.7524 12.3614 15.9048C12.0356 16.0529 11.6547 16.127 11.2188 16.127C10.8168 16.127 10.4487 16.0402 10.1144 15.8667C9.78428 15.6932 9.49863 15.4499 9.25742 15.1367C9.02044 14.8236 8.83636 14.4554 8.70518 14.0322C8.57822 13.6048 8.51475 13.1414 8.51475 12.6421ZM9.69541 12.5088V12.6421C9.69541 12.9849 9.72926 13.3065 9.79697 13.6069C9.86891 13.9074 9.97894 14.1719 10.1271 14.4004C10.2752 14.6289 10.4635 14.8088 10.692 14.9399C10.9205 15.0669 11.1935 15.1304 11.5108 15.1304C11.9002 15.1304 12.2197 15.0479 12.4693 14.8828C12.7232 14.7178 12.9264 14.4998 13.0787 14.229C13.2311 13.9582 13.3495 13.6641 13.4342 13.3467V11.8169C13.3834 11.5841 13.3093 11.3599 13.212 11.144C13.1189 10.924 12.9962 10.7293 12.8438 10.5601C12.6957 10.3866 12.5117 10.249 12.2916 10.1475C12.0758 10.0459 11.8198 9.99512 11.5235 9.99512C11.2019 9.99512 10.9247 10.0628 10.692 10.1982C10.4635 10.3294 10.2752 10.5114 10.1271 10.7441C9.97894 10.9727 9.86891 11.2393 9.79697 11.5439C9.72926 11.8444 9.69541 12.166 9.69541 12.5088ZM18.0705 9.13184V16H16.8898V9.13184H18.0705ZM16.801 7.31006C16.801 7.11963 16.8581 6.95882 16.9724 6.82764C17.0909 6.69645 17.2644 6.63086 17.4929 6.63086C17.7172 6.63086 17.8885 6.69645 18.007 6.82764C18.1298 6.95882 18.1911 7.11963 18.1911 7.31006C18.1911 7.49202 18.1298 7.6486 18.007 7.77979C17.8885 7.90674 17.7172 7.97021 17.4929 7.97021C17.2644 7.97021 17.0909 7.90674 16.9724 7.77979C16.8581 7.6486 16.801 7.49202 16.801 7.31006ZM23.4813 9.13184V10.0332H19.7679V9.13184H23.4813ZM21.0247 7.4624H22.199V14.2988C22.199 14.5316 22.235 14.7072 22.3069 14.8257C22.3789 14.9442 22.472 15.0225 22.5862 15.0605C22.7005 15.0986 22.8232 15.1177 22.9544 15.1177C23.0517 15.1177 23.1533 15.1092 23.2591 15.0923C23.3691 15.0711 23.4516 15.0542 23.5066 15.0415L23.513 16C23.4199 16.0296 23.2972 16.0571 23.1448 16.0825C22.9967 16.1121 22.8169 16.127 22.6053 16.127C22.3175 16.127 22.053 16.0698 21.8118 15.9556C21.5706 15.8413 21.3781 15.6509 21.2342 15.3843C21.0945 15.1134 21.0247 14.7495 21.0247 14.2925V7.4624ZM29.5585 14.8257V11.29C29.5585 11.0192 29.5035 10.7843 29.3935 10.5854C29.2877 10.3823 29.1269 10.2257 28.911 10.1157C28.6952 10.0057 28.4286 9.95068 28.1112 9.95068C27.815 9.95068 27.5548 10.0015 27.3305 10.103C27.1104 10.2046 26.9369 10.3379 26.81 10.5029C26.6872 10.668 26.6259 10.8457 26.6259 11.0361H25.4516C25.4516 10.7907 25.515 10.5474 25.642 10.3062C25.7689 10.0649 25.9509 9.84701 26.1879 9.65234C26.4291 9.45345 26.7169 9.29688 27.0512 9.18262C27.3897 9.06413 27.7663 9.00488 28.1811 9.00488C28.6804 9.00488 29.1205 9.08952 29.5014 9.25879C29.8865 9.42806 30.1869 9.68408 30.4027 10.0269C30.6228 10.3654 30.7328 10.7907 30.7328 11.3027V14.502C30.7328 14.7305 30.7519 14.9738 30.7899 15.2319C30.8323 15.4901 30.8936 15.7122 30.974 15.8984V16H29.7489C29.6897 15.8646 29.6431 15.6847 29.6093 15.4604C29.5754 15.2319 29.5585 15.0203 29.5585 14.8257ZM29.7616 11.8359L29.7743 12.6611H28.5873C28.253 12.6611 27.9547 12.6886 27.6923 12.7437C27.4299 12.7944 27.2099 12.8727 27.0321 12.9785C26.8544 13.0843 26.719 13.2176 26.6259 13.3784C26.5328 13.535 26.4862 13.7191 26.4862 13.9307C26.4862 14.1465 26.5349 14.3433 26.6322 14.521C26.7296 14.6987 26.8756 14.8405 27.0702 14.9463C27.2691 15.0479 27.5124 15.0986 27.8002 15.0986C28.1599 15.0986 28.4773 15.0225 28.7523 14.8701C29.0274 14.7178 29.2453 14.5316 29.4062 14.3115C29.5712 14.0915 29.6601 13.8778 29.6728 13.6704L30.1742 14.2354C30.1446 14.4131 30.0642 14.6099 29.933 14.8257C29.8018 15.0415 29.6262 15.2489 29.4062 15.4478C29.1903 15.6424 28.9322 15.8053 28.6317 15.9365C28.3355 16.0635 28.0012 16.127 27.6288 16.127C27.1633 16.127 26.7549 16.036 26.4037 15.854C26.0567 15.672 25.7859 15.4287 25.5912 15.124C25.4008 14.8151 25.3056 14.4702 25.3056 14.0894C25.3056 13.7212 25.3775 13.3975 25.5214 13.1182C25.6653 12.8346 25.8726 12.5998 26.1435 12.4136C26.4143 12.2231 26.7401 12.0793 27.121 11.9819C27.5019 11.8846 27.9271 11.8359 28.3969 11.8359H29.7616ZM34.4043 10.2109V16H33.23V9.13184H34.3726L34.4043 10.2109ZM36.5498 9.09375L36.5435 10.1855C36.4461 10.1644 36.353 10.1517 36.2642 10.1475C36.1795 10.139 36.0822 10.1348 35.9722 10.1348C35.7013 10.1348 35.4622 10.1771 35.2549 10.2617C35.0475 10.3464 34.8719 10.4648 34.728 10.6172C34.5841 10.7695 34.4699 10.9515 34.3853 11.1631C34.3049 11.3704 34.252 11.599 34.2266 11.8486L33.8965 12.0391C33.8965 11.6243 33.9367 11.235 34.0171 10.8711C34.1017 10.5072 34.2308 10.1855 34.4043 9.90625C34.5778 9.62272 34.7979 9.40267 35.0645 9.24609C35.3353 9.08529 35.6569 9.00488 36.0293 9.00488C36.1139 9.00488 36.2113 9.01546 36.3213 9.03662C36.4313 9.05355 36.5075 9.07259 36.5498 9.09375Z' fill='%23666666'/%3e%3cpath d='M0 17.2695H8.03867V17.9043H0V17.2695ZM7.91172 17.2695H24.6137V17.9043H7.91172V17.2695ZM24.6137 17.2695H32.335V17.9043H24.6137V17.2695ZM32.335 17.2695H36.7402V17.9043H32.335V17.2695Z' fill='%23666666'/%3e%3c/svg%3e ");
+  display: block;
+  width: 73px;
+  height: 24px;
+  background-repeat: no-repeat; */
+  color: #313131;
+}
+
+/* buyTogether */
+
+.buyTogether {
+  margin-top: 10px;
+}
+
+.buyTogetherImg {
+  max-width: 118px;
+  padding: 20px 35px 20px 10px;
+}
+
+.buyTogetherWraper {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  border: 1px solid #D5D5D5
+}
+
+.buyTogetherTitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+.buyTogetherName {
+  width: calc(100% - 355px);
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.buyTogetherPrice {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 32px 0 0;
+}
+
+.buyTogetherBtn {
+  margin-right: 15px;
+}
+
+.buyTogetherAdd {
+  width: 100%;
+  max-width: 300px;
+  min-width: 270px;
+  height: 48px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  background: #3A3C3A;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #fff;
+
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+@media (max-width: 1024px) {
+
+  .buyTogether {}
+
+  .buyTogetherWraper {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .buyTogetherImg {
+    width: 90px;
+    left: 0;
+    position: absolute;
+    margin-left: 10px;
+    padding: 0;
+
+  }
+
+  .buyTogetherImg img {
+    max-width: 90px;
+    margin-top: 5px;
+  }
+
+  .buyTogetherTitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
+  .buyTogetherName {
+    margin-left: 120px;
+    display: block;
+    text-align: left;
+    font-weight: 200;
+    width: auto;
+    padding: 0;
+  }
+
+  .buyTogetherPrice {
+    margin: 0 0 0 120px;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  .buyTogetherBtn {}
+
+  .buyTogetherAdd {
+    max-width: 200px;
+    min-width: auto;
+    margin: 0 0 0 120px;
+    padding: 16px 0;
+    margin-top: 7px;
+    height: 46px;
+  }
+
+  #checkoutMainContainer .cart-template.full-cart.span12.active .summary-template-holder::before {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 370px) {
+  .buyTogetherAdd {
+    max-width: 180px;
+    font-size: 12px;
+
+  }
+}
+
+body .orderform-template {
+  margin-top: 20px;
+}
+
+.orderform-template-holder .step.shipping-data .box-step>*:last-child {
+  /* display: block !important; */
+}
+
+body:not(.body-cart) .cart-template.mini-cart .summary-template-holder #shipping-preview-container {
+  display: none;
+}
+
+body:not(.body-cart) .cart-template.mini-cart .summary-template-holder {
+  padding: 0px !important;
+  background-color: #F5F5F5;
+  margin-top: 40px;
+
+}
+
+.orderform-template .payment-confirmation-wrap .payment-submit-wrap {
+  position: unset;
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 20px;
+}
+
+.summary-totalizers .accordion-inner {
+  border: 0;
+}
+
+@media(max-width: 768px) {
+  body.v-custom-step-profile.v-custom-paymentBuilder-accordion .checkout-container .orderform-template .row-fluid #payment-data {
+    margin-top: 0px !important;
+  }
+
+  body #breadcrumb-container {
+    top: 100px;
+    left: 15px;
+  }
+
+  body.js-vcustom-hideEmailStep #shipping-data,
+  body.js-vcustom-hideEmailStep #payment-data {
+    padding: 32px 15px;
+  }
+
+  body .box-client-info .newsletter label.checkbox.newsletter-label span,
+  body .box-client-info .newsletter__termo label span,
+  body .box-client-info .state-inscription-box label span {
+    width: auto;
+  }
+}
+
+@media(min-width: 768px) {
+  .body-cart-vertical .cart-template.full-cart.active {
+    margin-top: 20px;
+  }
+}
+
+.orderform-template-holder #payment-data .gift-card-section.form-step.box-default label {
+  position: absolute;
+  top: 2px;
+  font-size: 13px !important;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.orderform-template-holder #payment-data p.payment-discounts-options {
+  padding-top: 25px;
+}
+
+.orderform-template-holder #payment-data input#payment-discounts-code {
+  margin-left: 0px;
+}
+
+#btn-add-gift-card {
+  border-width: 1px;
+  border: 1px solid #3A3C3A !important;
+  color: #3A3C3A !important;
+  background-color: #fff;
+
+}
+
+.orderform-template-holder #payment-data #btn-add-gift-card {
+  height: 40px;
+  border-radius: 4px;
+}
+
+.v-custom-addLabels-active-flag {
+  margin-top: 10px;
+}
+
+.orderform-template-holder #payment-data p.link.link-gift-card a {
+  color: #313131;
+}
+
+.orderform-template-holder #payment-data .v-custom-payment-item-wrap .payment-group-item.active .payment-group-item-text:before {
+  background: #313131;
+  border-color: #313131;
+}
+
+.orderform-template-holder #payment-data .v-custom-payment-item-wrap .payment-group-item.active {
+  background: #FAFAFA;
+  border-bottom: 1px solid #313131;
+}
+
+.orderform-template-holder #payment-data .v-custom-payment-item-wrap.active,
+.orderform-template-holder #payment-data .v-custom-payment-item-wrap:hover {
+  border-color: #313131;
+}
+
+#app-container label.FormFieldLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: #666666;
+  display: block;
+  width: 100%;
+}
+
+.PaymentCardDueDate p.payment-card-lash {
+  display: none;
+}
+
+.payment-card-due-year {
+  margin-left: 8px;
+}
+
+#app-container select {
+  font-size: 14px;
+}
+
+.orderform-template-holder #payment-data .v-custom-payment-item-wrap .payment-group-item:hover .payment-group-item-text:before {
+  border-color: #313131;
+}
+
+.payment-group-item-cards .card-flag {
+  display: none;
+}
+
+.payment-group-item-cards:after {
+  content: "";
+  display: block;
+  background-image: url(https://acuoio.vtexassets.com/assets/vtex.file-manager-graphql/images/77c61058-6351-4302-90db-bbdb40cc6c5c___077d0e15bb9edd99ea536c010c334914.png);
+  width: 248px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body .table.cart-items tbody tr td.product-price .v-custom-quantity-price__best,
+body .table.cart-items tbody tr td.quantity-price .v-custom-quantity-price__best {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18.75px;
+  text-align: left;
+  color: #313131;
+  margin-top: 2px;
+}
+
+body .table.cart-items tbody tr td.product-price .v-custom-quantity-price__list--list,
+body .table.cart-items tbody tr td.quantity-price .v-custom-quantity-price__list--list {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  text-align: left;
+}
+
+body .table.cart-items tbody tr td.product-price .v-custom-quantity-price__list--selling .discount,
+body .table.cart-items tbody tr td.quantity-price .v-custom-quantity-price__list--selling .discount {
+  display: flex;
+}
+
+body .v-custom-quantity-price__list--selling {
+  display: block !important;
+  position: absolute;
+  right: -2px;
+}
+
+body .table.cart-items tbody tr td.product-price .v-custom-quantity-price__list--selling:before,
+body .table.cart-items tbody tr td.quantity-price .v-custom-quantity-price__list--selling:before {
+  display: none;
+}
+
+body .table.cart-items tbody tr td.product-price .v-custom-quantity-price__list--selling:after,
+body .table.cart-items tbody tr td.quantity-price .v-custom-quantity-price__list--selling:after {
+  display: none;
+}
+
+body .table.cart-items tbody tr td.product-price .v-custom-quantity-price__list--selling .vqc-ldelem {
+  display: none;
+}
+
+body .table.cart-items tbody tr td.product-price .v-custom-quantity-price__list--selling .new-product-price {
+  display: none;
+}
+
+body .table.cart-items tbody tr td i.icon-question-sign:before {
+  font-size: 16px;
+}
+
+@media(max-width: 768px) {
+  .table.cart-items tbody tr.product-item {
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
+  }
+
+  body .table.cart-items tbody tr td.product-price>span.list-price {
+    width: max-content;
+    float: none;
+    margin-right: 41px;
+  }
+
+  .full-cart .cart table tbody tr.unavailable td.quantity {
+    display: none !important;
+  }
+
+  .orderform-template-holder #payment-data .v-custom-payment-item-wrap .payment-group-item {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  .payment-group-item-cards:after {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 210px;
+  }
+
+  #app-container #creditCardpayment-card-0Brand {
+    font-size: 12px;
+  }
+
+  body .full-cart .cart table tbody tr td.product-price.v-custom-quantity-price-active {
+    gap: 5px;
+  }
+
+  body .full-cart .cart table tbody tr td.product-price .v-custom-quantity-price .v-custom-quantity-price__list {
+    margin-right: 41px;
+  }
+
+  .full-cart .cart table tbody tr td.product-price {
+    text-align: right;
+    float: left;
+    margin-right: 5px;
+    margin-left: 120px;
+    margin-bottom: 12px;
+    padding: 0;
+  }
+
+  .table.cart-items tbody tr td.quantity-price {
+    display: none !important;
+  }
+
+  body .table.cart-items tbody tr td.product-price .v-custom-quantity-price__best,
+  body .table.cart-items tbody tr td.quantity-price .v-custom-quantity-price__best {
+    margin-top: 4px;
+    margin-right: 28px;
+  }
+
+  body .v-custom-quantity-price .v-custom-quantity-price__list .v-custom-quantity-price__list--list {
+    padding: 0;
+  }
+
+  body .table.cart-items tbody tr td.product-price .v-custom-quantity-price__list>*:last-child {
+    padding: 0;
+  }
+
+  body .v-custom-quantity-price__list--selling {
+    bottom: -3px;
+    right: 0;
+  }
+}
+
+.orderform-template-holder #payment-data .v-custom-payment-item-wrap .payment-group-item.active {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+body#checkoutMainContainer {
+  padding: 0 !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.containerHeader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 20px 0 27px;
+  box-shadow: 0px 4px 4px 0px #0000000D;
+
+}
+
+.containerHeader .backToSiteDesktop,
+.containerHeader .backToSiteMobile {
+  position: absolute;
+  left: 104px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  text-align: center;
+  color: #313131;
+
+}
+
+
+.containerHeader .backToSiteDesktop {
+  left: 0px;
+  right: 0px;
+  max-width: 1519px;
+  width: calc(100% - 40px);
+  margin: auto;
+}
+
+.containerHeader .backToSiteMobile {
+  display: none;
+}
+
+.footerContainer {
+  padding: 80px 104px;
+  background: #313131;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paymentsAndPoweredBy {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+
+}
+
+.payments,
+.poweredBy {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+
+.payments p {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.23px;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 0 !important;
+  text-transform: uppercase;
+}
+
+.poweredBy p {
+  display: none;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.23px;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 0 !important;
+  text-transform: uppercase;
+}
+
+.copyright {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 0 !important;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .table.cart-items td.product-image img {
+    width: 90px;
+    margin-left: 10px;
+  }
+
+  .table.cart-items td.product-name,
+  .table.cart-items td.quantity {
+    margin-left: 120px !important;
+  }
+
+  .containerHeader .backToSiteDesktop {
+    display: none;
+  }
+
+  .sb-mobile li {
+    float: none !important;
+  }
+
+  .continueBuyingWrapper1 {}
+
+  .vtex-social-selling ul {
+    top: 40%;
+  }
+
+  .containerHeader .backToSiteMobile {
+    display: flex;
+    left: 30px;
+  }
+
+  .summary-template-holder .cart-links-bottom {
+    max-width: 91%;
+    position: relative;
+    width: auto;
+  }
+
+
+  .orderform-template .payment-confirmation-wrap .payment-submit-wrap {
+    padding: 0;
+  }
+
+  .orderform-template .payment-confirmation-wrap .payment-submit-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .cart-template #cartLoadedDiv:before {
+    display: flex;
+    justify-content: center;
+  }
+
+  .client-profile-data {}
+
+  .footerContainer {
+    padding: 36px 32px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    row-gap: 32px;
+  }
+
+  body .orderform-template .cart-template #payment-data-submit {
+    width: 90%;
+    margin: auto !important;
+  }
+
+  .continueBuyingWrapper2 {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .project-checkout__second {
+    width: 70%;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    border-top: 1px solid #e5e5e5;
+
+  }
+
+  .project-checkout__center {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    border-top: 1px solid #e5e5e5;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    border: 0;
+
+  }
+
+  .project-checkout__first,
+  .project-checkout__second {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    padding: 30px 40px;
+    margin: 0;
+  }
+
+  .project-checkout__second svg {
+    margin-left: 5px;
+  }
+
+  .paymentsAndPoweredBy,
+  .payments,
+  .poweredBy {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .payments,
+  .poweredBy {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 16px;
+  }
+
+  .full-cart .cart table tbody tr td.product-name a {
+    display: block;
+    padding-right: 24px;
+    font-weight: 400;
+  }
+
+  .poweredBy p {
+    display: block;
+  }
+
+  .paymentsAndPoweredBy {
+    row-gap: 32px;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+  .project-checkout__bottom {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 768px) {
+  .my-modal-gift .modal-content {
+    width: 90% !important;
+  }
+
+  body .modal-header p::after {
+    max-width: 250px;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  body .modal-items .btn-presente {
+    width: 100% !important;
+  }
+
+  body .modal-items {
+    gap: 15px;
+  }
+
+
+
+}
+
+body .modal-items .btn-presente {
+  background: #313131 !important;
+}
+
+.table.cart-items tbody tr.product-item[data-sku="71528"] .present,
+.table.cart-items tbody tr.product-item[data-sku="87988"] .present,
+.table.cart-items tbody tr.product-item[data-sku="70456"] .present {
+  display: none;
+}
+
+
+
+
+@media(max-width: 365px) {
+  body #buy-together .wrapperBuyTogether div.shelf.main-product {
+    width: 105px;
+  }
+}
+
+@media(max-width: 768px) {
+  body .orderform-template .cart-template.mini-cart .item [data-bind="text: priceLabel"] {
+    position: unset;
+    margin-top: 10px;
+  }
+}
+
+/* ///////////////////////////////////////////////////////////////// */
